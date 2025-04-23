@@ -1,0 +1,6 @@
+waybackpy
+openpyxl
+requests
+pandas
+beautifulsoup4
+pyttsx3
