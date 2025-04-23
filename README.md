@@ -6,9 +6,7 @@ This project collects, processes, and analyzes historical snapshots of the [ICE 
 
 ## 📁 Project Structure
 ```
-├── Participating Entities before feb 20
-├── participatingAgencies
-├── pendingAgencies
+287g/
 ├── archive-url-snapshot.py
 ├── combine_yearly_urls.py
 ├── extract_287g_after_feb20_snapshot.py
@@ -18,8 +16,15 @@ This project collects, processes, and analyzes historical snapshots of the [ICE 
 ├── filtered_snapshots_every_3_days.xlsx
 ├── filter_snapshots_every_3_days.py
 ├── ice_287g_snapshots.xlsx
-└── sheets_every_2_days.xlsx
-
+├── sheets_every_2_days.xlsx
+├── Participating Entities before feb 20/
+│   └── (Excel files with agencies before February 20)
+│
+├── participatingAgencies/
+│   └── (Excel files with agencies after February 20)
+│
+└── pendingAgencies/
+    └── (Excel files for pending agencies after February 20)
 ```
 ## 📌 Key Functionalities
 
