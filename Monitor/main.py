@@ -1,7 +1,17 @@
 import os
 import sys
+import logging
 from dotenv import load_dotenv
 
+# Setup logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    handlers=[
+        logging.FileHandler("log.txt", mode='a', encoding='utf-8'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
 
 # Add current directory to sys.path to import local modules
 sys.path.append(os.path.dirname(__file__))
@@ -18,27 +28,27 @@ from send_email import send_email
 from combinePendingAgencies import main as combine_pending_agencies
 from deduplicate_pending_combined import deduplicate_pending_combined
 
+
 def process_participating_agencies():
-    print("\nProcessing Participating Agencies...")
-    
+    logging.info("Processing Participating Agencies...")
+
     load_dotenv()
     base_dir = os.path.dirname(__file__)
     data_directory = os.path.join(base_dir, '..', 'participatingAgencies after feb 20')
     save_hyperlink_dir = os.path.join(base_dir, '..', 'Monitor', 'Hyperlink')
     total_agencies_dir = os.path.join(base_dir, '..', 'Total participatingAgencies')
 
-    # Email Info (optional)
     SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
     SENDGRID_FROM_EMAIL = os.getenv('SENDGRID_FROM_EMAIL')
     RECIPIENTS = os.getenv('RECIPIENTS').split(',')
 
     latest_filename = find_latest_file(data_directory)
     if not latest_filename:
-        print(" No matching .xlsx files found in participatingAgencies after feb 20.")
+        logging.warning("No matching .xlsx files found in participatingAgencies after feb 20.")
         return
 
     latest_file_path = os.path.join(data_directory, latest_filename)
-    print(f"Found latest file: {latest_filename}")
+    logging.info(f"Found latest file: {latest_filename}")
 
     extract_hyperlinks(latest_file_path, save_hyperlink_dir)
     combined_file_path = combine_latest_files(save_hyperlink_dir, total_agencies_dir, total_agencies_dir)
@@ -47,18 +57,19 @@ def process_participating_agencies():
     hyperlink_file_to_delete = os.path.join(save_hyperlink_dir, latest_hyperlink_file)
     if os.path.exists(hyperlink_file_to_delete):
         os.remove(hyperlink_file_to_delete)
-        print(f"Removed processed file from Hyperlink folder: {hyperlink_file_to_delete}")
+        logging.info(f"Removed processed file from Hyperlink folder: {hyperlink_file_to_delete}")
     else:
-        print(f"File to delete not found: {hyperlink_file_to_delete}")
+        logging.warning(f"File to delete not found: {hyperlink_file_to_delete}")
+
 
 def process_pending_agencies():
-    print("\nStep 1: Combining Pending Agencies...")
+    logging.info("Step 1: Combining Pending Agencies...")
     combine_pending_agencies()
 
-    print("\nStep 2: Deduplicating Combined Pending Agencies...")
+    logging.info("Step 2: Deduplicating Combined Pending Agencies...")
     deduplicate_pending_combined()
 
-    print("\nStep 3: Cleaning up duplicated file...")
+    logging.info("Step 3: Cleaning up duplicated file...")
     base_dir = os.path.dirname(__file__)
     total_with_dup_dir = os.path.abspath(os.path.join(base_dir, '..', 'Total pendingAgencies', 'Total_with_Duplication'))
 
@@ -68,40 +79,50 @@ def process_pending_agencies():
             duplicated_file_path = os.path.join(total_with_dup_dir, latest_dup_file)
             if os.path.exists(duplicated_file_path):
                 os.remove(duplicated_file_path)
-                print(f"Removed duplicated file: {duplicated_file_path}")
+                logging.info(f"Removed duplicated file: {duplicated_file_path}")
             else:
-                print(f"Duplicated file not found: {duplicated_file_path}")
+                logging.warning(f"Duplicated file not found: {duplicated_file_path}")
         else:
-            print("No duplicated file found to remove.")
+            logging.warning("No duplicated file found to remove.")
     except Exception as e:
-        print(f"Cleanup failed: {e}")
+        logging.error(f"Cleanup failed: {e}")
+
 
 def broadcast_email(base_dir, SENDGRID_API_KEY, SENDGRID_FROM_EMAIL, RECIPIENTS):
-    # Send Participating Agencies file
+    participating_path = None
+    pending_path = None
+
     latest_participating_file = find_latest_file(os.path.join(base_dir, '..', 'Total participatingAgencies'))
     if latest_participating_file:
-        send_email(
-            file_path=os.path.join(base_dir, '..', 'Total participatingAgencies', latest_participating_file),
-            file_url=None,
-            api_key=SENDGRID_API_KEY,
-            from_email=SENDGRID_FROM_EMAIL,
-            recipients=RECIPIENTS
-        )
+        participating_path = os.path.join(base_dir, '..', 'Total participatingAgencies', latest_participating_file)
 
-    # Send Pending Agencies file
     latest_pending_file = find_latest_file(os.path.join(base_dir, '..', 'Total pendingAgencies'))
     if latest_pending_file:
+        pending_path = os.path.join(base_dir, '..', 'Total pendingAgencies', latest_pending_file)
+
+    if participating_path or pending_path:
+        attachments = []
+        if participating_path:
+            attachments.append(participating_path)
+        if pending_path:
+            attachments.append(pending_path)
+
+        logging.info("Sending email with attachments...")
         send_email(
-            file_path=os.path.join(base_dir, '..', 'Total pendingAgencies', latest_pending_file),
+            file_path=None,
             file_url=None,
             api_key=SENDGRID_API_KEY,
             from_email=SENDGRID_FROM_EMAIL,
-            recipients=RECIPIENTS
+            recipients=RECIPIENTS,
+            attachments=attachments
         )
+        logging.info("Email sent successfully.")
+    else:
+        logging.warning("No files available to attach in email.")
 
 
 def main():
-    print("Step 0: Monitoring and downloading latest Excel files...")
+    logging.info("Step 0: Monitoring and downloading latest Excel files...")
     url = "https://www.ice.gov/identify-and-arrest/287g"
     has_new_file = monitor_and_download_all(url)
 
@@ -114,14 +135,14 @@ def main():
     if has_new_file:
         process_participating_agencies()
         process_pending_agencies()
-
         broadcast_email(base_dir, SENDGRID_API_KEY, SENDGRID_FROM_EMAIL, RECIPIENTS)
-        print("\nStep 4: Pushing files to GitHub...")
+
+        logging.info("Step 4: Pushing files to GitHub...")
         push_to_github()
 
-        print("\nAll steps completed successfully!")
+        logging.info("All steps completed successfully!")
     else:
-        print("No new files detected. Skipping processing steps.")
+        logging.info("No new files detected. Skipping processing steps.")
 
 
 if __name__ == "__main__":
