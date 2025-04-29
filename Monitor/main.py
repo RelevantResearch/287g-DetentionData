@@ -10,7 +10,7 @@ from getFilename import find_latest_file
 from getHyperlink import extract_hyperlinks
 from combineFiles import combine_latest_files
 from monitorSheets import monitor_and_download_all
-
+from pushGithub import push_to_github
 
 # Imports for Pending Agencies
 from combinePendingAgencies import main as combine_pending_agencies
@@ -82,9 +82,13 @@ def main():
     if has_new_file:
         process_participating_agencies()
         process_pending_agencies()
+        print("\nStep 4: Pushing files to GitHub...")
+        push_to_github()
+
         print("\nAll steps completed successfully!")
     else:
         print("No new files detected. Skipping processing steps.")
+
 
 if __name__ == "__main__":
     main()

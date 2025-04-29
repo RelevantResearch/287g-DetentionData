@@ -1,35 +1,38 @@
-import subprocess
 import os
+import subprocess
 
-def run_git_command(command):
-    result = subprocess.run(command, shell=True, capture_output=True, text=True)
-    print(f"Running: {command}")
-    if result.returncode != 0:
-        print(f"❌ Error:\n{result.stderr}")
-    else:
-        print(f"✅ Success:\n{result.stdout}")
+def read_first_line(file_path):
+    if not os.path.exists(file_path):
+        print(f"⚠️ File not found: {file_path}")
+        return "UnknownFile"
+    with open(file_path, 'r') as f:
+        return f.readline().strip()
 
-def push_to_new_remote(repo_path, new_remote_url):
-    # Get the directory where the script is located
-    script_dir = os.path.dirname(os.path.realpath(__file__))
+def push_to_github():
+    try:
+        base_dir = os.path.dirname(__file__)
+        repo_root = os.path.abspath(os.path.join(base_dir, ".."))
+        participating_txt = os.path.join(repo_root, 'Monitor', 'last-participating.txt')
+        pending_txt = os.path.join(repo_root, 'Monitor', 'last-pending.txt')
 
-    # Calculate the relative path to the repo directory from the script location
-    repo_path = os.path.join(script_dir, repo_path)
+        # Read filenames
+        participating_filename = read_first_line(participating_txt)
+        pending_filename = read_first_line(pending_txt)
 
-    # Step 1: Set the new remote URL
-    run_git_command(f'git -C "{repo_path}" remote set-url origin {new_remote_url}')
+        # Prepare commit message
+        commit_message = f"New Sheets Alert! {participating_filename} and {pending_filename}"
 
-    # Step 2: Verify remote
-    run_git_command(f'git -C "{repo_path}" remote -v')
+        # Change directory to repo root
+        os.chdir(repo_root)
 
-    # Step 3: Push all branches
-    run_git_command(f'git -C "{repo_path}" push origin --all')
+        # Git commands
+        subprocess.run(["git", "add", "."], check=True)
+        subprocess.run(["git", "commit", "-m", commit_message], check=True)
+        subprocess.run(["git", "push", "origin", "main"], check=True)
 
-    # Step 4: Push all tags
-    run_git_command(f'git -C "{repo_path}" push origin --tags')
+        print("✅ Files successfully pushed to GitHub.")
 
-# --- Usage ---
-repo_directory = "../"  # Relative path to the repository, from the script's location
-new_remote = "https://github.com/bishal784411/DetentionData"  # New remote URL
-
-push_to_new_remote(repo_directory, new_remote)
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Git command failed: {e}")
+    except Exception as ex:
+        print(f"❌ Unexpected error: {ex}")
