@@ -2,6 +2,7 @@ import os
 import sys
 from dotenv import load_dotenv
 
+
 # Add current directory to sys.path to import local modules
 sys.path.append(os.path.dirname(__file__))
 
@@ -11,6 +12,7 @@ from getHyperlink import extract_hyperlinks
 from combineFiles import combine_latest_files
 from monitorSheets import monitor_and_download_all
 from pushGithub import push_to_github
+from send_email import send_email
 
 # Imports for Pending Agencies
 from combinePendingAgencies import main as combine_pending_agencies
@@ -74,14 +76,46 @@ def process_pending_agencies():
     except Exception as e:
         print(f"Cleanup failed: {e}")
 
+def broadcast_email(base_dir, SENDGRID_API_KEY, SENDGRID_FROM_EMAIL, RECIPIENTS):
+    # Send Participating Agencies file
+    latest_participating_file = find_latest_file(os.path.join(base_dir, '..', 'Total participatingAgencies'))
+    if latest_participating_file:
+        send_email(
+            file_path=os.path.join(base_dir, '..', 'Total participatingAgencies', latest_participating_file),
+            file_url=None,
+            api_key=SENDGRID_API_KEY,
+            from_email=SENDGRID_FROM_EMAIL,
+            recipients=RECIPIENTS
+        )
+
+    # Send Pending Agencies file
+    latest_pending_file = find_latest_file(os.path.join(base_dir, '..', 'Total pendingAgencies'))
+    if latest_pending_file:
+        send_email(
+            file_path=os.path.join(base_dir, '..', 'Total pendingAgencies', latest_pending_file),
+            file_url=None,
+            api_key=SENDGRID_API_KEY,
+            from_email=SENDGRID_FROM_EMAIL,
+            recipients=RECIPIENTS
+        )
+
+
 def main():
     print("Step 0: Monitoring and downloading latest Excel files...")
     url = "https://www.ice.gov/identify-and-arrest/287g"
     has_new_file = monitor_and_download_all(url)
 
+    load_dotenv()
+    base_dir = os.path.dirname(__file__)
+    SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
+    SENDGRID_FROM_EMAIL = os.getenv('SENDGRID_FROM_EMAIL')
+    RECIPIENTS = os.getenv('RECIPIENTS').split(',')
+
     if has_new_file:
         process_participating_agencies()
         process_pending_agencies()
+
+        broadcast_email(base_dir, SENDGRID_API_KEY, SENDGRID_FROM_EMAIL, RECIPIENTS)
         print("\nStep 4: Pushing files to GitHub...")
         push_to_github()
 
