@@ -3,15 +3,19 @@ import sys
 import logging
 from dotenv import load_dotenv
 
-# Setup logging
+# Set up the base directory (monitor folder)
+base_dir = os.path.dirname(__file__)
+
+# Configure logging to save logs in the 'monitor' folder
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
     handlers=[
-        logging.FileHandler("log.txt", mode='a', encoding='utf-8'),
+        logging.FileHandler(os.path.join(base_dir, 'log.txt'), mode='a', encoding='utf-8'),
         logging.StreamHandler(sys.stdout)
     ]
 )
+
 
 # Add current directory to sys.path to import local modules
 sys.path.append(os.path.dirname(__file__))
@@ -122,6 +126,7 @@ def broadcast_email(base_dir, SENDGRID_API_KEY, SENDGRID_FROM_EMAIL, RECIPIENTS)
 
 
 def main():
+    logging.info("**********Starting Script************")
     logging.info("Step 0: Monitoring and downloading latest Excel files...")
     url = "https://www.ice.gov/identify-and-arrest/287g"
     has_new_file = monitor_and_download_all(url)
