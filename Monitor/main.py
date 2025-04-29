@@ -1,7 +1,6 @@
 import os
 import sys
 from dotenv import load_dotenv
-import subprocess
 
 # Add current directory to sys.path to import local modules
 sys.path.append(os.path.dirname(__file__))
@@ -12,30 +11,10 @@ from getHyperlink import extract_hyperlinks
 from combineFiles import combine_latest_files
 from monitorSheets import monitor_and_download_all
 
+
 # Imports for Pending Agencies
 from combinePendingAgencies import main as combine_pending_agencies
 from deduplicate_pending_combined import deduplicate_pending_combined
-
-def run_git_command(command):
-    result = subprocess.run(command, shell=True, capture_output=True, text=True)
-    print(f"Running: {command}")
-    if result.returncode != 0:
-        print(f"❌ Error:\n{result.stderr}")
-    else:
-        print(f"✅ Success:\n{result.stdout}")
-
-def push_to_new_remote(repo_path, commit_message):
-    # Ensure the repo_path is relative to the script directory
-    repo_path = os.path.join(os.path.dirname(__file__), repo_path)
-    
-    # Step 1: Add changes to git
-    run_git_command(f'git -C "{repo_path}" add .')
-    
-    # Step 2: Commit with message
-    run_git_command(f'git -C "{repo_path}" commit -m "{commit_message}"')
-
-    # Step 3: Push changes to the main branch
-    run_git_command(f'git -C "{repo_path}" push origin main')
 
 def process_participating_agencies():
     print("\nProcessing Participating Agencies...")
@@ -45,6 +24,11 @@ def process_participating_agencies():
     data_directory = os.path.join(base_dir, '..', 'participatingAgencies after feb 20')
     save_hyperlink_dir = os.path.join(base_dir, '..', 'Monitor', 'Hyperlink')
     total_agencies_dir = os.path.join(base_dir, '..', 'Total participatingAgencies')
+
+    # Email Info (optional)
+    SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
+    SENDGRID_FROM_EMAIL = os.getenv('SENDGRID_FROM_EMAIL')
+    RECIPIENTS = os.getenv('RECIPIENTS').split(',')
 
     latest_filename = find_latest_file(data_directory)
     if not latest_filename:
@@ -64,8 +48,6 @@ def process_participating_agencies():
         print(f"Removed processed file from Hyperlink folder: {hyperlink_file_to_delete}")
     else:
         print(f"File to delete not found: {hyperlink_file_to_delete}")
-
-    return latest_filename  # Return the participating agency filename
 
 def process_pending_agencies():
     print("\nStep 1: Combining Pending Agencies...")
@@ -92,21 +74,15 @@ def process_pending_agencies():
     except Exception as e:
         print(f"Cleanup failed: {e}")
 
-    return latest_dup_file  # Return the pending agency filename
-
 def main():
     print("Step 0: Monitoring and downloading latest Excel files...")
     url = "https://www.ice.gov/identify-and-arrest/287g"
     has_new_file = monitor_and_download_all(url)
 
     if has_new_file:
-        participating_filename = process_participating_agencies()
-        pending_filename = process_pending_agencies()
+        process_participating_agencies()
+        process_pending_agencies()
         print("\nAll steps completed successfully!")
-
-        # Step to push to GitHub with commit message including filenames
-        commit_message = f"New Sheets, Alert1: {participating_filename}, {pending_filename}"
-        push_to_new_remote("../", commit_message)
     else:
         print("No new files detected. Skipping processing steps.")
 
