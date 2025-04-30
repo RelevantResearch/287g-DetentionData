@@ -5,3 +5,4 @@ pandas
 beautifulsoup4
 pyttsx3
 python-dotenv
+sendgrid
