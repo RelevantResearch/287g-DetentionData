@@ -58,7 +58,7 @@ def main():
 
     if latest_date:
         # Send a message to Slack with the latest file date
-        message = f"287(g) Alert: The latest 287(g) file has been updated on {latest_date}."
+        message = f"Ignore 287(g) Alert: The latest 287(g) file has been updated on {latest_date}."
         
         # Send the message to Slack with the date in the alert
         send_message_to_slack(message)

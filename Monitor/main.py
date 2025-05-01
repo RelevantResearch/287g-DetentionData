@@ -16,6 +16,7 @@ logging.basicConfig(
     ]
 )
 
+
 # Add current directory to sys.path to import local modules
 sys.path.append(os.path.dirname(__file__))
 
@@ -25,8 +26,7 @@ from getHyperlink import extract_hyperlinks
 from combineFiles import combine_latest_files
 from monitorSheets import monitor_and_download_all
 from pushGithub import push_to_github
-from messageToSlack import send_message_to_slack
-
+from send_email import send_email
 
 # Imports for Pending Agencies
 from combinePendingAgencies import main as combine_pending_agencies
@@ -42,9 +42,9 @@ def process_participating_agencies():
     save_hyperlink_dir = os.path.join(base_dir, '..', 'Monitor', 'Hyperlink')
     total_agencies_dir = os.path.join(base_dir, '..', 'Total participatingAgencies')
 
-    # SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
-    # SENDGRID_FROM_EMAIL = os.getenv('SENDGRID_FROM_EMAIL')
-    # RECIPIENTS = os.getenv('RECIPIENTS').split(',')
+    SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
+    SENDGRID_FROM_EMAIL = os.getenv('SENDGRID_FROM_EMAIL')
+    RECIPIENTS = os.getenv('RECIPIENTS').split(',')
 
     latest_filename = find_latest_file(data_directory)
     if not latest_filename:
@@ -92,23 +92,55 @@ def process_pending_agencies():
         logging.error(f"Cleanup failed: {e}")
 
 
+def broadcast_email(base_dir, SENDGRID_API_KEY, SENDGRID_FROM_EMAIL, RECIPIENTS):
+    participating_path = None
+    pending_path = None
+
+    latest_participating_file = find_latest_file(os.path.join(base_dir, '..', 'Total participatingAgencies'))
+    if latest_participating_file:
+        participating_path = os.path.join(base_dir, '..', 'Total participatingAgencies', latest_participating_file)
+
+    latest_pending_file = find_latest_file(os.path.join(base_dir, '..', 'Total pendingAgencies'))
+    if latest_pending_file:
+        pending_path = os.path.join(base_dir, '..', 'Total pendingAgencies', latest_pending_file)
+
+    if participating_path or pending_path:
+        attachments = []
+        if participating_path:
+            attachments.append(participating_path)
+        if pending_path:
+            attachments.append(pending_path)
+
+        logging.info("Sending email with attachments...")
+        send_email(
+            file_path=None,
+            file_url=None,
+            api_key=SENDGRID_API_KEY,
+            from_email=SENDGRID_FROM_EMAIL,
+            recipients=RECIPIENTS,
+            attachments=attachments
+        )
+        logging.info("Email sent successfully.")
+    else:
+        logging.warning("No files available to attach in email.")
+
+
 def main():
     logging.info("**********Starting Script************")
     logging.info("Step 0: Monitoring and downloading latest Excel files...")
     url = "https://www.ice.gov/identify-and-arrest/287g"
     has_new_file = monitor_and_download_all(url)
 
-    # load_dotenv()
-    # base_dir = os.path.dirname(__file__)
-    # SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
-    # SENDGRID_FROM_EMAIL = os.getenv('SENDGRID_FROM_EMAIL')
-    # RECIPIENTS = os.getenv('RECIPIENTS').split(',')
+    load_dotenv()
+    base_dir = os.path.dirname(__file__)
+    SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
+    SENDGRID_FROM_EMAIL = os.getenv('SENDGRID_FROM_EMAIL')
+    RECIPIENTS = os.getenv('RECIPIENTS').split(',')
 
     if has_new_file:
         process_participating_agencies()
         process_pending_agencies()
-        # Skipping the email broadcasting step for now
-        # broadcast_email(base_dir, SENDGRID_API_KEY, SENDGRID_FROM_EMAIL, RECIPIENTS)
+        broadcast_email(base_dir, SENDGRID_API_KEY, SENDGRID_FROM_EMAIL, RECIPIENTS)
 
         logging.info("Step 4: Pushing files to GitHub...")
         push_to_github()
