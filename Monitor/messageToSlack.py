@@ -9,7 +9,7 @@ load_dotenv()
 SLACK_API_TOKEN = os.getenv('SLACK_API_TOKEN')
 SLACK_CHANNEL_ID = os.getenv('SLACK_CHANNEL_ID')
 
-def send_message_to_slack(message):
+def send_message_to_slack(message, attachments=None):
     url = "https://slack.com/api/chat.postMessage"
     
     headers = {
@@ -22,6 +22,9 @@ def send_message_to_slack(message):
         "text": message
     }
 
+    if attachments:
+        payload["attachments"] = attachments
+
     response = requests.post(url, headers=headers, json=payload)
 
     if response.status_code == 200 and response.json().get("ok"):
@@ -30,5 +33,6 @@ def send_message_to_slack(message):
         print(f"Error sending message to Slack: {response.text}")
 
 if __name__ == "__main__":
-    message = "The latest files are ready for GitHub push!"
+    # This part can be used to test the message
+    message = "Test message to Slack"
     send_message_to_slack(message)

@@ -25,6 +25,8 @@ from getHyperlink import extract_hyperlinks
 from combineFiles import combine_latest_files
 from monitorSheets import monitor_and_download_all
 from pushGithub import push_to_github
+from messageToSlack import send_message_to_slack
+
 
 # Imports for Pending Agencies
 from combinePendingAgencies import main as combine_pending_agencies
