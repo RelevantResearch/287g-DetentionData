@@ -32,6 +32,8 @@ def send_message_to_slack(message, attachments=None):
     else:
         print(f"Error sending message to Slack: {response.text}")
 
+
+
 if __name__ == "__main__":
     # This part can be used to test the message
     message = "Test message to Slack"

@@ -52,13 +52,12 @@ def download_file(file_url, label):
 def monitor_and_download_all(webpage_url):
     links = get_excel_links(webpage_url)
     downloaded_files = []
-    any_new_file = False
+    updated_files = []  # Track which labels were updated
 
     for label, file_url in links.items():
         latest_filename = file_url.split("/")[-1]
         last_filename_file = LAST_FILENAMES[label]
 
-        # Read the last saved filename if it exists
         last_filename = None
         if os.path.exists(last_filename_file):
             with open(last_filename_file, "r") as f:
@@ -80,11 +79,11 @@ def monitor_and_download_all(webpage_url):
 
             file_path, _ = download_file(file_url, label)
             downloaded_files.append((label, file_path))
-            any_new_file = True
+            updated_files.append(label)
         else:
             print(f"No updates for {label}.\n")
 
-    return any_new_file
+    return updated_files  # list of updated labels
 
 # Run the script
 if __name__ == "__main__":
