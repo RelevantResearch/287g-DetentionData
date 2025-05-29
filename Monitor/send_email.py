@@ -14,7 +14,7 @@ def send_email(file_path, file_url, api_key, from_email, recipients, attachments
     message = Mail(
         from_email=from_email,
         to_emails=recipients,
-        subject="ALERT! Detention Statistics Updated",
+        subject="ALERT! New 287(g) Spreadsheet",
         html_content=html_content
     )
 
