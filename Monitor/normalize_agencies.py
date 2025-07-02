@@ -11,7 +11,7 @@ def normalize_agency_names(txt_path="last-participating.txt", directory="UniqueN
     file_path = os.path.join(directory, actual_filename)
 
     # Confirm the file being processed
-    print(f"\n🛠️  Processing file → {os.path.abspath(file_path)}\n")
+    print(f"\n Processing file → {os.path.abspath(file_path)}\n")
 
     # Load Excel file
     df = pd.read_excel(file_path)
