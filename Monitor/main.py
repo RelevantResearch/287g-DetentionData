@@ -26,6 +26,7 @@ logging.basicConfig(
 sys.path.append(base_dir)
 
 # Local imports
+from normalize_agencies import normalize_agency_names
 from getFilename import find_latest_file
 from getHyperlink import extract_hyperlinks
 from combineFiles import combine_latest_files
@@ -195,8 +196,9 @@ def main():
             process_participating_agencies()
             print(f"processing the latest participating agency file with unique column")
             process_latest_agency_file()
+            normalize_agency_names()
             generate_agency_summary()
-            # clean_unique_name_folder()
+            clean_unique_name_folder()
         if "pending" in updated_labels:
             process_pending_agencies()
             # time.sleep(2)  # ⏳ Add a short wait (in seconds) to ensure file creation completes
@@ -205,7 +207,7 @@ def main():
 
         broadcast_email_and_slack(SENDGRID_API_KEY, SENDGRID_FROM_EMAIL, RECIPIENTS, updated_labels)
         logging.info("Pushing updates to GitHub...")
-        push_to_github()
+        # push_to_github()
     else:
         logging.info("No new files to process.")
 

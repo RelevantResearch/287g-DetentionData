@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-def generate_agency_summary(input_folder="UniqueName", output_folder="../ParticipatingAgencieswithpivot", txt_filename="last-participating.txt"):
+def generate_agency_summary(input_folder="Agency_Name_Normalizer", output_folder="../ParticipatingAgencieswithpivot", txt_filename="last-participating.txt"):
     # Read filename from last-participating.txt
     with open(txt_filename, "r") as f:
         txt_filename = f.read().strip()
@@ -11,7 +11,7 @@ def generate_agency_summary(input_folder="UniqueName", output_folder="../Partici
     input_filepath = os.path.join(input_folder, input_filename)
 
     # Print the actual file being processed
-    print(f"\n🛠️  Processing file → {os.path.abspath(input_filepath)}\n")
+    print(f"\nProcessing file → {os.path.abspath(input_filepath)}\n")
 
     # Load dataset
     df = pd.read_excel(input_filepath)
@@ -23,7 +23,7 @@ def generate_agency_summary(input_folder="UniqueName", output_folder="../Partici
 
     # Strip whitespaces and normalize case
     df['SUPPORT TYPE'] = df['SUPPORT TYPE'].str.strip()
-    df['LAW ENFORCEMENT AGENCY'] = df['LAW ENFORCEMENT AGENCY'].str.strip().str.upper()
+    df['Agency Validation'] = df['Agency Validation'].str.strip().str.upper()
 
     # Define the list of support types
     support_types = ['Warrant Service Officer', 'Jail Enforcement Model', 'Task Force Model']
@@ -62,7 +62,7 @@ def generate_agency_summary(input_folder="UniqueName", output_folder="../Partici
     weekly_pivot = pd.concat([weekly_pivot, pd.DataFrame([total_row])])
 
     # Agencies with more than one agreement
-    agency_counts = df.groupby(['STATE', 'LAW ENFORCEMENT AGENCY']).size().reset_index(name='Agreement Count')
+    agency_counts = df.groupby(['STATE', 'Agency Validation']).size().reset_index(name='Agreement Count')
     multiple_agreements = agency_counts[agency_counts['Agreement Count'] > 1]
 
     # Calculate total number of agreements

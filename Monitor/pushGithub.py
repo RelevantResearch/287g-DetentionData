@@ -3,7 +3,7 @@ import subprocess
 
 def read_first_line(file_path):
     if not os.path.exists(file_path):
-        print(f"⚠️ File not found: {file_path}")
+        print(f" File not found: {file_path}")
         return "UnknownFile"
     with open(file_path, 'r') as f:
         return f.readline().strip()
@@ -33,6 +33,6 @@ def push_to_github():
         print("✅ Files successfully pushed to GitHub.")
 
     except subprocess.CalledProcessError as e:
-        print(f"❌ Git command failed: {e}")
+        print(f" Git command failed: {e}")
     except Exception as ex:
-        print(f"❌ Unexpected error: {ex}")
+        print(f" Unexpected error: {ex}")
