@@ -9,7 +9,7 @@ def deduplicate_pending_combined():
     # Get latest pending filename dynamically
     latest_pending_file = find_latest_file(os.path.join(base_directory, '..', 'pendingAgencies'))
     if not latest_pending_file:
-        print("❌ No valid pending file found.")
+        print("No valid pending file found.")
         return
 
     # Extract just the timestamp part to reuse for naming
@@ -21,7 +21,7 @@ def deduplicate_pending_combined():
 
     # Check if input file exists
     if not os.path.exists(input_file_path):
-        print(f"❌ Input file not found: {input_file_path}")
+        print(f"Input file not found: {input_file_path}")
         return
 
     # Read and process the Excel file
