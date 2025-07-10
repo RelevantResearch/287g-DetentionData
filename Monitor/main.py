@@ -207,7 +207,7 @@ def main():
 
         broadcast_email_and_slack(SENDGRID_API_KEY, SENDGRID_FROM_EMAIL, RECIPIENTS, updated_labels)
         logging.info("Pushing updates to GitHub...")
-        # push_to_github()
+        push_to_github()
     else:
         logging.info("No new files to process.")
 
