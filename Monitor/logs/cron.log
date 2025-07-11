@@ -85179,3 +85179,3404 @@ Email sent successfully.
 2025-07-11 14:40:06,888 [INFO] File posted to Slack: /var/scraper/287g-DetentionData/Monitor/../Pivot PendingAgencies/pivot-pendingAgencies07112025am_b.xlsx
 Message sent successfully to Slack.
 2025-07-11 14:40:07,003 [INFO] Pushing updates to GitHub...
+[main 09d7dc9] New Sheets Alert! participatingAgencies07112025am.xlsx and pendingAgencies07112025am_b.xlsx
+ 9 files changed, 15504 insertions(+), 2 deletions(-)
+ create mode 100644 Pivot PendingAgencies/pivot-pendingAgencies07112025am_b.xlsx
+ create mode 100644 Total participatingAgencies/Total-participatingAgencies07112025am.xlsx
+ create mode 100644 Total pendingAgencies/Total-pendingAgencies07112025am_b.xlsx
+ create mode 100644 participatingAgencies after feb 20/participatingAgencies07112025am.xlsx
+ create mode 100644 pendingAgencies/pendingAgencies07112025am.xlsx
+ create mode 100644 pendingAgencies/pendingAgencies07112025am_b.xlsx
+To github.com:RelevantResearch/287g-DetentionData.git
+   b40e6e8..09d7dc9  main -> main
+✅ Files successfully pushed to GitHub.
+2025-07-11 14:40:08,598 [INFO] ===== Script End =====
+2025-07-11 14:41:03,039 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:41:03,141 [INFO] No new files to process.
+2025-07-11 14:41:03,141 [INFO] ===== Script End =====
+2025-07-11 14:42:02,598 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:42:02,699 [INFO] No new files to process.
+2025-07-11 14:42:02,699 [INFO] ===== Script End =====
+2025-07-11 14:43:03,171 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:43:03,291 [INFO] No new files to process.
+2025-07-11 14:43:03,292 [INFO] ===== Script End =====
+2025-07-11 14:44:02,801 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:44:02,942 [INFO] No new files to process.
+2025-07-11 14:44:02,943 [INFO] ===== Script End =====
+2025-07-11 14:45:02,567 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:45:03,636 [INFO] No new files to process.
+2025-07-11 14:45:03,636 [INFO] ===== Script End =====
+2025-07-11 14:46:03,127 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:46:03,228 [INFO] No new files to process.
+2025-07-11 14:46:03,228 [INFO] ===== Script End =====
+2025-07-11 14:47:02,688 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:47:02,987 [INFO] No new files to process.
+2025-07-11 14:47:02,988 [INFO] ===== Script End =====
+2025-07-11 14:48:02,533 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:48:02,856 [INFO] No new files to process.
+2025-07-11 14:48:02,856 [INFO] ===== Script End =====
+2025-07-11 14:49:02,363 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:49:04,062 [INFO] No new files to process.
+2025-07-11 14:49:04,062 [INFO] ===== Script End =====
+2025-07-11 14:50:02,698 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:50:02,860 [INFO] No new files to process.
+2025-07-11 14:50:02,861 [INFO] ===== Script End =====
+2025-07-11 14:51:02,361 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:51:02,477 [INFO] No new files to process.
+2025-07-11 14:51:02,477 [INFO] ===== Script End =====
+2025-07-11 14:52:03,003 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:52:03,111 [INFO] No new files to process.
+2025-07-11 14:52:03,112 [INFO] ===== Script End =====
+2025-07-11 14:53:02,621 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:53:02,735 [INFO] No new files to process.
+2025-07-11 14:53:02,735 [INFO] ===== Script End =====
+2025-07-11 14:54:02,229 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:54:02,357 [INFO] No new files to process.
+2025-07-11 14:54:02,357 [INFO] ===== Script End =====
+2025-07-11 14:55:03,113 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:55:04,202 [INFO] No new files to process.
+2025-07-11 14:55:04,202 [INFO] ===== Script End =====
+2025-07-11 14:56:02,613 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:56:03,636 [INFO] No new files to process.
+2025-07-11 14:56:03,636 [INFO] ===== Script End =====
+2025-07-11 14:57:03,062 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:57:03,149 [INFO] No new files to process.
+2025-07-11 14:57:03,150 [INFO] ===== Script End =====
+2025-07-11 14:58:02,616 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:58:02,720 [INFO] No new files to process.
+2025-07-11 14:58:02,720 [INFO] ===== Script End =====
+2025-07-11 14:59:03,140 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 14:59:03,246 [INFO] No new files to process.
+2025-07-11 14:59:03,246 [INFO] ===== Script End =====
+2025-07-11 15:00:03,151 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:00:03,621 [INFO] No new files to process.
+2025-07-11 15:00:03,622 [INFO] ===== Script End =====
+2025-07-11 15:01:03,256 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:01:03,384 [INFO] No new files to process.
+2025-07-11 15:01:03,384 [INFO] ===== Script End =====
+2025-07-11 15:02:02,788 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:02:02,887 [INFO] No new files to process.
+2025-07-11 15:02:02,887 [INFO] ===== Script End =====
+2025-07-11 15:03:02,365 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:03:02,476 [INFO] No new files to process.
+2025-07-11 15:03:02,477 [INFO] ===== Script End =====
+2025-07-11 15:04:02,853 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:04:02,956 [INFO] No new files to process.
+2025-07-11 15:04:02,956 [INFO] ===== Script End =====
+2025-07-11 15:05:02,624 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:05:02,747 [INFO] No new files to process.
+2025-07-11 15:05:02,747 [INFO] ===== Script End =====
+2025-07-11 15:06:02,139 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:06:02,267 [INFO] No new files to process.
+2025-07-11 15:06:02,268 [INFO] ===== Script End =====
+2025-07-11 15:07:02,741 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:07:02,844 [INFO] No new files to process.
+2025-07-11 15:07:02,844 [INFO] ===== Script End =====
+2025-07-11 15:08:02,286 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:08:02,417 [INFO] No new files to process.
+2025-07-11 15:08:02,417 [INFO] ===== Script End =====
+2025-07-11 15:09:03,084 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:09:03,241 [INFO] No new files to process.
+2025-07-11 15:09:03,242 [INFO] ===== Script End =====
+2025-07-11 15:10:02,947 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:10:03,070 [INFO] No new files to process.
+2025-07-11 15:10:03,070 [INFO] ===== Script End =====
+2025-07-11 15:11:02,592 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:11:02,690 [INFO] No new files to process.
+2025-07-11 15:11:02,690 [INFO] ===== Script End =====
+2025-07-11 15:12:03,096 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:12:03,193 [INFO] No new files to process.
+2025-07-11 15:12:03,193 [INFO] ===== Script End =====
+2025-07-11 15:13:02,802 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:13:02,914 [INFO] No new files to process.
+2025-07-11 15:13:02,915 [INFO] ===== Script End =====
+2025-07-11 15:14:02,285 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:14:02,389 [INFO] No new files to process.
+2025-07-11 15:14:02,389 [INFO] ===== Script End =====
+2025-07-11 15:15:03,105 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:15:03,230 [INFO] No new files to process.
+2025-07-11 15:15:03,230 [INFO] ===== Script End =====
+2025-07-11 15:16:02,656 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:16:02,830 [INFO] No new files to process.
+2025-07-11 15:16:02,830 [INFO] ===== Script End =====
+2025-07-11 15:17:02,283 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:17:02,402 [INFO] No new files to process.
+2025-07-11 15:17:02,402 [INFO] ===== Script End =====
+2025-07-11 15:18:02,905 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:18:03,007 [INFO] No new files to process.
+2025-07-11 15:18:03,007 [INFO] ===== Script End =====
+2025-07-11 15:19:02,542 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:19:02,645 [INFO] No new files to process.
+2025-07-11 15:19:02,645 [INFO] ===== Script End =====
+2025-07-11 15:20:03,509 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:20:03,692 [INFO] No new files to process.
+2025-07-11 15:20:03,692 [INFO] ===== Script End =====
+2025-07-11 15:21:03,217 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:21:03,318 [INFO] No new files to process.
+2025-07-11 15:21:03,318 [INFO] ===== Script End =====
+2025-07-11 15:22:02,466 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:22:02,577 [INFO] No new files to process.
+2025-07-11 15:22:02,577 [INFO] ===== Script End =====
+2025-07-11 15:23:03,049 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:23:03,150 [INFO] No new files to process.
+2025-07-11 15:23:03,150 [INFO] ===== Script End =====
+2025-07-11 15:24:02,582 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:24:02,691 [INFO] No new files to process.
+2025-07-11 15:24:02,692 [INFO] ===== Script End =====
+2025-07-11 15:25:03,366 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:25:03,618 [INFO] No new files to process.
+2025-07-11 15:25:03,619 [INFO] ===== Script End =====
+2025-07-11 15:26:02,972 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:26:03,086 [INFO] No new files to process.
+2025-07-11 15:26:03,086 [INFO] ===== Script End =====
+2025-07-11 15:27:02,532 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:27:02,626 [INFO] No new files to process.
+2025-07-11 15:27:02,626 [INFO] ===== Script End =====
+2025-07-11 15:28:03,223 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:28:03,635 [INFO] No new files to process.
+2025-07-11 15:28:03,635 [INFO] ===== Script End =====
+2025-07-11 15:29:02,986 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:29:03,094 [INFO] No new files to process.
+2025-07-11 15:29:03,095 [INFO] ===== Script End =====
+2025-07-11 15:30:03,094 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:30:03,250 [INFO] No new files to process.
+2025-07-11 15:30:03,251 [INFO] ===== Script End =====
+2025-07-11 15:31:02,779 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:31:02,906 [INFO] No new files to process.
+2025-07-11 15:31:02,907 [INFO] ===== Script End =====
+2025-07-11 15:32:02,427 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:32:03,602 [INFO] No new files to process.
+2025-07-11 15:32:03,602 [INFO] ===== Script End =====
+2025-07-11 15:33:03,009 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:33:04,072 [INFO] No new files to process.
+2025-07-11 15:33:04,073 [INFO] ===== Script End =====
+2025-07-11 15:34:02,525 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:34:02,632 [INFO] No new files to process.
+2025-07-11 15:34:02,632 [INFO] ===== Script End =====
+2025-07-11 15:35:03,392 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:35:03,499 [INFO] No new files to process.
+2025-07-11 15:35:03,500 [INFO] ===== Script End =====
+2025-07-11 15:36:02,998 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:36:03,104 [INFO] No new files to process.
+2025-07-11 15:36:03,105 [INFO] ===== Script End =====
+2025-07-11 15:37:02,597 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:37:02,698 [INFO] No new files to process.
+2025-07-11 15:37:02,698 [INFO] ===== Script End =====
+2025-07-11 15:38:03,220 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:38:03,316 [INFO] No new files to process.
+2025-07-11 15:38:03,316 [INFO] ===== Script End =====
+2025-07-11 15:39:02,987 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:39:03,309 [INFO] No new files to process.
+2025-07-11 15:39:03,309 [INFO] ===== Script End =====
+2025-07-11 15:40:03,201 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:40:03,369 [INFO] No new files to process.
+2025-07-11 15:40:03,369 [INFO] ===== Script End =====
+2025-07-11 15:41:02,824 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:41:02,962 [INFO] No new files to process.
+2025-07-11 15:41:02,962 [INFO] ===== Script End =====
+2025-07-11 15:42:02,425 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:42:02,537 [INFO] No new files to process.
+2025-07-11 15:42:02,537 [INFO] ===== Script End =====
+2025-07-11 15:43:03,052 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:43:03,147 [INFO] No new files to process.
+2025-07-11 15:43:03,147 [INFO] ===== Script End =====
+2025-07-11 15:44:02,591 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:44:02,695 [INFO] No new files to process.
+2025-07-11 15:44:02,695 [INFO] ===== Script End =====
+2025-07-11 15:45:03,331 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:45:03,446 [INFO] No new files to process.
+2025-07-11 15:45:03,447 [INFO] ===== Script End =====
+2025-07-11 15:46:02,872 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:46:02,983 [INFO] No new files to process.
+2025-07-11 15:46:02,983 [INFO] ===== Script End =====
+2025-07-11 15:47:02,499 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:47:02,585 [INFO] No new files to process.
+2025-07-11 15:47:02,585 [INFO] ===== Script End =====
+2025-07-11 15:48:03,017 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:48:03,106 [INFO] No new files to process.
+2025-07-11 15:48:03,106 [INFO] ===== Script End =====
+2025-07-11 15:49:02,618 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:49:02,724 [INFO] No new files to process.
+2025-07-11 15:49:02,725 [INFO] ===== Script End =====
+2025-07-11 15:50:02,310 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:50:02,465 [INFO] No new files to process.
+2025-07-11 15:50:02,465 [INFO] ===== Script End =====
+2025-07-11 15:51:03,137 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:51:03,240 [INFO] No new files to process.
+2025-07-11 15:51:03,240 [INFO] ===== Script End =====
+2025-07-11 15:52:02,704 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:52:02,812 [INFO] No new files to process.
+2025-07-11 15:52:02,812 [INFO] ===== Script End =====
+2025-07-11 15:53:02,292 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:53:02,393 [INFO] No new files to process.
+2025-07-11 15:53:02,393 [INFO] ===== Script End =====
+2025-07-11 15:54:02,784 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:54:02,878 [INFO] No new files to process.
+2025-07-11 15:54:02,878 [INFO] ===== Script End =====
+2025-07-11 15:55:02,562 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:55:02,700 [INFO] No new files to process.
+2025-07-11 15:55:02,700 [INFO] ===== Script End =====
+2025-07-11 15:56:02,223 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:56:02,343 [INFO] No new files to process.
+2025-07-11 15:56:02,343 [INFO] ===== Script End =====
+2025-07-11 15:57:02,783 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:57:02,880 [INFO] No new files to process.
+2025-07-11 15:57:02,880 [INFO] ===== Script End =====
+2025-07-11 15:58:02,303 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:58:02,410 [INFO] No new files to process.
+2025-07-11 15:58:02,410 [INFO] ===== Script End =====
+2025-07-11 15:59:02,751 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 15:59:02,858 [INFO] No new files to process.
+2025-07-11 15:59:02,858 [INFO] ===== Script End =====
+2025-07-11 16:00:02,627 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:00:02,769 [INFO] No new files to process.
+2025-07-11 16:00:02,770 [INFO] ===== Script End =====
+2025-07-11 16:01:02,286 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:01:02,387 [INFO] No new files to process.
+2025-07-11 16:01:02,387 [INFO] ===== Script End =====
+2025-07-11 16:02:02,798 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:02:02,896 [INFO] No new files to process.
+2025-07-11 16:02:02,896 [INFO] ===== Script End =====
+2025-07-11 16:03:02,330 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:03:02,423 [INFO] No new files to process.
+2025-07-11 16:03:02,423 [INFO] ===== Script End =====
+2025-07-11 16:04:02,748 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:04:02,827 [INFO] No new files to process.
+2025-07-11 16:04:02,827 [INFO] ===== Script End =====
+2025-07-11 16:05:02,234 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:05:02,407 [INFO] No new files to process.
+2025-07-11 16:05:02,407 [INFO] ===== Script End =====
+2025-07-11 16:06:02,952 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:06:03,104 [INFO] No new files to process.
+2025-07-11 16:06:03,104 [INFO] ===== Script End =====
+2025-07-11 16:07:02,549 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:07:02,682 [INFO] No new files to process.
+2025-07-11 16:07:02,683 [INFO] ===== Script End =====
+2025-07-11 16:08:03,085 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:08:03,186 [INFO] No new files to process.
+2025-07-11 16:08:03,186 [INFO] ===== Script End =====
+2025-07-11 16:09:02,781 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:09:02,888 [INFO] No new files to process.
+2025-07-11 16:09:02,888 [INFO] ===== Script End =====
+2025-07-11 16:10:02,660 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:10:02,817 [INFO] No new files to process.
+2025-07-11 16:10:02,817 [INFO] ===== Script End =====
+2025-07-11 16:11:02,351 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:11:02,466 [INFO] No new files to process.
+2025-07-11 16:11:02,466 [INFO] ===== Script End =====
+2025-07-11 16:12:02,946 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:12:03,052 [INFO] No new files to process.
+2025-07-11 16:12:03,052 [INFO] ===== Script End =====
+2025-07-11 16:13:02,520 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:13:02,650 [INFO] No new files to process.
+2025-07-11 16:13:02,651 [INFO] ===== Script End =====
+2025-07-11 16:14:02,959 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:14:03,063 [INFO] No new files to process.
+2025-07-11 16:14:03,063 [INFO] ===== Script End =====
+2025-07-11 16:15:02,702 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:15:02,818 [INFO] No new files to process.
+2025-07-11 16:15:02,818 [INFO] ===== Script End =====
+2025-07-11 16:16:02,203 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:16:02,314 [INFO] No new files to process.
+2025-07-11 16:16:02,314 [INFO] ===== Script End =====
+2025-07-11 16:17:02,726 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:17:02,827 [INFO] No new files to process.
+2025-07-11 16:17:02,827 [INFO] ===== Script End =====
+2025-07-11 16:18:02,124 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:18:02,223 [INFO] No new files to process.
+2025-07-11 16:18:02,223 [INFO] ===== Script End =====
+2025-07-11 16:19:02,684 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:19:02,785 [INFO] No new files to process.
+2025-07-11 16:19:02,785 [INFO] ===== Script End =====
+2025-07-11 16:20:02,456 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:20:02,710 [INFO] No new files to process.
+2025-07-11 16:20:02,710 [INFO] ===== Script End =====
+2025-07-11 16:21:02,236 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:21:02,352 [INFO] No new files to process.
+2025-07-11 16:21:02,353 [INFO] ===== Script End =====
+2025-07-11 16:22:02,805 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:22:02,903 [INFO] No new files to process.
+2025-07-11 16:22:02,903 [INFO] ===== Script End =====
+2025-07-11 16:23:02,297 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:23:02,402 [INFO] No new files to process.
+2025-07-11 16:23:02,402 [INFO] ===== Script End =====
+2025-07-11 16:24:02,822 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:24:02,915 [INFO] No new files to process.
+2025-07-11 16:24:02,915 [INFO] ===== Script End =====
+2025-07-11 16:25:02,551 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:25:02,672 [INFO] No new files to process.
+2025-07-11 16:25:02,673 [INFO] ===== Script End =====
+2025-07-11 16:26:02,946 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:26:03,038 [INFO] No new files to process.
+2025-07-11 16:26:03,038 [INFO] ===== Script End =====
+2025-07-11 16:27:03,317 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:27:03,409 [INFO] No new files to process.
+2025-07-11 16:27:03,409 [INFO] ===== Script End =====
+2025-07-11 16:28:02,794 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:28:02,881 [INFO] No new files to process.
+2025-07-11 16:28:02,882 [INFO] ===== Script End =====
+2025-07-11 16:29:02,199 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:29:02,302 [INFO] No new files to process.
+2025-07-11 16:29:02,302 [INFO] ===== Script End =====
+2025-07-11 16:30:03,103 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:30:03,243 [INFO] No new files to process.
+2025-07-11 16:30:03,243 [INFO] ===== Script End =====
+2025-07-11 16:31:02,636 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:31:02,736 [INFO] No new files to process.
+2025-07-11 16:31:02,737 [INFO] ===== Script End =====
+2025-07-11 16:32:03,160 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:32:03,251 [INFO] No new files to process.
+2025-07-11 16:32:03,251 [INFO] ===== Script End =====
+2025-07-11 16:33:02,655 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:33:02,742 [INFO] No new files to process.
+2025-07-11 16:33:02,742 [INFO] ===== Script End =====
+2025-07-11 16:34:03,086 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:34:03,497 [INFO] No new files to process.
+2025-07-11 16:34:03,497 [INFO] ===== Script End =====
+2025-07-11 16:35:03,205 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:35:03,319 [INFO] No new files to process.
+2025-07-11 16:35:03,319 [INFO] ===== Script End =====
+2025-07-11 16:36:02,819 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:36:02,924 [INFO] No new files to process.
+2025-07-11 16:36:02,924 [INFO] ===== Script End =====
+2025-07-11 16:37:02,334 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:37:02,440 [INFO] No new files to process.
+2025-07-11 16:37:02,440 [INFO] ===== Script End =====
+2025-07-11 16:38:02,842 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:38:02,959 [INFO] No new files to process.
+2025-07-11 16:38:02,959 [INFO] ===== Script End =====
+2025-07-11 16:39:02,445 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:39:02,554 [INFO] No new files to process.
+2025-07-11 16:39:02,555 [INFO] ===== Script End =====
+2025-07-11 16:40:03,274 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:40:03,418 [INFO] No new files to process.
+2025-07-11 16:40:03,418 [INFO] ===== Script End =====
+2025-07-11 16:41:02,827 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:41:02,929 [INFO] No new files to process.
+2025-07-11 16:41:02,929 [INFO] ===== Script End =====
+2025-07-11 16:42:02,347 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:42:02,447 [INFO] No new files to process.
+2025-07-11 16:42:02,447 [INFO] ===== Script End =====
+2025-07-11 16:43:02,834 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:43:02,928 [INFO] No new files to process.
+2025-07-11 16:43:02,928 [INFO] ===== Script End =====
+2025-07-11 16:44:02,236 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:44:02,350 [INFO] No new files to process.
+2025-07-11 16:44:02,350 [INFO] ===== Script End =====
+2025-07-11 16:45:02,954 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:45:03,067 [INFO] No new files to process.
+2025-07-11 16:45:03,068 [INFO] ===== Script End =====
+2025-07-11 16:46:02,518 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:46:02,645 [INFO] No new files to process.
+2025-07-11 16:46:02,645 [INFO] ===== Script End =====
+2025-07-11 16:47:02,978 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:47:03,078 [INFO] No new files to process.
+2025-07-11 16:47:03,078 [INFO] ===== Script End =====
+2025-07-11 16:48:02,459 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:48:02,584 [INFO] No new files to process.
+2025-07-11 16:48:02,584 [INFO] ===== Script End =====
+2025-07-11 16:49:03,041 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:49:03,137 [INFO] No new files to process.
+2025-07-11 16:49:03,137 [INFO] ===== Script End =====
+2025-07-11 16:50:02,757 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:50:02,916 [INFO] No new files to process.
+2025-07-11 16:50:02,917 [INFO] ===== Script End =====
+2025-07-11 16:51:02,356 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:51:02,461 [INFO] No new files to process.
+2025-07-11 16:51:02,461 [INFO] ===== Script End =====
+2025-07-11 16:52:02,937 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:52:03,038 [INFO] No new files to process.
+2025-07-11 16:52:03,038 [INFO] ===== Script End =====
+2025-07-11 16:53:02,470 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:53:02,574 [INFO] No new files to process.
+2025-07-11 16:53:02,574 [INFO] ===== Script End =====
+2025-07-11 16:54:02,892 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:54:03,001 [INFO] No new files to process.
+2025-07-11 16:54:03,001 [INFO] ===== Script End =====
+2025-07-11 16:55:02,528 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:55:02,650 [INFO] No new files to process.
+2025-07-11 16:55:02,650 [INFO] ===== Script End =====
+2025-07-11 16:56:02,971 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:56:03,060 [INFO] No new files to process.
+2025-07-11 16:56:03,060 [INFO] ===== Script End =====
+2025-07-11 16:57:02,395 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:57:02,503 [INFO] No new files to process.
+2025-07-11 16:57:02,503 [INFO] ===== Script End =====
+2025-07-11 16:58:02,786 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:58:02,873 [INFO] No new files to process.
+2025-07-11 16:58:02,873 [INFO] ===== Script End =====
+2025-07-11 16:59:02,207 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 16:59:02,320 [INFO] No new files to process.
+2025-07-11 16:59:02,320 [INFO] ===== Script End =====
+2025-07-11 17:00:03,076 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:00:03,204 [INFO] No new files to process.
+2025-07-11 17:00:03,205 [INFO] ===== Script End =====
+2025-07-11 17:01:02,626 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:01:02,721 [INFO] No new files to process.
+2025-07-11 17:01:02,722 [INFO] ===== Script End =====
+2025-07-11 17:02:02,900 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:02:02,991 [INFO] No new files to process.
+2025-07-11 17:02:02,992 [INFO] ===== Script End =====
+2025-07-11 17:03:02,285 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:03:02,371 [INFO] No new files to process.
+2025-07-11 17:03:02,371 [INFO] ===== Script End =====
+2025-07-11 17:04:02,683 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:04:02,762 [INFO] No new files to process.
+2025-07-11 17:04:02,762 [INFO] ===== Script End =====
+2025-07-11 17:05:03,340 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:05:03,595 [INFO] No new files to process.
+2025-07-11 17:05:03,596 [INFO] ===== Script End =====
+2025-07-11 17:06:03,063 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:06:03,148 [INFO] No new files to process.
+2025-07-11 17:06:03,148 [INFO] ===== Script End =====
+2025-07-11 17:07:02,536 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:07:02,641 [INFO] No new files to process.
+2025-07-11 17:07:02,641 [INFO] ===== Script End =====
+2025-07-11 17:08:03,105 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:08:03,206 [INFO] No new files to process.
+2025-07-11 17:08:03,206 [INFO] ===== Script End =====
+2025-07-11 17:09:02,797 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:09:02,904 [INFO] No new files to process.
+2025-07-11 17:09:02,904 [INFO] ===== Script End =====
+2025-07-11 17:10:02,533 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:10:02,701 [INFO] No new files to process.
+2025-07-11 17:10:02,702 [INFO] ===== Script End =====
+2025-07-11 17:11:03,080 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:11:03,164 [INFO] No new files to process.
+2025-07-11 17:11:03,164 [INFO] ===== Script End =====
+2025-07-11 17:12:02,414 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:12:02,517 [INFO] No new files to process.
+2025-07-11 17:12:02,517 [INFO] ===== Script End =====
+2025-07-11 17:13:02,845 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:13:02,915 [INFO] No new files to process.
+2025-07-11 17:13:02,915 [INFO] ===== Script End =====
+2025-07-11 17:14:02,084 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:14:02,190 [INFO] No new files to process.
+2025-07-11 17:14:02,190 [INFO] ===== Script End =====
+2025-07-11 17:15:02,762 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:15:02,873 [INFO] No new files to process.
+2025-07-11 17:15:02,873 [INFO] ===== Script End =====
+2025-07-11 17:16:02,267 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:16:02,367 [INFO] No new files to process.
+2025-07-11 17:16:02,368 [INFO] ===== Script End =====
+2025-07-11 17:17:02,737 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:17:02,829 [INFO] No new files to process.
+2025-07-11 17:17:02,830 [INFO] ===== Script End =====
+2025-07-11 17:18:02,185 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:18:02,369 [INFO] No new files to process.
+2025-07-11 17:18:02,369 [INFO] ===== Script End =====
+2025-07-11 17:19:02,803 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:19:02,920 [INFO] No new files to process.
+2025-07-11 17:19:02,921 [INFO] ===== Script End =====
+2025-07-11 17:20:02,529 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:20:02,738 [INFO] No new files to process.
+2025-07-11 17:20:02,739 [INFO] ===== Script End =====
+2025-07-11 17:21:02,081 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:21:02,191 [INFO] No new files to process.
+2025-07-11 17:21:02,192 [INFO] ===== Script End =====
+2025-07-11 17:22:02,614 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:22:02,732 [INFO] No new files to process.
+2025-07-11 17:22:02,733 [INFO] ===== Script End =====
+2025-07-11 17:23:03,000 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:23:03,106 [INFO] No new files to process.
+2025-07-11 17:23:03,106 [INFO] ===== Script End =====
+2025-07-11 17:24:02,411 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:24:02,525 [INFO] No new files to process.
+2025-07-11 17:24:02,525 [INFO] ===== Script End =====
+2025-07-11 17:25:03,066 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:25:03,186 [INFO] No new files to process.
+2025-07-11 17:25:03,186 [INFO] ===== Script End =====
+2025-07-11 17:26:02,578 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:26:02,659 [INFO] No new files to process.
+2025-07-11 17:26:02,659 [INFO] ===== Script End =====
+2025-07-11 17:27:02,933 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:27:03,032 [INFO] No new files to process.
+2025-07-11 17:27:03,032 [INFO] ===== Script End =====
+2025-07-11 17:28:02,354 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:28:02,475 [INFO] No new files to process.
+2025-07-11 17:28:02,475 [INFO] ===== Script End =====
+2025-07-11 17:29:02,743 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:29:02,840 [INFO] No new files to process.
+2025-07-11 17:29:02,840 [INFO] ===== Script End =====
+2025-07-11 17:30:02,326 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:30:02,503 [INFO] No new files to process.
+2025-07-11 17:30:02,503 [INFO] ===== Script End =====
+2025-07-11 17:31:02,849 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:31:02,932 [INFO] No new files to process.
+2025-07-11 17:31:02,932 [INFO] ===== Script End =====
+2025-07-11 17:32:02,892 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:32:02,984 [INFO] No new files to process.
+2025-07-11 17:32:02,984 [INFO] ===== Script End =====
+2025-07-11 17:33:02,333 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:33:02,439 [INFO] No new files to process.
+2025-07-11 17:33:02,439 [INFO] ===== Script End =====
+2025-07-11 17:34:02,760 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:34:02,858 [INFO] No new files to process.
+2025-07-11 17:34:02,859 [INFO] ===== Script End =====
+2025-07-11 17:35:02,318 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:35:02,443 [INFO] No new files to process.
+2025-07-11 17:35:02,443 [INFO] ===== Script End =====
+2025-07-11 17:36:02,939 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:36:03,040 [INFO] No new files to process.
+2025-07-11 17:36:03,040 [INFO] ===== Script End =====
+2025-07-11 17:37:02,509 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:37:02,617 [INFO] No new files to process.
+2025-07-11 17:37:02,617 [INFO] ===== Script End =====
+2025-07-11 17:38:02,849 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:38:02,938 [INFO] No new files to process.
+2025-07-11 17:38:02,938 [INFO] ===== Script End =====
+2025-07-11 17:39:02,438 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:39:02,543 [INFO] No new files to process.
+2025-07-11 17:39:02,543 [INFO] ===== Script End =====
+2025-07-11 17:40:03,228 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:40:03,368 [INFO] No new files to process.
+2025-07-11 17:40:03,368 [INFO] ===== Script End =====
+2025-07-11 17:41:02,749 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:41:02,842 [INFO] No new files to process.
+2025-07-11 17:41:02,842 [INFO] ===== Script End =====
+2025-07-11 17:42:02,204 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:42:02,592 [INFO] No new files to process.
+2025-07-11 17:42:02,593 [INFO] ===== Script End =====
+2025-07-11 17:43:03,007 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:43:03,108 [INFO] No new files to process.
+2025-07-11 17:43:03,108 [INFO] ===== Script End =====
+2025-07-11 17:44:02,538 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:44:02,639 [INFO] No new files to process.
+2025-07-11 17:44:02,639 [INFO] ===== Script End =====
+2025-07-11 17:45:03,345 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:45:03,452 [INFO] No new files to process.
+2025-07-11 17:45:03,453 [INFO] ===== Script End =====
+2025-07-11 17:46:02,803 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:46:02,911 [INFO] No new files to process.
+2025-07-11 17:46:02,911 [INFO] ===== Script End =====
+2025-07-11 17:47:02,252 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:47:02,352 [INFO] No new files to process.
+2025-07-11 17:47:02,352 [INFO] ===== Script End =====
+2025-07-11 17:48:02,662 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:48:02,769 [INFO] No new files to process.
+2025-07-11 17:48:02,770 [INFO] ===== Script End =====
+2025-07-11 17:49:03,257 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:49:03,392 [INFO] No new files to process.
+2025-07-11 17:49:03,392 [INFO] ===== Script End =====
+2025-07-11 17:50:02,891 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:50:03,001 [INFO] No new files to process.
+2025-07-11 17:50:03,001 [INFO] ===== Script End =====
+2025-07-11 17:51:02,478 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:51:02,573 [INFO] No new files to process.
+2025-07-11 17:51:02,573 [INFO] ===== Script End =====
+2025-07-11 17:52:03,046 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:52:03,266 [INFO] No new files to process.
+2025-07-11 17:52:03,266 [INFO] ===== Script End =====
+2025-07-11 17:53:02,838 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:53:02,939 [INFO] No new files to process.
+2025-07-11 17:53:02,939 [INFO] ===== Script End =====
+2025-07-11 17:54:02,293 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:54:02,403 [INFO] No new files to process.
+2025-07-11 17:54:02,403 [INFO] ===== Script End =====
+2025-07-11 17:55:03,027 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:55:03,132 [INFO] No new files to process.
+2025-07-11 17:55:03,132 [INFO] ===== Script End =====
+2025-07-11 17:56:02,539 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:56:02,627 [INFO] No new files to process.
+2025-07-11 17:56:02,627 [INFO] ===== Script End =====
+2025-07-11 17:57:02,919 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:57:02,990 [INFO] No new files to process.
+2025-07-11 17:57:02,990 [INFO] ===== Script End =====
+2025-07-11 17:58:02,222 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:58:02,316 [INFO] No new files to process.
+2025-07-11 17:58:02,317 [INFO] ===== Script End =====
+2025-07-11 17:59:02,621 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 17:59:02,776 [INFO] No new files to process.
+2025-07-11 17:59:02,776 [INFO] ===== Script End =====
+2025-07-11 18:00:02,284 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:00:02,524 [INFO] No new files to process.
+2025-07-11 18:00:02,527 [INFO] ===== Script End =====
+2025-07-11 18:01:02,997 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:01:03,096 [INFO] No new files to process.
+2025-07-11 18:01:03,096 [INFO] ===== Script End =====
+2025-07-11 18:02:02,324 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:02:02,481 [INFO] No new files to process.
+2025-07-11 18:02:02,481 [INFO] ===== Script End =====
+2025-07-11 18:03:02,812 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:03:02,906 [INFO] No new files to process.
+2025-07-11 18:03:02,906 [INFO] ===== Script End =====
+2025-07-11 18:04:02,120 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:04:02,231 [INFO] No new files to process.
+2025-07-11 18:04:02,231 [INFO] ===== Script End =====
+2025-07-11 18:05:02,814 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:05:03,056 [INFO] No new files to process.
+2025-07-11 18:05:03,056 [INFO] ===== Script End =====
+2025-07-11 18:06:02,472 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:06:02,583 [INFO] No new files to process.
+2025-07-11 18:06:02,583 [INFO] ===== Script End =====
+2025-07-11 18:07:02,958 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:07:03,054 [INFO] No new files to process.
+2025-07-11 18:07:03,054 [INFO] ===== Script End =====
+2025-07-11 18:08:02,402 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:08:02,497 [INFO] No new files to process.
+2025-07-11 18:08:02,498 [INFO] ===== Script End =====
+2025-07-11 18:09:03,058 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:09:03,156 [INFO] No new files to process.
+2025-07-11 18:09:03,156 [INFO] ===== Script End =====
+2025-07-11 18:10:02,749 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:10:02,869 [INFO] No new files to process.
+2025-07-11 18:10:02,869 [INFO] ===== Script End =====
+2025-07-11 18:11:02,238 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:11:02,342 [INFO] No new files to process.
+2025-07-11 18:11:02,342 [INFO] ===== Script End =====
+2025-07-11 18:12:02,702 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:12:02,801 [INFO] No new files to process.
+2025-07-11 18:12:02,801 [INFO] ===== Script End =====
+2025-07-11 18:13:02,211 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:13:02,340 [INFO] No new files to process.
+2025-07-11 18:13:02,341 [INFO] ===== Script End =====
+2025-07-11 18:14:02,785 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:14:02,882 [INFO] No new files to process.
+2025-07-11 18:14:02,883 [INFO] ===== Script End =====
+2025-07-11 18:15:02,425 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:15:02,542 [INFO] No new files to process.
+2025-07-11 18:15:02,542 [INFO] ===== Script End =====
+2025-07-11 18:16:02,927 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:16:03,008 [INFO] No new files to process.
+2025-07-11 18:16:03,008 [INFO] ===== Script End =====
+2025-07-11 18:17:02,324 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:17:02,465 [INFO] No new files to process.
+2025-07-11 18:17:02,465 [INFO] ===== Script End =====
+2025-07-11 18:18:02,840 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:18:02,932 [INFO] No new files to process.
+2025-07-11 18:18:02,933 [INFO] ===== Script End =====
+2025-07-11 18:19:02,293 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:19:02,407 [INFO] No new files to process.
+2025-07-11 18:19:02,407 [INFO] ===== Script End =====
+2025-07-11 18:20:03,107 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:20:03,258 [INFO] No new files to process.
+2025-07-11 18:20:03,258 [INFO] ===== Script End =====
+2025-07-11 18:21:02,688 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:21:02,791 [INFO] No new files to process.
+2025-07-11 18:21:02,791 [INFO] ===== Script End =====
+2025-07-11 18:22:02,074 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:22:02,341 [INFO] No new files to process.
+2025-07-11 18:22:02,342 [INFO] ===== Script End =====
+2025-07-11 18:23:02,673 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:23:02,762 [INFO] No new files to process.
+2025-07-11 18:23:02,762 [INFO] ===== Script End =====
+2025-07-11 18:24:02,914 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:24:02,985 [INFO] No new files to process.
+2025-07-11 18:24:02,985 [INFO] ===== Script End =====
+2025-07-11 18:25:02,538 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:25:02,655 [INFO] No new files to process.
+2025-07-11 18:25:02,656 [INFO] ===== Script End =====
+2025-07-11 18:26:03,027 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:26:03,132 [INFO] No new files to process.
+2025-07-11 18:26:03,132 [INFO] ===== Script End =====
+2025-07-11 18:27:02,423 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:27:02,512 [INFO] No new files to process.
+2025-07-11 18:27:02,512 [INFO] ===== Script End =====
+2025-07-11 18:28:02,811 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:28:02,900 [INFO] No new files to process.
+2025-07-11 18:28:02,900 [INFO] ===== Script End =====
+2025-07-11 18:29:02,151 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:29:02,281 [INFO] No new files to process.
+2025-07-11 18:29:02,281 [INFO] ===== Script End =====
+2025-07-11 18:30:02,968 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:30:03,082 [INFO] No new files to process.
+2025-07-11 18:30:03,082 [INFO] ===== Script End =====
+2025-07-11 18:31:02,347 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:31:02,431 [INFO] No new files to process.
+2025-07-11 18:31:02,432 [INFO] ===== Script End =====
+2025-07-11 18:32:02,608 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:32:02,719 [INFO] No new files to process.
+2025-07-11 18:32:02,719 [INFO] ===== Script End =====
+2025-07-11 18:33:03,024 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:33:03,124 [INFO] No new files to process.
+2025-07-11 18:33:03,124 [INFO] ===== Script End =====
+2025-07-11 18:34:02,424 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:34:02,525 [INFO] No new files to process.
+2025-07-11 18:34:02,525 [INFO] ===== Script End =====
+2025-07-11 18:35:03,199 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:35:03,394 [INFO] No new files to process.
+2025-07-11 18:35:03,394 [INFO] ===== Script End =====
+2025-07-11 18:36:02,907 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:36:02,996 [INFO] No new files to process.
+2025-07-11 18:36:02,996 [INFO] ===== Script End =====
+2025-07-11 18:37:02,302 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:37:02,411 [INFO] No new files to process.
+2025-07-11 18:37:02,411 [INFO] ===== Script End =====
+2025-07-11 18:38:02,731 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:38:02,830 [INFO] No new files to process.
+2025-07-11 18:38:02,831 [INFO] ===== Script End =====
+2025-07-11 18:39:02,217 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:39:02,412 [INFO] No new files to process.
+2025-07-11 18:39:02,412 [INFO] ===== Script End =====
+2025-07-11 18:40:03,177 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:40:03,334 [INFO] No new files to process.
+2025-07-11 18:40:03,334 [INFO] ===== Script End =====
+2025-07-11 18:41:02,703 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:41:02,804 [INFO] No new files to process.
+2025-07-11 18:41:02,804 [INFO] ===== Script End =====
+2025-07-11 18:42:02,121 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:42:02,222 [INFO] No new files to process.
+2025-07-11 18:42:02,222 [INFO] ===== Script End =====
+2025-07-11 18:43:02,622 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:43:02,786 [INFO] No new files to process.
+2025-07-11 18:43:02,787 [INFO] ===== Script End =====
+2025-07-11 18:44:02,261 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:44:02,361 [INFO] No new files to process.
+2025-07-11 18:44:02,361 [INFO] ===== Script End =====
+2025-07-11 18:45:02,950 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:45:03,099 [INFO] No new files to process.
+2025-07-11 18:45:03,099 [INFO] ===== Script End =====
+2025-07-11 18:46:02,499 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:46:02,593 [INFO] No new files to process.
+2025-07-11 18:46:02,593 [INFO] ===== Script End =====
+2025-07-11 18:47:02,972 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:47:03,084 [INFO] No new files to process.
+2025-07-11 18:47:03,085 [INFO] ===== Script End =====
+2025-07-11 18:48:02,418 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:48:02,589 [INFO] No new files to process.
+2025-07-11 18:48:02,590 [INFO] ===== Script End =====
+2025-07-11 18:49:03,015 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:49:03,113 [INFO] No new files to process.
+2025-07-11 18:49:03,114 [INFO] ===== Script End =====
+2025-07-11 18:50:02,708 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:50:02,864 [INFO] No new files to process.
+2025-07-11 18:50:02,864 [INFO] ===== Script End =====
+2025-07-11 18:51:02,280 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:51:02,395 [INFO] No new files to process.
+2025-07-11 18:51:02,395 [INFO] ===== Script End =====
+2025-07-11 18:52:02,850 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:52:02,955 [INFO] No new files to process.
+2025-07-11 18:52:02,955 [INFO] ===== Script End =====
+2025-07-11 18:53:02,325 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:53:02,418 [INFO] No new files to process.
+2025-07-11 18:53:02,419 [INFO] ===== Script End =====
+2025-07-11 18:54:02,773 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:54:02,871 [INFO] No new files to process.
+2025-07-11 18:54:02,872 [INFO] ===== Script End =====
+2025-07-11 18:55:02,373 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:55:02,499 [INFO] No new files to process.
+2025-07-11 18:55:02,500 [INFO] ===== Script End =====
+2025-07-11 18:56:02,926 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:56:03,034 [INFO] No new files to process.
+2025-07-11 18:56:03,034 [INFO] ===== Script End =====
+2025-07-11 18:57:02,323 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025am_b.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+No updates for pending.
+
+2025-07-11 18:57:02,423 [INFO] No new files to process.
+2025-07-11 18:57:02,423 [INFO] ===== Script End =====
+2025-07-11 18:58:02,732 [INFO] ===== Script Start =====
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies07112025am.xlsx
+- Last saved:    participatingAgencies07112025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies07112025pm.xlsx
+- Last saved:    pendingAgencies07112025am_b.xlsx
+New pending file detected. Downloading...
+Updated last-pending.txt with: pendingAgencies07112025pm.xlsx
+Downloaded pending file to: /var/scraper/287g-DetentionData/pendingAgencies/pendingAgencies07112025pm.xlsx
+2025-07-11 18:58:04,693 [INFO] Processing Pending Agencies...
+/var/scraper/287g-DetentionData/Monitor/combinePendingAgencies.py:248: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  absent_df["STATUS"] = "Absent"
+/var/scraper/287g-DetentionData/Monitor/combinePendingAgencies.py:249: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  absent_df["LAST SEEN"] = absent_df["ROW_SIGNATURE"].map(prev_last_seen_map)
+✅ Latest Pending File: pendingAgencies07112025pm.xlsx
+✅ Latest Total File: Total-pendingAgencies07112025am_b.xlsx
+✅ Final file saved with STATUS & LAST SEEN: /var/scraper/287g-DetentionData/Total pendingAgencies/Total_with_Duplication/Total_with-dup-pendingAgencies07112025pm.xlsx
+✅ Deduplicated file saved as: /var/scraper/287g-DetentionData/Monitor/../Total pendingAgencies/Total-pendingAgencies07112025pm.xlsx
+2025-07-11 18:58:05,017 [INFO] Removed duplicate file: Total_with-dup-pendingAgencies07112025pm.xlsx
+Using base directory (Monitor folder): /var/scraper/287g-DetentionData/Monitor
+Parent directory (base data folder): /var/scraper/287g-DetentionData
+Looking for last-pending.txt at: /var/scraper/287g-DetentionData/Monitor/last-pending.txt
+Filename read from txt file: 'pendingAgencies07112025pm.xlsx'
+Looking for file at: /var/scraper/287g-DetentionData/Total pendingAgencies/Total-pendingAgencies07112025pm.xlsx
+📁 Processing file: Total-pendingAgencies07112025pm.xlsx
+Pivot report saved to: /var/scraper/287g-DetentionData/Pivot PendingAgencies/pivot-pendingAgencies07112025pm.xlsx
+📎 Attaching pivot file: /var/scraper/287g-DetentionData/Monitor/../Pivot PendingAgencies/pivot-pendingAgencies07112025pm.xlsx
+2025-07-11 18:58:05,162 [INFO] Sending email...
+API Key Loaded: SG.W4****
+Email sent successfully.
+2025-07-11 18:58:05,574 [INFO] Email sent.
+2025-07-11 18:58:05,787 [INFO] Upload to Slack successful. Finalizing...
+2025-07-11 18:58:05,882 [INFO] File posted to Slack: /var/scraper/287g-DetentionData/Monitor/../Total pendingAgencies/Total-pendingAgencies07112025pm.xlsx
+2025-07-11 18:58:06,044 [INFO] Upload to Slack successful. Finalizing...
+2025-07-11 18:58:06,140 [INFO] File posted to Slack: /var/scraper/287g-DetentionData/Monitor/../Pivot PendingAgencies/pivot-pendingAgencies07112025pm.xlsx
+Message sent successfully to Slack.
+2025-07-11 18:58:06,251 [INFO] Pushing updates to GitHub...
