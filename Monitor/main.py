@@ -156,13 +156,13 @@ def broadcast_email_and_slack(SENDGRID_API_KEY, SENDGRID_FROM_EMAIL, RECIPIENTS,
         )
         logging.info("Email sent.")
 
-        # for path in attachments:
-        #     file_title = f"{os.path.basename(path)}"
-        #     upload_file_to_slack_via_sdk(path, title=file_title)
+        for path in attachments:
+            file_title = f"{os.path.basename(path)}"
+            upload_file_to_slack_via_sdk(path, title=file_title)
 
 
-        # message = "*New 287(g) Spreadsheet for the new alert*"
-        # send_message_to_slack(message)
+        message = "*New 287(g) Spreadsheet for the new alert*"
+        send_message_to_slack(message)
 
 def clean_unique_name_folder():
     unique_name_dir = os.path.join(base_dir, 'UniqueName')
@@ -201,7 +201,7 @@ def main():
             clean_unique_name_folder()
         if "pending" in updated_labels:
             process_pending_agencies()
-            # time.sleep(2)  # ⏳ Add a short wait (in seconds) to ensure file creation completes
+            # time.sleep(2)  
             run_pending_agencies_pivot_report()
 
 
