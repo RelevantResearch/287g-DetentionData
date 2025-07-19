@@ -120,9 +120,9 @@ def broadcast_email_and_slack(SENDGRID_API_KEY, SENDGRID_FROM_EMAIL, RECIPIENTS,
     attachments = []
 
     if "participating" in updated_labels:
-        file = find_latest_file(os.path.join(base_dir, 'UniqueName'))
+        file = find_latest_file(os.path.join(base_dir, 'Agency_Name_Normalizer'))
         if file:
-            path = os.path.join(base_dir, 'UniqueName', file)
+            path = os.path.join(base_dir, 'Agency_Name_Normalizer', file)
             attachments.append(path)
 
         pivot_file = find_latest_file(os.path.join(base_dir, '..', 'ParticipatingAgencieswithpivot'))
