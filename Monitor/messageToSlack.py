@@ -1,40 +1,51 @@
 import os
 import requests
 from dotenv import load_dotenv
+from slack_sdk import WebClient
+from slack_sdk.errors import SlackApiError
 
-# Load environment variables from .env file
 load_dotenv()
 
-# Get the Slack API token and channel ID from the environment
 SLACK_API_TOKEN = os.getenv('SLACK_API_TOKEN')
 SLACK_CHANNEL_ID = os.getenv('SLACK_CHANNEL_ID')
 
-def send_message_to_slack(message, attachments=None):
-    url = "https://slack.com/api/chat.postMessage"
-    
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {SLACK_API_TOKEN}"
-    }
+client = WebClient(token=SLACK_API_TOKEN)
 
-    payload = {
-        "channel": SLACK_CHANNEL_ID,
-        "text": message
-    }
+def send_file_to_slack_via_external_upload(file_path, message=None):
+    try:
+        filename = os.path.basename(file_path)
+        file_size = os.path.getsize(file_path)
 
-    if attachments:
-        payload["attachments"] = attachments
+        # Step 1: Get upload URL
+        upload_response = client.files_getUploadURLExternal(
+            filename=filename,
+            length=file_size
+        )
+        upload_url = upload_response['upload_url']
+        file_id = upload_response['file_id']
 
-    response = requests.post(url, headers=headers, json=payload)
+        # Step 2: Upload file to given URL
+        with open(file_path, 'rb') as f:
+            files = {'file': (filename, f, 'application/octet-stream')}
+            upload_result = requests.post(upload_url, files=files)
+        if upload_result.status_code != 200:
+            print(f"❌ Failed to upload file: {upload_result.text}")
+            return
 
-    if response.status_code == 200 and response.json().get("ok"):
-        print("Message sent successfully to Slack.")
-    else:
-        print(f"Error sending message to Slack: {response.text}")
+        # Step 3: Complete upload
+        client.files_completeUploadExternal(
+            channel_id=SLACK_CHANNEL_ID,
+            initial_comment=message or "",
+            files=[{"id": file_id}]
+        )
 
+        print(f"✅ File '{filename}' uploaded to Slack.")
 
+    except SlackApiError as e:
+        print(f"❌ Slack API error: {e.response['error']}")
+    except Exception as e:
+        print(f"❌ Unexpected error: {e}")
 
 if __name__ == "__main__":
-    # This part can be used to test the message
-    message = "Test message to Slack"
-    send_message_to_slack(message)
+    send_file_to_slack_via_external_upload("testSheetjustIgnoreIt.xlsx", "Test Sheet Just Ignore It.")
+
