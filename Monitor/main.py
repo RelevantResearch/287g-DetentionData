@@ -285,6 +285,7 @@ def process_pending_agencies():
 
 
 # === Email + Slack Broadcast ===
+
 def broadcast_email_and_slack(updated_labels):
     attachments = []
 
@@ -307,14 +308,57 @@ def broadcast_email_and_slack(updated_labels):
             attachments.append(os.path.join(base_dir, '..', 'Pivot PendingAgencies', pivot_file))
 
     if attachments:
+        # Send email
         logging.info("Sending email via SES...")
         send_email(file_path=None, file_url=None, attachments=attachments)
         logging.info("Email sent.")
 
-        logging.info("Sending files to Slack...")
+        # Send Slack message first
+        logging.info("Sending Slack alert...")
+        try:
+            client.chat_postMessage(
+                channel=SLACK_CHANNEL_ID,
+                text="ALERT! New 287(g) Spreadsheet"
+            )
+        except SlackApiError as e:
+            logging.error(f"Slack message error: {e.response['error']}")
+
+        # Upload files without repeating message
+        logging.info("Uploading files to Slack...")
         for file_path in attachments:
-            send_file_to_slack_via_external_upload(file_path, message="New updated file")
+            send_file_to_slack_via_external_upload(file_path, message=None)
         logging.info("Slack upload complete.")
+
+# def broadcast_email_and_slack(updated_labels):
+#     attachments = []
+
+#     if "participating" in updated_labels:
+#         file = find_latest_file(os.path.join(base_dir, 'Agency_Name_Normalizer'))
+#         if file:
+#             attachments.append(os.path.join(base_dir, 'Agency_Name_Normalizer', file))
+
+#         pivot_file = find_latest_file(os.path.join(base_dir, '..', 'ParticipatingAgencieswithpivot'))
+#         if pivot_file:
+#             attachments.append(os.path.join(base_dir, '..', 'ParticipatingAgencieswithpivot', pivot_file))
+
+#     if "pending" in updated_labels:
+#         file = find_latest_file(os.path.join(base_dir, '..', 'Total pendingAgencies'))
+#         if file:
+#             attachments.append(os.path.join(base_dir, '..', 'Total pendingAgencies', file))
+
+#         pivot_file = find_latest_file(os.path.join(base_dir, '..', 'Pivot PendingAgencies'))
+#         if pivot_file:
+#             attachments.append(os.path.join(base_dir, '..', 'Pivot PendingAgencies', pivot_file))
+
+#     if attachments:
+#         logging.info("Sending email via SES...")
+#         send_email(file_path=None, file_url=None, attachments=attachments)
+#         logging.info("Email sent.")
+
+#         logging.info("Sending files to Slack...")
+#         for file_path in attachments:
+#             send_file_to_slack_via_external_upload(file_path, message="New updated file")
+#         logging.info("Slack upload complete.")
 
 
 # === Cleanup Function ===
