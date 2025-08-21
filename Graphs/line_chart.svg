@@ -1,0 +1,499 @@
+<svg width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .line { fill:none; stroke-width:2.5; }
+    .marker { cursor:pointer; }
+    .tooltip-bg { fill:#333; rx:4; ry:4; }
+    .tooltip-text { fill:#fff; font-family:Arial; font-size:12px; }
+</style>
+<rect width="1000" height="600" fill="white"/>
+<line x1="80" y1="520.0" x2="950" y2="520.0" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="70" y="524.0" text-anchor="end" font-family="Arial" font-size="11">0</text>
+<line x1="80" y1="426.0" x2="950" y2="426.0" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="70" y="430.0" text-anchor="end" font-family="Arial" font-size="11">89</text>
+<line x1="80" y1="332.0" x2="950" y2="332.0" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="70" y="336.0" text-anchor="end" font-family="Arial" font-size="11">178</text>
+<line x1="80" y1="238.0" x2="950" y2="238.0" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="70" y="242.0" text-anchor="end" font-family="Arial" font-size="11">267</text>
+<line x1="80" y1="144.0" x2="950" y2="144.0" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="70" y="148.0" text-anchor="end" font-family="Arial" font-size="11">356</text>
+<line x1="80" y1="50.0" x2="950" y2="50.0" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="70" y="54.0" text-anchor="end" font-family="Arial" font-size="11">445</text>
+<line x1="80.0" y1="50" x2="80.0" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="80.0" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,80.0,535)">01/04/25</text>
+<line x1="128.33333333333331" y1="50" x2="128.33333333333331" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="128.33333333333331" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,128.33333333333331,535)">01/16/25</text>
+<line x1="164.58333333333331" y1="50" x2="164.58333333333331" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="164.58333333333331" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,164.58333333333331,535)">01/25/25</text>
+<line x1="188.75" y1="50" x2="188.75" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="188.75" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,188.75,535)">01/31/25</text>
+<line x1="225.0" y1="50" x2="225.0" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="225.0" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,225.0,535)">02/09/25</text>
+<line x1="249.16666666666666" y1="50" x2="249.16666666666666" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="249.16666666666666" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,249.16666666666666,535)">02/15/25</text>
+<line x1="273.3333333333333" y1="50" x2="273.3333333333333" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="273.3333333333333" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,273.3333333333333,535)">02/21/25</text>
+<line x1="301.5277777777778" y1="50" x2="301.5277777777778" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="301.5277777777778" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,301.5277777777778,535)">02/28/25</text>
+<line x1="325.69444444444446" y1="50" x2="325.69444444444446" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="325.69444444444446" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,325.69444444444446,535)">03/06/25</text>
+<line x1="370.0" y1="50" x2="370.0" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="370.0" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,370.0,535)">03/17/25</text>
+<line x1="378.0555555555556" y1="50" x2="378.0555555555556" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="378.0555555555556" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,378.0555555555556,535)">03/19/25</text>
+<line x1="410.27777777777777" y1="50" x2="410.27777777777777" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="410.27777777777777" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,410.27777777777777,535)">03/27/25</text>
+<line x1="442.5" y1="50" x2="442.5" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="442.5" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,442.5,535)">04/04/25</text>
+<line x1="466.66666666666663" y1="50" x2="466.66666666666663" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="466.66666666666663" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,466.66666666666663,535)">04/10/25</text>
+<line x1="494.86111111111114" y1="50" x2="494.86111111111114" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="494.86111111111114" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,494.86111111111114,535)">04/17/25</text>
+<line x1="543.1944444444445" y1="50" x2="543.1944444444445" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="543.1944444444445" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,543.1944444444445,535)">04/29/25</text>
+<line x1="555.2777777777778" y1="50" x2="555.2777777777778" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="555.2777777777778" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,555.2777777777778,535)">05/02/25</text>
+<line x1="611.6666666666667" y1="50" x2="611.6666666666667" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="611.6666666666667" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,611.6666666666667,535)">05/16/25</text>
+<line x1="639.8611111111111" y1="50" x2="639.8611111111111" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="639.8611111111111" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,639.8611111111111,535)">05/23/25</text>
+<line x1="664.0277777777777" y1="50" x2="664.0277777777777" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="664.0277777777777" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,664.0277777777777,535)">05/29/25</text>
+<line x1="696.25" y1="50" x2="696.25" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="696.25" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,696.25,535)">06/06/25</text>
+<line x1="720.4166666666667" y1="50" x2="720.4166666666667" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="720.4166666666667" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,720.4166666666667,535)">06/12/25</text>
+<line x1="752.6388888888889" y1="50" x2="752.6388888888889" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="752.6388888888889" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,752.6388888888889,535)">06/20/25</text>
+<line x1="780.8333333333334" y1="50" x2="780.8333333333334" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="780.8333333333334" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,780.8333333333334,535)">06/27/25</text>
+<line x1="805.0" y1="50" x2="805.0" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="805.0" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,805.0,535)">07/03/25</text>
+<line x1="837.2222222222222" y1="50" x2="837.2222222222222" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="837.2222222222222" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,837.2222222222222,535)">07/11/25</text>
+<line x1="865.4166666666666" y1="50" x2="865.4166666666666" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="865.4166666666666" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,865.4166666666666,535)">07/18/25</text>
+<line x1="893.6111111111112" y1="50" x2="893.6111111111112" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="893.6111111111112" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,893.6111111111112,535)">07/25/25</text>
+<line x1="921.8055555555555" y1="50" x2="921.8055555555555" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="921.8055555555555" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,921.8055555555555,535)">08/01/25</text>
+<line x1="950.0" y1="50" x2="950.0" y2="520" stroke="#E0E0E0" stroke-width="0.5"/>
+<text x="950.0" y="535" text-anchor="middle" font-family="Arial" font-size="11" transform="rotate(45,950.0,535)">08/08/25</text>
+<path d="M 80.0,520.0 L 128.33333333333331,520.0 L 164.58333333333331,520.0 L 188.75,520.0 L 225.0,520.0 L 249.16666666666666,520.0 L 273.3333333333333,508.3820224719101 L 301.5277777777778,452.40449438202245 L 325.69444444444446,403.82022471910113 L 370.0,372.13483146067415 L 378.0555555555556,363.685393258427 L 410.27777777777777,342.56179775280896 L 442.5,341.5056179775281 L 466.66666666666663,332.0 L 494.86111111111114,319.32584269662925 L 543.1944444444445,276.02247191011236 L 555.2777777777778,265.4606741573034 L 611.6666666666667,229.55056179775283 L 639.8611111111111,196.80898876404495 L 664.0277777777777,195.75280898876406 L 696.25,187.3033707865169 L 720.4166666666667,163.01123595505618 L 752.6388888888889,152.44943820224722 L 780.8333333333334,139.77528089887642 L 805.0,112.31460674157302 L 837.2222222222222,99.64044943820227 L 865.4166666666666,81.68539325842698 L 893.6111111111112,61.61797752808991 L 921.8055555555555,59.50561797752806 L 950.0,50.0 " class="line" stroke="#E74C3C"/>
+
+        <circle cx="80.0" cy="520.0" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '01/04/2025', '0')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="128.33333333333331" cy="520.0" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '01/16/2025', '0')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="164.58333333333331" cy="520.0" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '01/25/2025', '0')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="188.75" cy="520.0" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '01/31/2025', '0')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="225.0" cy="520.0" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '02/09/2025', '0')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="249.16666666666666" cy="520.0" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '02/15/2025', '0')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="273.3333333333333" cy="508.3820224719101" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '02/21/2025', '11')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="301.5277777777778" cy="452.40449438202245" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '02/28/2025', '64')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="325.69444444444446" cy="403.82022471910113" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '03/06/2025', '110')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="370.0" cy="372.13483146067415" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '03/17/2025', '140')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="378.0555555555556" cy="363.685393258427" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '03/19/2025', '148')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="410.27777777777777" cy="342.56179775280896" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '03/27/2025', '168')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="442.5" cy="341.5056179775281" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '04/04/2025', '169')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="466.66666666666663" cy="332.0" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '04/10/2025', '178')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="494.86111111111114" cy="319.32584269662925" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '04/17/2025', '190')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="543.1944444444445" cy="276.02247191011236" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '04/29/2025', '231')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="555.2777777777778" cy="265.4606741573034" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '05/02/2025', '241')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="611.6666666666667" cy="229.55056179775283" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '05/16/2025', '275')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="639.8611111111111" cy="196.80898876404495" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '05/23/2025', '306')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="664.0277777777777" cy="195.75280898876406" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '05/29/2025', '307')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="696.25" cy="187.3033707865169" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '06/06/2025', '315')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="720.4166666666667" cy="163.01123595505618" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '06/12/2025', '338')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="752.6388888888889" cy="152.44943820224722" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '06/20/2025', '348')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="780.8333333333334" cy="139.77528089887642" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '06/27/2025', '360')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="805.0" cy="112.31460674157302" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '07/03/2025', '386')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="837.2222222222222" cy="99.64044943820227" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '07/11/2025', '398')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="865.4166666666666" cy="81.68539325842698" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '07/18/2025', '415')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="893.6111111111112" cy="61.61797752808991" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '07/25/2025', '434')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="921.8055555555555" cy="59.50561797752806" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '08/01/2025', '436')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="950.0" cy="50.0" r="5" fill="#E74C3C" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Task Force Model', '08/08/2025', '445')"
+            onmouseout="hideTooltip()"/>
+        <path d="M 80.0,440.7865168539326 L 128.33333333333331,440.7865168539326 L 164.58333333333331,440.7865168539326 L 188.75,440.7865168539326 L 225.0,440.7865168539326 L 249.16666666666666,440.7865168539326 L 273.3333333333333,435.5056179775281 L 301.5277777777778,403.82022471910113 L 325.69444444444446,387.97752808988764 L 370.0,367.91011235955057 L 378.0555555555556,361.5730337078652 L 410.27777777777777,339.3932584269663 L 442.5,338.3370786516854 L 466.66666666666663,329.8876404494382 L 494.86111111111114,329.8876404494382 L 543.1944444444445,321.43820224719104 L 555.2777777777778,320.3820224719101 L 611.6666666666667,303.48314606741576 L 639.8611111111111,284.4719101123595 L 664.0277777777777,279.1910112359551 L 696.25,274.96629213483146 L 720.4166666666667,254.8988764044944 L 752.6388888888889,245.39325842696633 L 780.8333333333334,239.0561797752809 L 805.0,226.3820224719101 L 837.2222222222222,212.6516853932584 L 865.4166666666666,203.14606741573033 L 893.6111111111112,189.41573033707868 L 921.8055555555555,186.24719101123594 L 950.0,168.29213483146066 " class="line" stroke="#3498DB"/>
+
+        <circle cx="80.0" cy="440.7865168539326" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '01/04/2025', '75')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="128.33333333333331" cy="440.7865168539326" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '01/16/2025', '75')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="164.58333333333331" cy="440.7865168539326" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '01/25/2025', '75')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="188.75" cy="440.7865168539326" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '01/31/2025', '75')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="225.0" cy="440.7865168539326" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '02/09/2025', '75')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="249.16666666666666" cy="440.7865168539326" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '02/15/2025', '75')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="273.3333333333333" cy="435.5056179775281" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '02/21/2025', '80')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="301.5277777777778" cy="403.82022471910113" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '02/28/2025', '110')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="325.69444444444446" cy="387.97752808988764" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '03/06/2025', '125')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="370.0" cy="367.91011235955057" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '03/17/2025', '144')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="378.0555555555556" cy="361.5730337078652" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '03/19/2025', '150')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="410.27777777777777" cy="339.3932584269663" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '03/27/2025', '171')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="442.5" cy="338.3370786516854" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '04/04/2025', '172')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="466.66666666666663" cy="329.8876404494382" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '04/10/2025', '180')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="494.86111111111114" cy="329.8876404494382" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '04/17/2025', '180')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="543.1944444444445" cy="321.43820224719104" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '04/29/2025', '188')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="555.2777777777778" cy="320.3820224719101" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '05/02/2025', '189')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="611.6666666666667" cy="303.48314606741576" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '05/16/2025', '205')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="639.8611111111111" cy="284.4719101123595" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '05/23/2025', '223')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="664.0277777777777" cy="279.1910112359551" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '05/29/2025', '228')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="696.25" cy="274.96629213483146" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '06/06/2025', '232')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="720.4166666666667" cy="254.8988764044944" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '06/12/2025', '251')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="752.6388888888889" cy="245.39325842696633" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '06/20/2025', '260')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="780.8333333333334" cy="239.0561797752809" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '06/27/2025', '266')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="805.0" cy="226.3820224719101" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '07/03/2025', '278')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="837.2222222222222" cy="212.6516853932584" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '07/11/2025', '291')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="865.4166666666666" cy="203.14606741573033" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '07/18/2025', '300')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="893.6111111111112" cy="189.41573033707868" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '07/25/2025', '313')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="921.8055555555555" cy="186.24719101123594" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '08/01/2025', '316')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="950.0" cy="168.29213483146066" r="5" fill="#3498DB" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Warrant Service Officer', '08/08/2025', '333')"
+            onmouseout="hideTooltip()"/>
+        <path d="M 80.0,456.6292134831461 L 128.33333333333331,456.6292134831461 L 164.58333333333331,456.6292134831461 L 188.75,456.6292134831461 L 225.0,456.6292134831461 L 249.16666666666666,456.6292134831461 L 273.3333333333333,456.6292134831461 L 301.5277777777778,451.3483146067416 L 325.69444444444446,442.8988764044944 L 370.0,439.7303370786517 L 378.0555555555556,434.44943820224717 L 410.27777777777777,429.1685393258427 L 442.5,429.1685393258427 L 466.66666666666663,429.1685393258427 L 494.86111111111114,429.1685393258427 L 543.1944444444445,428.1123595505618 L 555.2777777777778,428.1123595505618 L 611.6666666666667,423.8876404494382 L 639.8611111111111,415.438202247191 L 664.0277777777777,414.3820224719101 L 696.25,412.2696629213483 L 720.4166666666667,404.87640449438203 L 752.6388888888889,402.76404494382024 L 780.8333333333334,402.76404494382024 L 805.0,400.65168539325845 L 837.2222222222222,397.48314606741576 L 865.4166666666666,396.4269662921348 L 893.6111111111112,394.314606741573 L 921.8055555555555,392.2022471910112 L 950.0,390.08988764044943 " class="line" stroke="#2ECC71"/>
+
+        <circle cx="80.0" cy="456.6292134831461" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '01/04/2025', '60')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="128.33333333333331" cy="456.6292134831461" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '01/16/2025', '60')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="164.58333333333331" cy="456.6292134831461" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '01/25/2025', '60')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="188.75" cy="456.6292134831461" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '01/31/2025', '60')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="225.0" cy="456.6292134831461" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '02/09/2025', '60')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="249.16666666666666" cy="456.6292134831461" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '02/15/2025', '60')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="273.3333333333333" cy="456.6292134831461" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '02/21/2025', '60')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="301.5277777777778" cy="451.3483146067416" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '02/28/2025', '65')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="325.69444444444446" cy="442.8988764044944" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '03/06/2025', '73')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="370.0" cy="439.7303370786517" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '03/17/2025', '76')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="378.0555555555556" cy="434.44943820224717" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '03/19/2025', '81')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="410.27777777777777" cy="429.1685393258427" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '03/27/2025', '86')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="442.5" cy="429.1685393258427" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '04/04/2025', '86')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="466.66666666666663" cy="429.1685393258427" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '04/10/2025', '86')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="494.86111111111114" cy="429.1685393258427" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '04/17/2025', '86')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="543.1944444444445" cy="428.1123595505618" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '04/29/2025', '87')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="555.2777777777778" cy="428.1123595505618" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '05/02/2025', '87')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="611.6666666666667" cy="423.8876404494382" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '05/16/2025', '91')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="639.8611111111111" cy="415.438202247191" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '05/23/2025', '99')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="664.0277777777777" cy="414.3820224719101" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '05/29/2025', '100')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="696.25" cy="412.2696629213483" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '06/06/2025', '102')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="720.4166666666667" cy="404.87640449438203" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '06/12/2025', '109')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="752.6388888888889" cy="402.76404494382024" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '06/20/2025', '111')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="780.8333333333334" cy="402.76404494382024" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '06/27/2025', '111')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="805.0" cy="400.65168539325845" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '07/03/2025', '113')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="837.2222222222222" cy="397.48314606741576" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '07/11/2025', '116')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="865.4166666666666" cy="396.4269662921348" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '07/18/2025', '117')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="893.6111111111112" cy="394.314606741573" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '07/25/2025', '119')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="921.8055555555555" cy="392.2022471910112" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '08/01/2025', '121')"
+            onmouseout="hideTooltip()"/>
+        
+        <circle cx="950.0" cy="390.08988764044943" r="5" fill="#2ECC71" stroke="white" stroke-width="1" class="marker"
+            onmouseover="showTooltip(evt, 'Jail Enforcement Model', '08/08/2025', '123')"
+            onmouseout="hideTooltip()"/>
+        
+<g id="tooltip" opacity="0">
+    <rect id="tooltip-bg" class="tooltip-bg"/>
+    <text id="tooltip-text" class="tooltip-text"></text>
+</g>
+
+<script type="text/ecmascript"><![CDATA[
+function showTooltip(evt, series, date, value) {
+    var tooltip = document.getElementById('tooltip');
+    var tooltipBg = document.getElementById('tooltip-bg');
+    var tooltipText = document.getElementById('tooltip-text');
+
+    while (tooltipText.firstChild) tooltipText.removeChild(tooltipText.firstChild);
+
+    var lines = [series, date, 'Value: ' + value];
+    for (var i = 0; i < lines.length; i++) {
+        var tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
+        tspan.textContent = lines[i];
+        tspan.setAttribute('x', 0);  // <-- relative to <text>
+        tspan.setAttribute('dy', i === 0 ? '1em' : '1.2em');
+        if (i === 0) tspan.setAttribute('font-weight', 'bold');
+        tooltipText.appendChild(tspan);
+    }
+
+    var bbox = tooltipText.getBBox();
+    var padding = 6;
+
+    tooltipBg.setAttribute('width', bbox.width + padding * 2);
+    tooltipBg.setAttribute('height', bbox.height + padding * 2);
+
+    // Position tooltip near mouse
+    var pt = evt.target.ownerSVGElement.createSVGPoint();
+    pt.x = evt.clientX; pt.y = evt.clientY;
+    var svgP = pt.matrixTransform(evt.target.ownerSVGElement.getScreenCTM().inverse());
+
+    var x = svgP.x + 10;
+    var y = svgP.y - bbox.height - 10;
+    if (x + bbox.width + padding * 2 > evt.target.ownerSVGElement.width.baseVal.value)
+        x = svgP.x - bbox.width - padding * 2 - 10;
+    if (y < 0) y = svgP.y + 10;
+
+    tooltipBg.setAttribute('x', x);
+    tooltipBg.setAttribute('y', y);
+
+    tooltipText.setAttribute('x', x + padding);   // <-- now aligned with rect
+    tooltipText.setAttribute('y', y + padding + 10);
+
+    tooltip.setAttribute('opacity', 1);
+}
+
+
+function hideTooltip() {
+    document.getElementById('tooltip').setAttribute('opacity', 0);
+}
+]]></script>
+</svg>

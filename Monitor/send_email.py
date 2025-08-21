@@ -11,16 +11,18 @@ load_dotenv()
 
 SES_REGION = os.getenv("SES_REGION")
 SES_FROM_EMAIL = os.getenv("SES_FROM_EMAIL")
-RECIPIENT_EMAILS = [email.strip() for email in os.getenv("RECIPIENT_EMAILS", "").split(",") if email.strip()]
+RECIPIENT_EMAILS = [
+    email.strip() for email in os.getenv("RECIPIENT_EMAILS", "").split(",") if email.strip()
+]
 
 def send_email(file_path=None, file_url=None, attachments=None):
-    """Send an email via AWS SES with optional attachments."""
     ses_client = boto3.client("ses", region_name=SES_REGION)
 
-    if file_url:
-        html_content = f"<h1>New file available: <a href='{file_url}'>{file_url}</a></h1>"
-    else:
-        html_content = "<h4>Attached are the latest updated files for participating and pending agencies.</h4>"
+    html_content = (
+        f"<h1>New file available: <a href='{file_url}'>{file_url}</a></h1>"
+        if file_url
+        else "<h4>Attached are the latest updated files for participating and pending agencies.</h4>"
+    )
 
     subject = "ALERT! New 287(g) Spreadsheet"
 
@@ -29,6 +31,9 @@ def send_email(file_path=None, file_url=None, attachments=None):
             if file_path and not attachments:
                 attachments = [file_path]
 
+            # -------------------------
+            # Prepare multipart email
+            # -------------------------
             msg = MIMEMultipart()
             msg["Subject"] = subject
             msg["From"] = SES_FROM_EMAIL
@@ -36,6 +41,9 @@ def send_email(file_path=None, file_url=None, attachments=None):
 
             msg.attach(MIMEText(html_content, "html"))
 
+            # -------------------------
+            # Attach files
+            # -------------------------
             for path in attachments:
                 with open(path, "rb") as f:
                     part = MIMEBase("application", "octet-stream")
@@ -52,8 +60,10 @@ def send_email(file_path=None, file_url=None, attachments=None):
                 Destinations=RECIPIENT_EMAILS,
                 RawMessage={"Data": msg.as_string()},
             )
-
         else:
+            # -------------------------
+            # Send email without attachment
+            # -------------------------
             ses_client.send_email(
                 Source=SES_FROM_EMAIL,
                 Destination={"ToAddresses": RECIPIENT_EMAILS},
@@ -63,7 +73,7 @@ def send_email(file_path=None, file_url=None, attachments=None):
                 },
             )
 
-        print("✅ Email sent successfully via SES.")
+        print("Email sent successfully via SES.")
 
     except ClientError as e:
-        print("❌ Error sending email:", e.response["Error"]["Message"])
+        print("Error sending email:", e.response["Error"]["Message"])

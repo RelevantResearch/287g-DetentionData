@@ -8,3 +8,4 @@ python-dotenv
 logging
 boto3
 slack_sdk
+xlsxwriter

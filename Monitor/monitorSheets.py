@@ -2,9 +2,10 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-# Force the script to work in its own directory
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
+# -------------------------
+# Constants & Directories
+# -------------------------
 LAST_FILENAMES = {
     "participating": "last-participating.txt",
     "pending": "last-pending.txt"
@@ -13,33 +14,44 @@ LAST_FILENAMES = {
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 TARGET_FOLDERS = {
-    "participating": os.path.join(BASE_DIR, "participatingAgencies after feb 20"),
+    "participating": os.path.join(BASE_DIR, "participatingAgencies"),
     "pending": os.path.join(BASE_DIR, "pendingAgencies")
 }
 
-def get_excel_links(url):
+
+# -------------------------
+# Extract Excel links
+# -------------------------
+def get_excel_links(url: str) -> dict:
     response = requests.get(url)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
 
     links = soup.find_all("a", href=lambda href: href and href.endswith(".xlsx"))
-
     result = {}
+
     for link in links:
         href = link["href"]
         full_url = href if href.startswith("http") else "https://www.ice.gov" + href
         text = link.get_text(strip=True).lower()
+
         if "participating" in text:
             result["participating"] = full_url
         elif "pending" in text:
             result["pending"] = full_url
+
     return result
 
-def download_file(file_url, label):
+
+# -------------------------
+# Download file
+# -------------------------
+def download_file(file_url: str, label: str) -> tuple[str, str]:
     folder = TARGET_FOLDERS[label]
     os.makedirs(folder, exist_ok=True)
+
     file_name = file_url.split("/")[-1]
-    file_path = os.path.join(folder, f"{file_name}")
+    file_path = os.path.join(folder, file_name)
 
     response = requests.get(file_url)
     response.raise_for_status()
@@ -49,10 +61,14 @@ def download_file(file_url, label):
     print(f"Downloaded {label} file to: {file_path}")
     return file_path, file_name
 
-def monitor_and_download_all(webpage_url):
+
+# -------------------------
+# Monitor & download updates
+# -------------------------
+def monitor_and_download_all(webpage_url: str) -> list[str]:
     links = get_excel_links(webpage_url)
     downloaded_files = []
-    updated_files = []  # Track which labels were updated
+    updated_files = []
 
     for label, file_url in links.items():
         latest_filename = file_url.split("/")[-1]
@@ -69,6 +85,7 @@ def monitor_and_download_all(webpage_url):
 
         if latest_filename != last_filename:
             print(f"New {label} file detected. Downloading...")
+
             try:
                 with open(last_filename_file, "w") as f:
                     f.write(latest_filename)
@@ -83,9 +100,4 @@ def monitor_and_download_all(webpage_url):
         else:
             print(f"No updates for {label}.\n")
 
-    return updated_files  # list of updated labels
-
-# Run the script
-if __name__ == "__main__":
-    url = "https://www.ice.gov/identify-and-arrest/287g"
-    monitor_and_download_all(url)
+    return updated_files

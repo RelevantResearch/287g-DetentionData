@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Law Enforcement Chart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <style>
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+            z-index: 1000;
+        }
+        
+        .line {
+            fill: none;
+            stroke-width: 2.5;
+        }
+        
+        .marker {
+            cursor: pointer;
+            transition: r 0.2s, width 0.2s, height 0.2s;
+        }
+        
+        .marker:hover {
+            stroke-width: 2;
+        }
+        
+        .marker.circle:hover {
+            r: 6;
+        }
+        
+        .marker.rect:hover {
+            width: 12;
+            height: 12;
+        }
+        
+        .grid-line {
+            stroke: #E0E0E0;
+            stroke-width: 0.5;
+        }
+        
+        .axis-line {
+            stroke: #333;
+            stroke-width: 1;
+        }
+        
+        .axis-text {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            fill: #666;
+        }
+        
+        .title {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            fill: #333;
+            text-anchor: middle;
+        }
+        
+        .legend {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            fill: #333;
+        }
+    </style>
+</defs>
+
+<!-- Background -->
+<rect width="1000" height="600" fill="white"/>
+
+<!-- Grid lines -->
+<line x1="80" y1="50.0" x2="900" y2="50.0" class="grid-line"/>
+<text x="70" y="54.0" class="axis-text" text-anchor="end">991</text>
+<line x1="80" y1="144.0" x2="900" y2="144.0" class="grid-line"/>
+<text x="70" y="148.0" class="axis-text" text-anchor="end">793</text>
+<line x1="80" y1="238.0" x2="900" y2="238.0" class="grid-line"/>
+<text x="70" y="242.0" class="axis-text" text-anchor="end">595</text>
+<line x1="80" y1="332.0" x2="900" y2="332.0" class="grid-line"/>
+<text x="70" y="336.0" class="axis-text" text-anchor="end">396</text>
+<line x1="80" y1="426.0" x2="900" y2="426.0" class="grid-line"/>
+<text x="70" y="430.0" class="axis-text" text-anchor="end">198</text>
+<line x1="80" y1="520.0" x2="900" y2="520.0" class="grid-line"/>
+<text x="70" y="524.0" class="axis-text" text-anchor="end">0</text>
+<line x1="80.0" y1="50" x2="80.0" y2="520" class="grid-line"/>
+<text x="80.0" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 80.0, 540)">01/04/25</text>
+<line x1="108.27586206896552" y1="50" x2="108.27586206896552" y2="520" class="grid-line"/>
+<text x="108.27586206896552" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 108.27586206896552, 540)">01/16/25</text>
+<line x1="136.55172413793105" y1="50" x2="136.55172413793105" y2="520" class="grid-line"/>
+<text x="136.55172413793105" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 136.55172413793105, 540)">01/25/25</text>
+<line x1="164.82758620689657" y1="50" x2="164.82758620689657" y2="520" class="grid-line"/>
+<text x="164.82758620689657" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 164.82758620689657, 540)">01/31/25</text>
+<line x1="193.10344827586206" y1="50" x2="193.10344827586206" y2="520" class="grid-line"/>
+<text x="193.10344827586206" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 193.10344827586206, 540)">02/09/25</text>
+<line x1="221.3793103448276" y1="50" x2="221.3793103448276" y2="520" class="grid-line"/>
+<text x="221.3793103448276" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 221.3793103448276, 540)">02/15/25</text>
+<line x1="249.6551724137931" y1="50" x2="249.6551724137931" y2="520" class="grid-line"/>
+<text x="249.6551724137931" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 249.6551724137931, 540)">02/21/25</text>
+<line x1="277.9310344827586" y1="50" x2="277.9310344827586" y2="520" class="grid-line"/>
+<text x="277.9310344827586" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 277.9310344827586, 540)">02/28/25</text>
+<line x1="306.2068965517241" y1="50" x2="306.2068965517241" y2="520" class="grid-line"/>
+<text x="306.2068965517241" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 306.2068965517241, 540)">03/06/25</text>
+<line x1="334.48275862068965" y1="50" x2="334.48275862068965" y2="520" class="grid-line"/>
+<text x="334.48275862068965" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 334.48275862068965, 540)">03/17/25</text>
+<line x1="362.7586206896552" y1="50" x2="362.7586206896552" y2="520" class="grid-line"/>
+<text x="362.7586206896552" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 362.7586206896552, 540)">03/19/25</text>
+<line x1="391.0344827586207" y1="50" x2="391.0344827586207" y2="520" class="grid-line"/>
+<text x="391.0344827586207" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 391.0344827586207, 540)">03/27/25</text>
+<line x1="419.3103448275862" y1="50" x2="419.3103448275862" y2="520" class="grid-line"/>
+<text x="419.3103448275862" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 419.3103448275862, 540)">04/04/25</text>
+<line x1="447.58620689655174" y1="50" x2="447.58620689655174" y2="520" class="grid-line"/>
+<text x="447.58620689655174" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 447.58620689655174, 540)">04/10/25</text>
+<line x1="475.86206896551727" y1="50" x2="475.86206896551727" y2="520" class="grid-line"/>
+<text x="475.86206896551727" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 475.86206896551727, 540)">04/17/25</text>
+<line x1="504.1379310344828" y1="50" x2="504.1379310344828" y2="520" class="grid-line"/>
+<text x="504.1379310344828" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 504.1379310344828, 540)">04/29/25</text>
+<line x1="532.4137931034483" y1="50" x2="532.4137931034483" y2="520" class="grid-line"/>
+<text x="532.4137931034483" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 532.4137931034483, 540)">05/02/25</text>
+<line x1="560.6896551724137" y1="50" x2="560.6896551724137" y2="520" class="grid-line"/>
+<text x="560.6896551724137" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 560.6896551724137, 540)">05/16/25</text>
+<line x1="588.9655172413793" y1="50" x2="588.9655172413793" y2="520" class="grid-line"/>
+<text x="588.9655172413793" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 588.9655172413793, 540)">05/23/25</text>
+<line x1="617.2413793103448" y1="50" x2="617.2413793103448" y2="520" class="grid-line"/>
+<text x="617.2413793103448" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 617.2413793103448, 540)">05/29/25</text>
+<line x1="645.5172413793103" y1="50" x2="645.5172413793103" y2="520" class="grid-line"/>
+<text x="645.5172413793103" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 645.5172413793103, 540)">06/06/25</text>
+<line x1="673.7931034482758" y1="50" x2="673.7931034482758" y2="520" class="grid-line"/>
+<text x="673.7931034482758" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 673.7931034482758, 540)">06/12/25</text>
+<line x1="702.0689655172414" y1="50" x2="702.0689655172414" y2="520" class="grid-line"/>
+<text x="702.0689655172414" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 702.0689655172414, 540)">06/20/25</text>
+<line x1="730.344827586207" y1="50" x2="730.344827586207" y2="520" class="grid-line"/>
+<text x="730.344827586207" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 730.344827586207, 540)">06/27/25</text>
+<line x1="758.6206896551724" y1="50" x2="758.6206896551724" y2="520" class="grid-line"/>
+<text x="758.6206896551724" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 758.6206896551724, 540)">07/03/25</text>
+<line x1="786.8965517241379" y1="50" x2="786.8965517241379" y2="520" class="grid-line"/>
+<text x="786.8965517241379" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 786.8965517241379, 540)">07/11/25</text>
+<line x1="815.1724137931035" y1="50" x2="815.1724137931035" y2="520" class="grid-line"/>
+<text x="815.1724137931035" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 815.1724137931035, 540)">07/18/25</text>
+<line x1="843.448275862069" y1="50" x2="843.448275862069" y2="520" class="grid-line"/>
+<text x="843.448275862069" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 843.448275862069, 540)">07/25/25</text>
+<line x1="871.7241379310345" y1="50" x2="871.7241379310345" y2="520" class="grid-line"/>
+<text x="871.7241379310345" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 871.7241379310345, 540)">08/01/25</text>
+<line x1="900.0" y1="50" x2="900.0" y2="520" class="grid-line"/>
+<text x="900.0" y="540" class="axis-text" text-anchor="middle" transform="rotate(45, 900.0, 540)">08/08/25</text>
+<!-- Axes -->
+<line x1="80" y1="50" x2="80" y2="520" class="axis-line"/>
+<line x1="80" y1="520" x2="900" y2="520" class="axis-line"/>
+
+<!-- Title -->
+<text x="500.0" y="30" class="title">Law Enforcement Models Over Time</text>
+
+<!-- Y-axis label -->
+<text x="20" y="300.0" class="axis-text" text-anchor="middle" transform="rotate(-90, 20, 300.0)">Number of Officers/Cases</text>
+
+<!-- X-axis label -->
+<text x="500.0" y="580" class="axis-text" text-anchor="middle">Date</text>
+<!-- Line for Task Force Model -->
+<path d="M 80.0,520.0 L 108.27586206896552,520.0 L 136.55172413793105,520.0 L 164.82758620689657,520.0 L 193.10344827586206,520.0 L 221.3793103448276,520.0 L 249.6551724137931,514.7835738068812 L 277.9310344827586,489.64988396730905 L 306.2068965517241,467.8357380688124 L 334.48275862068965,453.6091211784885 L 362.7586206896552,449.8153566744022 L 391.0344827586207,440.33094541418626 L 419.3103448275862,439.85672485117544 L 447.58620689655174,435.5887397840783 L 475.86206896551727,429.89809302794873 L 504.1379310344828,410.4550499445061 L 532.4137931034483,405.7128443143981 L 560.6896551724137,389.5893451720311 L 588.9655172413793,374.88850771869636 L 617.2413793103448,374.4142871556856 L 645.5172413793103,370.62052265159923 L 673.7931034482758,359.7134497023509 L 702.0689655172414,354.97124407224294 L 730.344827586207,349.2805973161134 L 758.6206896551724,336.95086267783273 L 786.8965517241379,331.26021592170315 L 815.1724137931035,323.19846635051965 L 843.448275862069,314.18827565331446 L 871.7241379310345,313.23983452729294 L 900.0,308.97184946019576" class="line" stroke="#E74C3C"/>
+<circle cx="80.0" cy="520.0" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="January 04, 2025" data-value="0"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="108.27586206896552" cy="520.0" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="January 16, 2025" data-value="0"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="136.55172413793105" cy="520.0" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="January 25, 2025" data-value="0"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="164.82758620689657" cy="520.0" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="January 31, 2025" data-value="0"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="193.10344827586206" cy="520.0" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="February 09, 2025" data-value="0"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="221.3793103448276" cy="520.0" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="February 15, 2025" data-value="0"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="249.6551724137931" cy="514.7835738068812" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="February 21, 2025" data-value="11"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="277.9310344827586" cy="489.64988396730905" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="February 28, 2025" data-value="64"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="306.2068965517241" cy="467.8357380688124" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="March 06, 2025" data-value="110"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="334.48275862068965" cy="453.6091211784885" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="March 17, 2025" data-value="140"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="362.7586206896552" cy="449.8153566744022" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="March 19, 2025" data-value="148"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="391.0344827586207" cy="440.33094541418626" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="March 27, 2025" data-value="168"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="419.3103448275862" cy="439.85672485117544" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="April 04, 2025" data-value="169"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="447.58620689655174" cy="435.5887397840783" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="April 10, 2025" data-value="178"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="475.86206896551727" cy="429.89809302794873" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="April 17, 2025" data-value="190"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="504.1379310344828" cy="410.4550499445061" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="April 29, 2025" data-value="231"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="532.4137931034483" cy="405.7128443143981" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="May 02, 2025" data-value="241"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="560.6896551724137" cy="389.5893451720311" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="May 16, 2025" data-value="275"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="588.9655172413793" cy="374.88850771869636" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="May 23, 2025" data-value="306"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="617.2413793103448" cy="374.4142871556856" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="May 29, 2025" data-value="307"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="645.5172413793103" cy="370.62052265159923" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="June 06, 2025" data-value="315"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="673.7931034482758" cy="359.7134497023509" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="June 12, 2025" data-value="338"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="702.0689655172414" cy="354.97124407224294" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="June 20, 2025" data-value="348"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="730.344827586207" cy="349.2805973161134" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="June 27, 2025" data-value="360"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="758.6206896551724" cy="336.95086267783273" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="July 03, 2025" data-value="386"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="786.8965517241379" cy="331.26021592170315" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="July 11, 2025" data-value="398"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="815.1724137931035" cy="323.19846635051965" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="July 18, 2025" data-value="415"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="843.448275862069" cy="314.18827565331446" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="July 25, 2025" data-value="434"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="871.7241379310345" cy="313.23983452729294" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="August 01, 2025" data-value="436"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="900.0" cy="308.97184946019576" r="4" fill="#E74C3C" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Task Force Model" data-date="August 08, 2025" data-value="445"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<!-- Line for Warrant Service Officer -->
+<path d="M 80.0,484.4334577741903 L 108.27586206896552,484.4334577741903 L 136.55172413793105,484.4334577741903 L 164.82758620689657,484.4334577741903 L 193.10344827586206,484.4334577741903 L 221.3793103448276,484.4334577741903 L 249.6551724137931,482.0623549591363 L 277.9310344827586,467.8357380688124 L 306.2068965517241,460.7224296236505 L 334.48275862068965,451.71223892644537 L 362.7586206896552,448.8669155483806 L 391.0344827586207,438.90828372515386 L 419.3103448275862,438.43406316214305 L 447.58620689655174,434.64029865805674 L 475.86206896551727,434.64029865805674 L 504.1379310344828,430.8465341539703 L 532.4137931034483,430.37231359095955 L 560.6896551724137,422.7847845827868 L 588.9655172413793,414.2488144485925 L 617.2413793103448,411.8777116335385 L 645.5172413793103,409.9808293814953 L 673.7931034482758,400.9706386842902 L 702.0689655172414,396.70265361719305 L 730.344827586207,393.85733023912826 L 758.6206896551724,388.1666834829987 L 786.8965517241379,382.00181616385834 L 815.1724137931035,377.73383109676115 L 843.448275862069,371.56896377762087 L 871.7241379310345,370.1463020885884 L 900.0,362.0845525174049" class="line" stroke="#3498DB"/>
+<rect x="76.0" y="480.4334577741903" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="January 04, 2025" data-value="75"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="104.27586206896552" y="480.4334577741903" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="January 16, 2025" data-value="75"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="132.55172413793105" y="480.4334577741903" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="January 25, 2025" data-value="75"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="160.82758620689657" y="480.4334577741903" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="January 31, 2025" data-value="75"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="189.10344827586206" y="480.4334577741903" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="February 09, 2025" data-value="75"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="217.3793103448276" y="480.4334577741903" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="February 15, 2025" data-value="75"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="245.6551724137931" y="478.0623549591363" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="February 21, 2025" data-value="80"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="273.9310344827586" y="463.8357380688124" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="February 28, 2025" data-value="110"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="302.2068965517241" y="456.7224296236505" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="March 06, 2025" data-value="125"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="330.48275862068965" y="447.71223892644537" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="March 17, 2025" data-value="144"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="358.7586206896552" y="444.8669155483806" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="March 19, 2025" data-value="150"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="387.0344827586207" y="434.90828372515386" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="March 27, 2025" data-value="171"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="415.3103448275862" y="434.43406316214305" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="April 04, 2025" data-value="172"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="443.58620689655174" y="430.64029865805674" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="April 10, 2025" data-value="180"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="471.86206896551727" y="430.64029865805674" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="April 17, 2025" data-value="180"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="500.1379310344828" y="426.8465341539703" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="April 29, 2025" data-value="188"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="528.4137931034483" y="426.37231359095955" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="May 02, 2025" data-value="189"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="556.6896551724137" y="418.7847845827868" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="May 16, 2025" data-value="205"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="584.9655172413793" y="410.2488144485925" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="May 23, 2025" data-value="223"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="613.2413793103448" y="407.8777116335385" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="May 29, 2025" data-value="228"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="641.5172413793103" y="405.9808293814953" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="June 06, 2025" data-value="232"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="669.7931034482758" y="396.9706386842902" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="June 12, 2025" data-value="251"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="698.0689655172414" y="392.70265361719305" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="June 20, 2025" data-value="260"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="726.344827586207" y="389.85733023912826" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="June 27, 2025" data-value="266"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="754.6206896551724" y="384.1666834829987" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="July 03, 2025" data-value="278"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="782.8965517241379" y="378.00181616385834" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="July 11, 2025" data-value="291"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="811.1724137931035" y="373.73383109676115" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="July 18, 2025" data-value="300"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="839.448275862069" y="367.56896377762087" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="July 25, 2025" data-value="313"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="867.7241379310345" y="366.1463020885884" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="August 01, 2025" data-value="316"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<rect x="896.0" y="358.0845525174049" width="8" height="8" fill="#3498DB" stroke="white" stroke-width="1" 
+      class="marker rect" data-series="Warrant Service Officer" data-date="August 08, 2025" data-value="333"
+      onmouseover="showTooltipFromData(evt)"
+      onmouseout="hideTooltip()"/>
+<!-- Line for Jail Enforcement Model -->
+<path d="M 80.0,491.5467662193522 L 108.27586206896552,491.5467662193522 L 136.55172413793105,491.5467662193522 L 164.82758620689657,491.5467662193522 L 193.10344827586206,491.5467662193522 L 221.3793103448276,491.5467662193522 L 249.6551724137931,491.5467662193522 L 277.9310344827586,489.17566340429823 L 306.2068965517241,485.38189890021187 L 334.48275862068965,483.95923721117947 L 362.7586206896552,481.5881343961255 L 391.0344827586207,479.2170315810715 L 419.3103448275862,479.2170315810715 L 447.58620689655174,479.2170315810715 L 475.86206896551727,479.2170315810715 L 504.1379310344828,478.74281101806076 L 532.4137931034483,478.74281101806076 L 560.6896551724137,476.84592876601755 L 588.9655172413793,473.0521642619312 L 617.2413793103448,472.5779436989204 L 645.5172413793103,471.6295025728988 L 673.7931034482758,468.30995863182324 L 702.0689655172414,467.36151750580166 L 730.344827586207,467.36151750580166 L 758.6206896551724,466.41307637978 L 786.8965517241379,464.9904146907477 L 815.1724137931035,464.51619412773687 L 843.448275862069,463.5677530017153 L 871.7241379310345,462.61931187569365 L 900.0,461.6708707496721" class="line" stroke="#2ECC71"/>
+<polygon points="80.0,486.5467662193522 76.0,494.5467662193522 84.0,494.5467662193522" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="January 04, 2025" data-value="60"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="108.27586206896552,486.5467662193522 104.27586206896552,494.5467662193522 112.27586206896552,494.5467662193522" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="January 16, 2025" data-value="60"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="136.55172413793105,486.5467662193522 132.55172413793105,494.5467662193522 140.55172413793105,494.5467662193522" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="January 25, 2025" data-value="60"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="164.82758620689657,486.5467662193522 160.82758620689657,494.5467662193522 168.82758620689657,494.5467662193522" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="January 31, 2025" data-value="60"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="193.10344827586206,486.5467662193522 189.10344827586206,494.5467662193522 197.10344827586206,494.5467662193522" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="February 09, 2025" data-value="60"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="221.3793103448276,486.5467662193522 217.3793103448276,494.5467662193522 225.3793103448276,494.5467662193522" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="February 15, 2025" data-value="60"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="249.6551724137931,486.5467662193522 245.6551724137931,494.5467662193522 253.6551724137931,494.5467662193522" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="February 21, 2025" data-value="60"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="277.9310344827586,484.17566340429823 273.9310344827586,492.17566340429823 281.9310344827586,492.17566340429823" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="February 28, 2025" data-value="65"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="306.2068965517241,480.38189890021187 302.2068965517241,488.38189890021187 310.2068965517241,488.38189890021187" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="March 06, 2025" data-value="73"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="334.48275862068965,478.95923721117947 330.48275862068965,486.95923721117947 338.48275862068965,486.95923721117947" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="March 17, 2025" data-value="76"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="362.7586206896552,476.5881343961255 358.7586206896552,484.5881343961255 366.7586206896552,484.5881343961255" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="March 19, 2025" data-value="81"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="391.0344827586207,474.2170315810715 387.0344827586207,482.2170315810715 395.0344827586207,482.2170315810715" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="March 27, 2025" data-value="86"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="419.3103448275862,474.2170315810715 415.3103448275862,482.2170315810715 423.3103448275862,482.2170315810715" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="April 04, 2025" data-value="86"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="447.58620689655174,474.2170315810715 443.58620689655174,482.2170315810715 451.58620689655174,482.2170315810715" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="April 10, 2025" data-value="86"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="475.86206896551727,474.2170315810715 471.86206896551727,482.2170315810715 479.86206896551727,482.2170315810715" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="April 17, 2025" data-value="86"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="504.1379310344828,473.74281101806076 500.1379310344828,481.74281101806076 508.1379310344828,481.74281101806076" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="April 29, 2025" data-value="87"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="532.4137931034483,473.74281101806076 528.4137931034483,481.74281101806076 536.4137931034483,481.74281101806076" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="May 02, 2025" data-value="87"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="560.6896551724137,471.84592876601755 556.6896551724137,479.84592876601755 564.6896551724137,479.84592876601755" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="May 16, 2025" data-value="91"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="588.9655172413793,468.0521642619312 584.9655172413793,476.0521642619312 592.9655172413793,476.0521642619312" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="May 23, 2025" data-value="99"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="617.2413793103448,467.5779436989204 613.2413793103448,475.5779436989204 621.2413793103448,475.5779436989204" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="May 29, 2025" data-value="100"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="645.5172413793103,466.6295025728988 641.5172413793103,474.6295025728988 649.5172413793103,474.6295025728988" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="June 06, 2025" data-value="102"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="673.7931034482758,463.30995863182324 669.7931034482758,471.30995863182324 677.7931034482758,471.30995863182324" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="June 12, 2025" data-value="109"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="702.0689655172414,462.36151750580166 698.0689655172414,470.36151750580166 706.0689655172414,470.36151750580166" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="June 20, 2025" data-value="111"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="730.344827586207,462.36151750580166 726.344827586207,470.36151750580166 734.344827586207,470.36151750580166" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="June 27, 2025" data-value="111"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="758.6206896551724,461.41307637978 754.6206896551724,469.41307637978 762.6206896551724,469.41307637978" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="July 03, 2025" data-value="113"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="786.8965517241379,459.9904146907477 782.8965517241379,467.9904146907477 790.8965517241379,467.9904146907477" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="July 11, 2025" data-value="116"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="815.1724137931035,459.51619412773687 811.1724137931035,467.51619412773687 819.1724137931035,467.51619412773687" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="July 18, 2025" data-value="117"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="843.448275862069,458.5677530017153 839.448275862069,466.5677530017153 847.448275862069,466.5677530017153" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="July 25, 2025" data-value="119"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="871.7241379310345,457.61931187569365 867.7241379310345,465.61931187569365 875.7241379310345,465.61931187569365" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="August 01, 2025" data-value="121"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<polygon points="900.0,456.6708707496721 896.0,464.6708707496721 904.0,464.6708707496721" fill="#2ECC71" stroke="white" stroke-width="1" 
+         class="marker polygon" data-series="Jail Enforcement Model" data-date="August 08, 2025" data-value="123"
+         onmouseover="showTooltipFromData(evt)"
+         onmouseout="hideTooltip()"/>
+<!-- Line for Total -->
+<path d="M 80.0,455.98022399354255 L 108.27586206896552,455.98022399354255 L 136.55172413793105,455.98022399354255 L 164.82758620689657,455.98022399354255 L 193.10344827586206,455.98022399354255 L 221.3793103448276,455.98022399354255 L 249.6551724137931,448.3926949853698 L 277.9310344827586,406.66128544041976 L 306.2068965517241,373.94006659267484 L 334.48275862068965,349.2805973161134 L 362.7586206896552,340.2704066189083 L 391.0344827586207,318.4562607204117 L 419.3103448275862,317.50781959439007 L 447.58620689655174,309.4460700232065 L 475.86206896551727,303.755423267077 L 504.1379310344828,280.0443951165372 L 532.4137931034483,274.82796892341844 L 560.6896551724137,249.22005852083544 L 588.9655172413793,222.1894864292201 L 617.2413793103448,218.8699424881445 L 645.5172413793103,212.23085460599333 L 673.7931034482758,188.9940470184643 L 702.0689655172414,179.03541519523765 L 730.344827586207,170.49944506104328 L 758.6206896551724,151.53062254061143 L 786.8965517241379,138.25244677630917 L 815.1724137931035,125.44849157501767 L 843.448275862069,109.32499243265062 L 871.7241379310345,106.00544849157501 L 900.0,92.72727272727275" class="line" stroke="#9B59B6"/>
+<circle cx="80.0" cy="455.98022399354255" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="January 04, 2025" data-value="135"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="108.27586206896552" cy="455.98022399354255" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="January 16, 2025" data-value="135"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="136.55172413793105" cy="455.98022399354255" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="January 25, 2025" data-value="135"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="164.82758620689657" cy="455.98022399354255" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="January 31, 2025" data-value="135"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="193.10344827586206" cy="455.98022399354255" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="February 09, 2025" data-value="135"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="221.3793103448276" cy="455.98022399354255" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="February 15, 2025" data-value="135"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="249.6551724137931" cy="448.3926949853698" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="February 21, 2025" data-value="151"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="277.9310344827586" cy="406.66128544041976" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="February 28, 2025" data-value="239"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="306.2068965517241" cy="373.94006659267484" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="March 06, 2025" data-value="308"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="334.48275862068965" cy="349.2805973161134" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="March 17, 2025" data-value="360"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="362.7586206896552" cy="340.2704066189083" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="March 19, 2025" data-value="379"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="391.0344827586207" cy="318.4562607204117" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="March 27, 2025" data-value="425"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="419.3103448275862" cy="317.50781959439007" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="April 04, 2025" data-value="427"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="447.58620689655174" cy="309.4460700232065" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="April 10, 2025" data-value="444"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="475.86206896551727" cy="303.755423267077" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="April 17, 2025" data-value="456"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="504.1379310344828" cy="280.0443951165372" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="April 29, 2025" data-value="506"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="532.4137931034483" cy="274.82796892341844" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="May 02, 2025" data-value="517"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="560.6896551724137" cy="249.22005852083544" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="May 16, 2025" data-value="571"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="588.9655172413793" cy="222.1894864292201" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="May 23, 2025" data-value="628"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="617.2413793103448" cy="218.8699424881445" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="May 29, 2025" data-value="635"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="645.5172413793103" cy="212.23085460599333" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="June 06, 2025" data-value="649"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="673.7931034482758" cy="188.9940470184643" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="June 12, 2025" data-value="698"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="702.0689655172414" cy="179.03541519523765" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="June 20, 2025" data-value="719"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="730.344827586207" cy="170.49944506104328" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="June 27, 2025" data-value="737"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="758.6206896551724" cy="151.53062254061143" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="July 03, 2025" data-value="777"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="786.8965517241379" cy="138.25244677630917" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="July 11, 2025" data-value="805"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="815.1724137931035" cy="125.44849157501767" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="July 18, 2025" data-value="832"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="843.448275862069" cy="109.32499243265062" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="July 25, 2025" data-value="866"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="871.7241379310345" cy="106.00544849157501" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="August 01, 2025" data-value="873"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<circle cx="900.0" cy="92.72727272727275" r="4" fill="#9B59B6" stroke="white" stroke-width="1" 
+        class="marker circle" data-series="Total" data-date="August 08, 2025" data-value="901"
+        onmouseover="showTooltipFromData(evt)"
+        onmouseout="hideTooltip()"/>
+<!-- Legend -->
+<text x="910" y="60" class="legend" font-weight="bold">Legend</text>
+<circle cx="918" cy="70" r="4" fill="#E74C3C" stroke="white" stroke-width="1"/>
+<text x="930" y="74" class="legend">Task Force Model</text>
+<circle cx="918" cy="95" r="4" fill="#3498DB" stroke="white" stroke-width="1"/>
+<text x="930" y="99" class="legend">Warrant Service Officer</text>
+<circle cx="918" cy="120" r="4" fill="#2ECC71" stroke="white" stroke-width="1"/>
+<text x="930" y="124" class="legend">Jail Enforcement Model</text>
+<circle cx="918" cy="145" r="4" fill="#9B59B6" stroke="white" stroke-width="1"/>
+<text x="930" y="149" class="legend">Total</text>
+<!-- Tooltip -->
+<g id="tooltip" style="opacity: 0; pointer-events: none;">
+    <rect id="tooltip-bg" x="0" y="0" width="0" height="0" 
+          fill="rgba(0,0,0,0.8)" rx="4" ry="4"/>
+    <text id="tooltip-text" x="0" y="0" 
+          font-family="Arial, sans-serif" font-size="12" fill="white"/>
+</g>
+
+<script><![CDATA[
+function showTooltipFromData(evt) {
+    var element = evt.target;
+    var series = element.getAttribute('data-series');
+    var date = element.getAttribute('data-date');
+    var value = element.getAttribute('data-value');
+    
+    if (!series || !date || !value) {
+        console.log('Missing tooltip data:', {series, date, value});
+        return;
+    }
+    
+    showTooltip(evt, series, date, value);
+}
+
+function showTooltip(evt, series, date, value) {
+    var tooltip = document.getElementById('tooltip');
+    var tooltipBg = document.getElementById('tooltip-bg');
+    var tooltipText = document.getElementById('tooltip-text');
+    
+    if (!tooltip || !tooltipBg || !tooltipText) {
+        console.log('Tooltip elements not found');
+        return;
+    }
+    
+    // Set tooltip text
+    var text = series + '\n' + date + '\n' + 'Value: ' + value;
+    
+    // Clear previous text
+    while (tooltipText.firstChild) {
+        tooltipText.removeChild(tooltipText.firstChild);
+    }
+    
+    // Get mouse position first (before adding text)
+    try {
+        var rect = evt.target.ownerSVGElement.getBoundingClientRect();
+        var x = evt.clientX - rect.left + 10;
+        var y = evt.clientY - rect.top - 10;
+        
+        // Fallback positioning if clientX/clientY not available
+        if (!evt.clientX) {
+            // Use element position as fallback
+            if (evt.target.cx) {
+                x = parseFloat(evt.target.cx.baseVal.value) + 10;
+                y = parseFloat(evt.target.cy.baseVal.value) - 10;
+            } else if (evt.target.x) {
+                x = parseFloat(evt.target.x.baseVal.value) + 10;
+                y = parseFloat(evt.target.y.baseVal.value) - 10;
+            } else {
+                x = 100; y = 100; // Default fallback
+            }
+        }
+    } catch(e) {
+        console.log('Error getting position:', e);
+        x = 100; y = 100; // Fallback position
+    }
+    
+    // Calculate initial position
+    var padding = 8;
+    
+    // Set initial position for text element
+    tooltipText.setAttribute('x', x + padding);
+    tooltipText.setAttribute('y', y + padding);
+    
+    // Add text lines with correct positioning
+    var lines = text.split('\n');
+    for (var i = 0; i < lines.length; i++) {
+        var tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
+        tspan.textContent = lines[i];
+        tspan.setAttribute('x', x + padding);  // Position relative to tooltip position
+        tspan.setAttribute('dy', i === 0 ? '15' : '15');
+        if (i === 0) tspan.setAttribute('font-weight', 'bold');
+        tooltipText.appendChild(tspan);
+    }
+    
+    // Get text dimensions and adjust background
+    try {
+        var bbox = tooltipText.getBBox();
+        var bgWidth = bbox.width + (padding * 2);
+        var bgHeight = bbox.height + (padding * 2);
+        
+        // Adjust position to keep tooltip in bounds
+        if (x + bgWidth > 1000) x = Math.max(0, x - bgWidth - 20);
+        if (y - bgHeight < 0) y = y + bgHeight + 20;
+        
+        // Update positions if they changed
+        tooltipText.setAttribute('x', x + padding);
+        tooltipText.setAttribute('y', y - bgHeight + padding + 15);
+        
+        // Update all tspan positions
+        var tspans = tooltipText.getElementsByTagName('tspan');
+        for (var i = 0; i < tspans.length; i++) {
+            tspans[i].setAttribute('x', x + padding);
+        }
+        
+        // Set background position and size
+        tooltipBg.setAttribute('x', x);
+        tooltipBg.setAttribute('y', y - bgHeight);
+        tooltipBg.setAttribute('width', bgWidth);
+        tooltipBg.setAttribute('height', bgHeight);
+        
+    } catch(e) {
+        console.log('Error setting tooltip dimensions:', e);
+        // Fallback dimensions
+        tooltipBg.setAttribute('x', x);
+        tooltipBg.setAttribute('y', y - 50);
+        tooltipBg.setAttribute('width', 150);
+        tooltipBg.setAttribute('height', 50);
+    }
+    
+    tooltip.setAttribute('style', 'opacity: 1; transition: opacity 0.2s;');
+}
+
+function hideTooltip() {
+    var tooltip = document.getElementById('tooltip');
+    if (tooltip) {
+        tooltip.setAttribute('style', 'opacity: 0; transition: opacity 0.2s;');
+    }
+}
+]]></script>
+
+</svg>
+    </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+{
+  "info": {
+    "name": "287g_API",
+    "_postman_id": "287g-api-collection",
+    "description": "Postman collection for 287g database backend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "States",
+      "item": [
+        {
+          "name": "List all states",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{base_url}/api/states",
+              "host": ["{base_url}"],
+              "path": ["api","states"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Counties",
+      "item": [
+        {
+          "name": "List all counties",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{base_url}/api/counties",
+              "host": ["{base_url}"],
+              "path": ["api","counties"]
+            }
+          }
+        },
+        {
+          "name": "List counties by state",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{base_url}/api/counties?state_id={state_id}",
+              "host": ["{base_url}"],
+              "path": ["api","counties"],
+              "query": [
+                { "key": "state_id", "value": "{state_id}" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Status",
+      "item": [
+        {
+          "name": "List all status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{base_url}/api/status",
+              "host": ["{base_url}"],
+              "path": ["api","status"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Agencies",
+      "item": [
+        {
+          "name": "List all agencies",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{base_url}/api/agencies",
+              "host": ["{base_url}"],
+              "path": ["api","agencies"]
+            }
+          }
+        },
+        {
+          "name": "List agencies by state",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{base_url}/api/agencies?state_id={state_id}",
+              "host": ["{base_url}"],
+              "path": ["api","agencies"],
+              "query": [
+                { "key": "state_id", "value": "{state_id}" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "List agencies by county",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{base_url}/api/agencies?county_id={county_id}",
+              "host": ["{base_url}"],
+              "path": ["api","agencies"],
+              "query": [
+                { "key": "county_id", "value": "{county_id}" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "List agencies by state & county",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{base_url}/api/agencies?state_id={state_id}&county_id={county_id}",
+              "host": ["{base_url}"],
+              "path": ["api","agencies"],
+              "query": [
+                { "key": "state_id", "value": "{state_id}" },
+                { "key": "county_id", "value": "{county_id}" }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

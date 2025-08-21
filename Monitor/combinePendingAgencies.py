@@ -1,263 +1,203 @@
 # import os
-# import re
-# import pandas as pd
 # from datetime import datetime
-# import sys
-
-# sys.path.append(os.path.dirname(__file__))
-
-# from getFilename import find_latest_file
+# import pandas as pd
 
 
-# # Correct base path (go up one level from Monitor)
-# base_path = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
+# def find_latest_file(directory: str) -> str | None:
+#     import re
+#     from datetime import datetime
 
-# # Correct paths
-# pending_dir = os.path.join(base_path, "pendingAgencies")
-# total_pending_dir = os.path.join(base_path, "Total pendingAgencies")
-# output_subdir = os.path.join(total_pending_dir, "Total_with_Duplication")
+#     pattern = re.compile(r'(\d{8})(am|pm)', re.IGNORECASE)
+#     latest_file = None
+#     latest_datetime = None
 
-# # Make sure output folder exists
-# os.makedirs(output_subdir, exist_ok=True)
+#     for filename in os.listdir(directory):
+#         if filename.endswith('.xlsx'):
+#             match = pattern.search(filename)
+#             if match:
+#                 date_str = match.group(1)
+#                 period = match.group(2).lower()
+#                 try:
+#                     file_datetime = datetime.strptime(date_str, '%m%d%Y')
+#                     if period == 'pm':
+#                         file_datetime = file_datetime.replace(hour=12)
+#                     if not latest_datetime or file_datetime > latest_datetime:
+#                         latest_datetime = file_datetime
+#                         latest_file = filename
+#                 except ValueError:
+#                     continue
+#     return latest_file
 
-# def load_dataframe(file_path):
-#     """
-#     Load an Excel file into a pandas DataFrame.
-#     """
-#     try:
-#         return pd.read_excel(file_path)
-#     except Exception as e:
-#         print(f"Error loading {file_path}: {e}")
-#         return None
 
-# def main():
-#     # Find latest file in pendingAgencies
-#     latest_pending_filename = find_latest_file(pending_dir)
-#     if not latest_pending_filename:
-#         print("❌ No latest file found in pendingAgencies.")
-#         return
-#     pending_file_path = os.path.join(pending_dir, latest_pending_filename)
-#     print(f"✅ Latest Pending Agencies File: {latest_pending_filename}")
-
-#     # Find latest file in Total pendingAgencies
-#     latest_total_filename = find_latest_file(total_pending_dir)
-#     if not latest_total_filename:
-#         print("❌ No latest file found in Total pendingAgencies.")
-#         return
-#     total_pending_path = os.path.join(total_pending_dir, latest_total_filename)
-#     print(f"✅ Latest Total Pending Agencies File: {latest_total_filename}")
-
-#     # Load both DataFrames
-#     pending_df = load_dataframe(pending_file_path)
-#     total_pending_df = load_dataframe(total_pending_path)
-
-#     if pending_df is None or total_pending_df is None:
-#         print("❌ Could not load one or both files.")
+# def merge_pending_agencies():
+#     folder = "Normalized_Total_pendingAgencies"
+#     latest_file = find_latest_file(folder)
+#     if not latest_file:
+#         print("No Excel file found.")
 #         return
 
-#     # Align columns
-#     all_columns = set(pending_df.columns).union(set(total_pending_df.columns))
+#     latest_path = os.path.join(folder, latest_file)
+#     print(f"Latest file found: {latest_path}")
 
-#     # Normalize both DataFrames
-#     for col in all_columns:
-#         if col not in pending_df.columns:
-#             pending_df[col] = ''
-#         if col not in total_pending_df.columns:
-#             total_pending_df[col] = ''
+#     with open("last-pending.txt", "r") as f:
+#         normalizer_file = f.read().strip()
 
-#     pending_df = pending_df[list(all_columns)]
-#     total_pending_df = total_pending_df[list(all_columns)]
+#     normalizer_path = os.path.join("Agency_Pending_Normalizer", normalizer_file)
+#     print(f"Using normalizer file: {normalizer_path}")
 
-#     # Combine them
-#     final_combined_df = pd.concat([pending_df, total_pending_df], ignore_index=True)
-#     total_rows = len(final_combined_df)
-#     print(f"\n✅ Final total rows: {total_rows}")
+#     df_latest = pd.read_excel(latest_path, sheet_name=0)
+#     df_normalizer = pd.read_excel(normalizer_path, sheet_name=0)
 
-#     # Build output filename
-#     output_filename = f"Total_with-dup-{latest_pending_filename}"
-#     output_file_path = os.path.join(output_subdir, output_filename)
+#     today = datetime.now().strftime('%Y/%m/%d')
 
-#     # Save final file
-#     final_combined_df.to_excel(output_file_path, index=False)
-#     print(f"✅ Final combined file saved at: {output_file_path}")
+#     # --- Step 1: STATUS and LAST SEEN for df_latest ---
+#     status_list = []
+#     last_seen_list = []
 
-# if __name__ == "__main__":
-#     main()
+#     for _, row in df_latest.iterrows():
+#         match = df_normalizer[
+#             (df_normalizer['STATE'] == row['STATE']) &
+#             (df_normalizer['Agency Validation'] == row['Agency Validation']) &
+#             (df_normalizer['SUPPORT TYPE'] == row['SUPPORT TYPE'])
+#         ]
+#         if not match.empty:
+#             status_list.append('present')
+#             last_seen_list.append(today)
+#         else:
+#             status_list.append('absent')
+#             # Keep old LAST SEEN if exists, else blank
+#             last_seen_list.append(row['LAST SEEN'] if 'LAST SEEN' in row and pd.notna(row['LAST SEEN']) else '')
 
-import os
-import re
-import pandas as pd
-from datetime import datetime
-import sys
+#     df_latest['STATUS'] = status_list
+#     df_latest['LAST SEEN'] = last_seen_list
 
-sys.path.append(os.path.dirname(__file__))
-from getFilename import find_latest_file
-
-# Set base path
-base_path = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
-
-# Directories
-pending_dir = os.path.join(base_path, "pendingAgencies")
-total_pending_dir = os.path.join(base_path, "Total pendingAgencies")
-output_subdir = os.path.join(total_pending_dir, "Total_with_Duplication")
-os.makedirs(output_subdir, exist_ok=True)
-
-def load_dataframe(file_path):
-    try:
-        return pd.read_excel(file_path)
-    except Exception as e:
-        print(f"Error loading {file_path}: {e}")
-        return None
-
-def extract_date_from_filename(filename):
-    match = re.search(r'(\d{8})', filename)
-    if match:
-        date_str = match.group(1)
-        return datetime.strptime(date_str, "%m%d%Y").strftime("%Y/%m/%d")
-    return None
-
-# def main():
-#     # Get latest pending file
-#     latest_pending_filename = find_latest_file(pending_dir)
-#     if not latest_pending_filename:
-#         print("❌ No latest file found in pendingAgencies.")
-#         return
-#     pending_file_path = os.path.join(pending_dir, latest_pending_filename)
-#     print(f"✅ Latest Pending File: {latest_pending_filename}")
-
-#     # Get latest total file
-#     latest_total_filename = find_latest_file(total_pending_dir)
-#     if not latest_total_filename:
-#         print("❌ No latest file found in Total pendingAgencies.")
-#         return
-#     total_pending_path = os.path.join(total_pending_dir, latest_total_filename)
-#     print(f"✅ Latest Total File: {latest_total_filename}")
-
-#     # Load files
-#     pending_df = load_dataframe(pending_file_path)
-#     total_pending_df = load_dataframe(total_pending_path)
-#     if pending_df is None or total_pending_df is None:
-#         print("❌ Could not load one or both files.")
-#         return
-
-#     # Extract and format current date
-#     current_date = extract_date_from_filename(latest_pending_filename)
-#     if not current_date:
-#         print("❌ Could not extract date from filename.")
-#         return
-
-#     # Add LAST SEEN to pending_df
-#     pending_df["LAST SEEN"] = current_date
-
-#     # Ensure both DataFrames have same columns
-#     all_columns = set(pending_df.columns).union(set(total_pending_df.columns))
-#     for col in all_columns:
-#         if col not in pending_df.columns:
-#             pending_df[col] = ''
-#         if col not in total_pending_df.columns:
-#             total_pending_df[col] = ''
-
-#     # Align both dataframes to same column order
-#     pending_df = pending_df[list(all_columns)]
-#     total_pending_df = total_pending_df[list(all_columns)]
-
-#     # Key columns for comparison
-#     key_cols = ["SUPPORT TYPE", "LAW ENFORCEMENT AGENCY", "STATE"]
-
-#     def get_signature(df):
-#         return df[key_cols].astype(str).agg('|'.join, axis=1)
-
-#     # Generate row signature for comparison
-#     pending_df["ROW_SIGNATURE"] = get_signature(pending_df)
-#     total_pending_df["ROW_SIGNATURE"] = get_signature(total_pending_df)
-
-#     # Create a dict of previous last seen dates
-#     prev_last_seen_map = dict(zip(total_pending_df["ROW_SIGNATURE"], total_pending_df.get("LAST SEEN", "")))
-
-#     # Assign STATUS to pending rows
-#     pending_df["STATUS"] = pending_df["ROW_SIGNATURE"].apply(
-#         lambda sig: "New" if sig not in total_pending_df["ROW_SIGNATURE"].values else "Present"
+#     # --- Step 2: STATUS and LAST SEEN for new rows from normalizer ---
+#     latest_keys = set(
+#         zip(df_latest['STATE'], df_latest['Agency Validation'], df_latest['SUPPORT TYPE'])
 #     )
 
-#     # Get Absent rows from previous file
-#     absent_df = total_pending_df[~total_pending_df["ROW_SIGNATURE"].isin(pending_df["ROW_SIGNATURE"])]
-#     absent_df["STATUS"] = "Absent"
+#     new_rows = []
+#     for _, row in df_normalizer.iterrows():
+#         key = (row['STATE'], row['Agency Validation'], row['SUPPORT TYPE'])
+#         if key not in latest_keys:
+#             row['STATUS'] = 'new'
+#             row['LAST SEEN'] = today
+#             new_rows.append(row)
 
-#     # Keep previous LAST SEEN for Absent rows
-#     absent_df["LAST SEEN"] = absent_df["ROW_SIGNATURE"].map(prev_last_seen_map)
+#     df_new = pd.DataFrame(new_rows)
 
-#     # Combine everything
-#     final_df = pd.concat([pending_df, absent_df], ignore_index=True)
-#     final_df.drop(columns=["ROW_SIGNATURE"], inplace=True)
+#     # --- Step 3: Merge all ---
+#     merged_df = pd.concat([df_latest, df_new], ignore_index=True)
 
-#     # Save output
-#     output_filename = f"Total_with-dup-{latest_pending_filename}"
-#     output_file_path = os.path.join(output_subdir, output_filename)
-#     final_df.to_excel(output_file_path, index=False)
-#     print(f"✅ Final file with STATUS and LAST SEEN saved at: {output_file_path}")
+#     # --- Step 4: Remove duplicates ---
+#     merged_df = merged_df.drop_duplicates(
+#         subset=['STATE', 'TYPE', 'SUPPORT TYPE', 'Agency Validation'],
+#         keep='first'
+#     )
 
-def main():
-    # Get latest filenames
-    latest_pending_filename = find_latest_file(pending_dir)
-    if not latest_pending_filename:
-        print("❌ No latest file found in pendingAgencies.")
+#     dest_folder = "Normalized_Total_pendingAgencies"
+#     os.makedirs(dest_folder, exist_ok=True)
+#     output_name = "Total-" + os.path.splitext(normalizer_file)[0] + ".xlsx"
+#     output_file = os.path.join(dest_folder, output_name)
+
+#     merged_df.to_excel(output_file, index=False)
+#     print(f"Merged file saved directly to: {output_file}")
+
+
+import os
+import pandas as pd
+from datetime import datetime
+
+
+# -------------------------
+# Find latest Excel file in folder
+# -------------------------
+def find_latest_file(directory: str) -> str | None:
+    import re
+
+    pattern = re.compile(r'(\d{8})(am|pm)', re.IGNORECASE)
+    latest_file, latest_datetime = None, None
+
+    for filename in os.listdir(directory):
+        if filename.endswith('.xlsx'):
+            match = pattern.search(filename)
+            if match:
+                date_str, period = match.group(1), match.group(2).lower()
+                try:
+                    file_datetime = datetime.strptime(date_str, '%m%d%Y')
+                    if period == 'pm':
+                        file_datetime = file_datetime.replace(hour=12)
+                    if not latest_datetime or file_datetime > latest_datetime:
+                        latest_datetime, latest_file = file_datetime, filename
+                except ValueError:
+                    continue
+    return latest_file
+
+
+# -------------------------
+# Merge pending agencies
+# -------------------------
+def merge_pending_agencies():
+    folder = "Normalized_Total_pendingAgencies"
+    latest_file = find_latest_file(folder)
+    if not latest_file:
+        print("No Excel file found.")
         return
-    pending_file_path = os.path.join(pending_dir, latest_pending_filename)
-    print(f"✅ Latest Pending File: {latest_pending_filename}")
 
-    latest_total_filename = find_latest_file(total_pending_dir)
-    if not latest_total_filename:
-        print("❌ No latest file found in Total pendingAgencies.")
-        return
-    total_pending_path = os.path.join(total_pending_dir, latest_total_filename)
-    print(f"✅ Latest Total File: {latest_total_filename}")
+    latest_path = os.path.join(folder, latest_file)
+    print(f"Latest file found: {latest_path}")
 
-    # Load data
-    pending_df = load_dataframe(pending_file_path)
-    total_pending_df = load_dataframe(total_pending_path)
-    if pending_df is None or total_pending_df is None:
-        print("❌ Could not load one or both files.")
-        return
+    with open("last-pending.txt", "r") as f:
+        normalizer_file = f.read().strip()
 
-    # Extract current date from filename
-    current_date = extract_date_from_filename(latest_pending_filename)
-    if not current_date:
-        print("❌ Could not extract date from filename.")
-        return
+    normalizer_path = os.path.join("Agency_Pending_Normalizer", normalizer_file)
+    print(f"Using normalizer file: {normalizer_path}")
 
-    # Add ROW_SIGNATURE for comparison
-    key_cols = ["SUPPORT TYPE", "LAW ENFORCEMENT AGENCY", "STATE"]
-    def get_signature(df): return df[key_cols].astype(str).agg('|'.join, axis=1)
+    df_latest = pd.read_excel(latest_path, sheet_name=0)
+    df_normalizer = pd.read_excel(normalizer_path, sheet_name=0)
+    today = datetime.now().strftime('%Y/%m/%d')
 
-    pending_df["ROW_SIGNATURE"] = get_signature(pending_df)
-    total_pending_df["ROW_SIGNATURE"] = get_signature(total_pending_df)
+    # --- Step 1: Update STATUS and LAST SEEN in df_latest
+    status, last_seen = [], []
+    for _, row in df_latest.iterrows():
+        match = df_normalizer[
+            (df_normalizer['STATE'] == row['STATE']) &
+            (df_normalizer['Agency Validation'] == row['Agency Validation']) &
+            (df_normalizer['SUPPORT TYPE'] == row['SUPPORT TYPE'])
+        ]
+        if not match.empty:
+            status.append('present')
+            last_seen.append(today)
+        else:
+            status.append('absent')
+            last_seen.append(row['LAST SEEN'] if 'LAST SEEN' in row and pd.notna(row['LAST SEEN']) else '')
 
-    # Map of previous LAST SEENs
-    prev_last_seen_map = dict(zip(total_pending_df["ROW_SIGNATURE"], total_pending_df.get("LAST SEEN", "")))
+    df_latest['STATUS'] = status
+    df_latest['LAST SEEN'] = last_seen
 
-    # Assign STATUS
-    def determine_status(sig):
-        return "New" if sig not in total_pending_df["ROW_SIGNATURE"].values else "Present"
-    pending_df["STATUS"] = pending_df["ROW_SIGNATURE"].apply(determine_status)
+    # --- Step 2: Add new rows from normalizer
+    latest_keys = set(zip(df_latest['STATE'], df_latest['Agency Validation'], df_latest['SUPPORT TYPE']))
+    new_rows = []
+    for _, row in df_normalizer.iterrows():
+        key = (row['STATE'], row['Agency Validation'], row['SUPPORT TYPE'])
+        if key not in latest_keys:
+            row['STATUS'], row['LAST SEEN'] = 'new', today
+            new_rows.append(row)
 
-    # Set LAST SEEN for Present & New → today's date
-    pending_df["LAST SEEN"] = current_date
+    df_new = pd.DataFrame(new_rows)
 
-    # Get Absent rows from previous file
-    absent_df = total_pending_df[~total_pending_df["ROW_SIGNATURE"].isin(pending_df["ROW_SIGNATURE"])]
-    absent_df["STATUS"] = "Absent"
-    absent_df["LAST SEEN"] = absent_df["ROW_SIGNATURE"].map(prev_last_seen_map)
+    # --- Step 3: Merge and clean
+    merged_df = pd.concat([df_latest, df_new], ignore_index=True)
+    merged_df = merged_df.drop_duplicates(
+        subset=['STATE', 'TYPE', 'SUPPORT TYPE', 'Agency Validation'],
+        keep='first'
+    )
 
-    # Combine all rows
-    final_df = pd.concat([pending_df, absent_df], ignore_index=True)
-    final_df.drop(columns=["ROW_SIGNATURE"], inplace=True)
+    # --- Step 4: Save result
+    dest_folder = "Normalized_Total_pendingAgencies"
+    os.makedirs(dest_folder, exist_ok=True)
+    output_name = "Total-" + os.path.splitext(normalizer_file)[0] + ".xlsx"
+    output_file = os.path.join(dest_folder, output_name)
 
-    # Save result
-    output_filename = f"Total_with-dup-{latest_pending_filename}"
-    output_file_path = os.path.join(output_subdir, output_filename)
-    final_df.to_excel(output_file_path, index=False)
-    print(f"✅ Final file saved with STATUS & LAST SEEN: {output_file_path}")
-
-
-if __name__ == "__main__":
-    main()
+    merged_df.to_excel(output_file, index=False)
+    print(f"Merged file saved directly to: {output_file}")

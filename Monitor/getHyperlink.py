@@ -1,94 +1,53 @@
-# import openpyxl
-# import os
-
-# def extract_hyperlinks(file_path, save_dir, link_column_name='MOA', new_column_name='EXTRACTED LINK'):
-#     wb = openpyxl.load_workbook(file_path)
-#     ws = wb.active
-
-#     header_row = 1
-
-#     # Find the index of the 'MOA' column
-#     moa_col_idx = None
-#     for cell in ws[header_row]:
-#         if cell.value and cell.value.strip().lower() == link_column_name.lower():
-#             moa_col_idx = cell.column
-#             break
-
-#     if moa_col_idx is None:
-#         raise ValueError(f"Column '{link_column_name}' not found.")
-
-#     # Insert a new column just after the 'MOA' column
-#     insert_col_idx = moa_col_idx + 1
-#     ws.insert_cols(insert_col_idx)
-#     ws.cell(row=header_row, column=insert_col_idx).value = new_column_name
-
-#     # Process rows to extract hyperlinks
-#     extracted_count = 0
-#     for row in range(2, ws.max_row + 1):
-#         cell = ws.cell(row=row, column=moa_col_idx)
-#         if cell.hyperlink:
-#             ws.cell(row=row, column=insert_col_idx).value = cell.hyperlink.target
-#             extracted_count += 1
-#         else:
-#             ws.cell(row=row, column=insert_col_idx).value = "-"
-
-#     os.makedirs(save_dir, exist_ok=True)
-#     filename = os.path.basename(file_path)
-#     new_file_path = os.path.join(save_dir, filename)
-#     wb.save(new_file_path)
-
-#     print(f"✅ Updated file saved as: {new_file_path} with {extracted_count} hyperlinks extracted.")
-
-
-import openpyxl
 import os
+import pandas as pd
+from openpyxl import load_workbook
+from getFilename import find_latest_file
 
-def extract_hyperlinks(file_path, save_dir):
-    wb = openpyxl.load_workbook(file_path)
+
+# -------------------------
+# Extract hyperlinks from latest Excel file
+# -------------------------
+def extract_hyperlinks(folder_name: str, save_hyperlink: bool = True) -> pd.DataFrame | None:
+    base_directory = os.path.dirname(__file__)
+    folder_path = os.path.join(base_directory, '..', folder_name)
+
+    latest_file = find_latest_file(folder_path)
+    if not latest_file:
+        print(f"No Excel file found in folder '{folder_name}'.")
+        return None
+
+    file_path = os.path.join(folder_path, latest_file)
+    print(f"Processing latest file: {latest_file}")
+
+    # --- Load workbook and sheet
+    wb = load_workbook(file_path, data_only=True)
     ws = wb.active
 
-    header_row = 1
+    df = pd.DataFrame(ws.values)
+    df.columns = df.iloc[0]
+    df = df[1:].reset_index(drop=True)
 
-    # Columns you want to extract from and their respective new columns
-    columns_to_process = {
-        "MOA": "EXTRACTED LINK",
-        "ADDENDUM": "EXTRACTED_ADDENDUM"
-    }
+    # --- Locate MOA and ADDENDUM columns
+    moa_idx = df.columns.get_loc("MOA")
+    add_idx = df.columns.get_loc("ADDENDUM")
 
-    # Find column indices
-    col_indices = {}
-    for cell in ws[header_row]:
-        for col_name in columns_to_process:
-            if cell.value and cell.value.strip().lower() == col_name.lower():
-                col_indices[col_name] = cell.column
+    extracted_moa, extracted_addendum = [], []
 
-    # Check all required columns found
-    for col in columns_to_process:
-        if col not in col_indices:
-            raise ValueError(f"Column '{col}' not found in the sheet.")
+    # --- Extract hyperlinks row by row
+    for row in ws.iter_rows(min_row=2):  # skip header
+        cell_moa, cell_add = row[moa_idx], row[add_idx]
+        extracted_moa.append(cell_moa.hyperlink.target if cell_moa.hyperlink else None)
+        extracted_addendum.append(cell_add.hyperlink.target if cell_add.hyperlink else None)
 
-    # Sort columns in reverse to avoid shifting when inserting
-    for original_col in sorted(col_indices, key=lambda c: col_indices[c], reverse=True):
-        insert_col_idx = col_indices[original_col] + 1
-        ws.insert_cols(insert_col_idx)
-        ws.cell(row=header_row, column=insert_col_idx).value = columns_to_process[original_col]
+    # --- Add extracted links to DataFrame
+    df['Extracted Link'] = extracted_moa
+    df['Extracted Addendum'] = extracted_addendum
 
-        # Process each row for this column
-        extracted_count = 0
-        for row in range(2, ws.max_row + 1):
-            cell = ws.cell(row=row, column=col_indices[original_col])
-            if cell.hyperlink:
-                ws.cell(row=row, column=insert_col_idx).value = cell.hyperlink.target
-                extracted_count += 1
-            else:
-                ws.cell(row=row, column=insert_col_idx).value = "-"
+    # --- Optionally save results
+    if save_hyperlink:
+        os.makedirs("Hyperlink", exist_ok=True)
+        save_path = os.path.join("Hyperlink", f"hyperlink_{latest_file}")
+        df.to_excel(save_path, index=False)
+        print(f"Saved extracted hyperlinks to: {save_path}")
 
-        print(f"✅ {columns_to_process[original_col]}: {extracted_count} hyperlinks extracted.")
-
-    # Save updated file
-    os.makedirs(save_dir, exist_ok=True)
-    filename = os.path.basename(file_path)
-    new_file_path = os.path.join(save_dir, filename)
-    wb.save(new_file_path)
-
-    print(f"✅ Updated file saved as: {new_file_path}")
+    return df
