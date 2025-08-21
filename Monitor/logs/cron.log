@@ -1,0 +1,224 @@
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08202025pm.xlsx
+- Last saved:    participatingAgencies08202025pm.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08202025pm.xlsx
+- Last saved:    pendingAgencies08202025pm.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08202025pm.xlsx
+- Last saved:    participatingAgencies08202025pm.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08202025pm.xlsx
+- Last saved:    pendingAgencies08202025pm.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08202025pm.xlsx
+- Last saved:    participatingAgencies08202025pm.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08202025pm.xlsx
+- Last saved:    pendingAgencies08202025pm.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08202025pm.xlsx
+- Last saved:    participatingAgencies08202025pm.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08202025pm.xlsx
+- Last saved:    pendingAgencies08202025pm.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08202025pm.xlsx
+- Last saved:    participatingAgencies08202025pm.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08202025pm.xlsx
+- Last saved:    pendingAgencies08202025pm.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08202025pm.xlsx
+- Last saved:    participatingAgencies08202025pm.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08202025pm.xlsx
+- Last saved:    pendingAgencies08202025pm.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08202025pm.xlsx
+- Last saved:    participatingAgencies08202025pm.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08202025pm.xlsx
+- Last saved:    pendingAgencies08202025pm.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08202025pm.xlsx
+- Last saved:    participatingAgencies08202025pm.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08202025pm.xlsx
+- Last saved:    pendingAgencies08202025pm.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08202025pm.xlsx
+- Last saved:    participatingAgencies08202025pm.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08202025pm.xlsx
+- Last saved:    pendingAgencies08202025pm.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08202025pm.xlsx
+- Last saved:    participatingAgencies08202025pm.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08202025pm.xlsx
+- Last saved:    pendingAgencies08202025pm.xlsx
+No updates for pending.
+
+No new updates found.
+/var/scraper/287g-DetentionData/Monitor/merge.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df['SIGNED'] = pd.to_datetime(df['SIGNED'], errors='coerce')
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 187, in monitor_sheets
+    generate_agency_summary()
+  File "/var/scraper/287g-DetentionData/Monitor/creationOfPivotTable.py", line 252, in generate_agency_summary
+    with pd.ExcelWriter(output_filepath, engine="xlsxwriter") as writer:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/pandas/io/excel/_xlsxwriter.py", line 197, in __init__
+    from xlsxwriter import Workbook
+ModuleNotFoundError: No module named 'xlsxwriter'
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08202025pm.xlsx
+- Last saved:    participatingAgenc
+New participating file detected. Downloading...
+Updated last-participating.txt with: participatingAgencies08202025pm.xlsx
+Downloaded participating file to: /var/scraper/287g-DetentionData/participatingAgencies/participatingAgencies08202025pm.xlsx
+Checking PENDING file:
+- Latest on site: pendingAgencies08202025pm.xlsx
+- Last saved:    pendingAgencies08202025pm.xlsx
+No updates for pending.
+
+
+Processing participating agencies...
+Latest file: participatingAgencies08202025pm.xlsx (896 rows, 8 columns)
+Processing latest file: participatingAgencies08202025pm.xlsx
+Saved extracted hyperlinks to: Hyperlink/hyperlink_participatingAgencies08202025pm.xlsx
+
+Processing file → /var/scraper/287g-DetentionData/Monitor/Hyperlink/hyperlink_participatingAgencies08202025pm.xlsx
+Done! Cleaned data saved to: /var/scraper/287g-DetentionData/Monitor/Agency_Name_Normalizer/TOTAL-participatingAgencies08202025pm.xlsx
+Generating pivot table for participating agencies...
+Filename from txt: participatingAgencies08202025pm.xlsx
+
+Processing file → /var/scraper/287g-DetentionData/Monitor/CleanParticipatingAgencies/Total-participatingAgencies08202025pm.xlsx
+
+Loaded 972 rows
+After filtering ≥ 2025-01-01 → 835 rows remain
+Creating per-support-type pivot tables...
+   Warrant Service Officer: 278 rows processed
+   Jail Enforcement Model: 72 rows processed
+   Task Force Model: 485 rows processed
+Creating weekly pivot table...
+Weekly pivot with 29 rows
+Writing results to ../pivotParticipatingAgencies/Pivot-participatingAgencies08202025pm.xlsx ...
+Deleted: hyperlink_participatingAgencies08202025pm.xlsx
+Cleaned folder: Hyperlink
+Broadcasting updates: ['participating']
+/var/scraper/287g-DetentionData/Monitor/merge.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df['SIGNED'] = pd.to_datetime(df['SIGNED'], errors='coerce')
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 187, in monitor_sheets
+    generate_agency_summary()
+  File "/var/scraper/287g-DetentionData/Monitor/creationOfPivotTable.py", line 252, in generate_agency_summary
+    with pd.ExcelWriter(output_filepath, engine="xlsxwriter") as writer:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/pandas/io/excel/_xlsxwriter.py", line 197, in __init__
+    from xlsxwriter import Workbook
+ModuleNotFoundError: No module named 'xlsxwriter'
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08202025pm.xlsx
+- Last saved:    participatingAgencies0820202
+New participating file detected. Downloading...
+Updated last-participating.txt with: participatingAgencies08202025pm.xlsx
+Downloaded participating file to: /var/scraper/287g-DetentionData/participatingAgencies/participatingAgencies08202025pm.xlsx
+Checking PENDING file:
+- Latest on site: pendingAgencies08202025pm.xlsx
+- Last saved:    pendingAgencies08202025pm.xlsx
+No updates for pending.
+
+
+Processing participating agencies...
+Latest file: participatingAgencies08202025pm.xlsx (896 rows, 8 columns)
+Processing latest file: participatingAgencies08202025pm.xlsx
+Saved extracted hyperlinks to: Hyperlink/hyperlink_participatingAgencies08202025pm.xlsx
+
+Processing file → /var/scraper/287g-DetentionData/Monitor/Hyperlink/hyperlink_participatingAgencies08202025pm.xlsx
+Done! Cleaned data saved to: /var/scraper/287g-DetentionData/Monitor/Agency_Name_Normalizer/TOTAL-participatingAgencies08202025pm.xlsx
+Generating pivot table for participating agencies...
+Filename from txt: participatingAgencies08202025pm.xlsx
+
+Processing file → /var/scraper/287g-DetentionData/Monitor/CleanParticipatingAgencies/Total-participatingAgencies08202025pm.xlsx
+
+Loaded 972 rows
+After filtering ≥ 2025-01-01 → 835 rows remain
+Creating per-support-type pivot tables...
+   Warrant Service Officer: 278 rows processed
+   Jail Enforcement Model: 72 rows processed
+   Task Force Model: 485 rows processed
+Creating weekly pivot table...
+Weekly pivot with 29 rows
+Writing results to ../pivotParticipatingAgencies/Pivot-participatingAgencies08202025pm.xlsx ...
+Deleted: hyperlink_participatingAgencies08202025pm.xlsx
+Cleaned folder: Hyperlink
+Broadcasting updates: ['participating']
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08202025pm.xlsx
+- Last saved:    participatingAgencies08202025pm.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08202025pm.xlsx
+- Last saved:    pendingAgencies08202025pm.xlsx
+No updates for pending.
+
+No new updates found.
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 187, in monitor_sheets
+    generate_agency_summary()
+  File "/var/scraper/287g-DetentionData/Monitor/creationOfPivotTable.py", line 252, in generate_agency_summary
+    with pd.ExcelWriter(output_filepath, engine="xlsxwriter") as writer:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/pandas/io/excel/_xlsxwriter.py", line 197, in __init__
+    from xlsxwriter import Workbook
+ModuleNotFoundError: No module named 'xlsxwriter'
