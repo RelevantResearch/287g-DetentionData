@@ -194,7 +194,7 @@ def monitor_sheets():
     # Broadcast updates
     if updated_labels:
         print(f"Broadcasting updates: {updated_labels}")
-        # broadcast_email_and_slack(updated_labels)
+        broadcast_email_and_slack(updated_labels)
     
     push_to_github()
 
