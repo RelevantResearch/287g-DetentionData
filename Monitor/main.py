@@ -96,9 +96,9 @@ def broadcast_email_and_slack(updated_labels):
             attachments.append(os.path.join(base_dir, '..', 'pivotParticipatingAgencies', pivot_file))
 
     if "pending" in updated_labels:
-        file = find_latest_file(os.path.join(base_dir, '..', 'Normalized_Total_pendingAgencies'))
+        file = find_latest_file(os.path.join(base_dir, 'Normalized_Total_pendingAgencies'))
         if file:
-            attachments.append(os.path.join(base_dir, '..', 'Normalized_Total_pendingAgencies', file))
+            attachments.append(os.path.join(base_dir, 'Normalized_Total_pendingAgencies', file))
 
         pivot_file = find_latest_file(os.path.join(base_dir, '..', 'pivotPendingAgencies'))
         if pivot_file:
@@ -146,6 +146,7 @@ def monitor_sheets():
             pending_dir="pendingAgencies",
             output_dir="Monitor/Agency_Pending_Normalizer"
         )
+        
         merge_pending_agencies()
         print("Finished pending pipeline.\n")
         updated_labels.append("pending")
@@ -194,9 +195,9 @@ def monitor_sheets():
     # Broadcast updates
     if updated_labels:
         print(f"Broadcasting updates: {updated_labels}")
-        broadcast_email_and_slack(updated_labels)
+        # broadcast_email_and_slack(updated_labels)
     
-    push_to_github()
+    # push_to_github()
 
 
 if __name__ == "__main__":
