@@ -3639,3 +3639,224 @@ No updates for pending.
 No new updates found.
 /var/scraper/287g-DetentionData/Monitor/merge.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
   df['SIGNED'] = pd.to_datetime(df['SIGNED'], errors='coerce')
+[main d224f7c] New Sheets Alert! participatingAgencies08272025am.xlsx and pendingAgencies08272025am.xlsx
+ 11 files changed, 124 insertions(+), 2 deletions(-)
+ create mode 100644 Monitor/Agency_Name_Normalizer/TOTAL-participatingAgencies08272025am.xlsx
+ create mode 100644 Monitor/Agency_Pending_Normalizer/pendingAgencies08272025am.xlsx
+ create mode 100644 Monitor/CleanParticipatingAgencies/Total-participatingAgencies08272025am.xlsx
+ create mode 100644 Monitor/Normalized_Total_pendingAgencies/Total-pendingAgencies08272025am.xlsx
+ create mode 100644 participatingAgencies/participatingAgencies08272025am.xlsx
+ create mode 100644 pendingAgencies/pendingAgencies08272025am.xlsx
+ create mode 100644 pivotParticipatingAgencies/Pivot-participatingAgencies08272025am.xlsx
+ create mode 100644 pivotPendingAgencies/pivot-pendingAgencies08272025am.xlsx
+To github.com:RelevantResearch/287g-DetentionData.git
+   682f91a..d224f7c  main -> main
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08272025am.xlsx
+- Last saved:    participatingAgencies08262025pm.xlsx
+New participating file detected. Downloading...
+Updated last-participating.txt with: participatingAgencies08272025am.xlsx
+Downloaded participating file to: /var/scraper/287g-DetentionData/participatingAgencies/participatingAgencies08272025am.xlsx
+Checking PENDING file:
+- Latest on site: pendingAgencies08272025am.xlsx
+- Last saved:    pendingAgencies08262025pm.xlsx
+New pending file detected. Downloading...
+Updated last-pending.txt with: pendingAgencies08272025am.xlsx
+Downloaded pending file to: /var/scraper/287g-DetentionData/pendingAgencies/pendingAgencies08272025am.xlsx
+
+Processing pending agencies...
+
+Processing latest file → /var/scraper/287g-DetentionData/pendingAgencies/pendingAgencies08272025am.xlsx
+
+Done! Cleaned data saved to: /var/scraper/287g-DetentionData/Monitor/Agency_Pending_Normalizer/pendingAgencies08272025am.xlsx
+Latest file found: Normalized_Total_pendingAgencies/Total-pendingAgencies08262025pm.xlsx
+Using normalizer file: Agency_Pending_Normalizer/pendingAgencies08272025am.xlsx
+Merged file saved directly to: Normalized_Total_pendingAgencies/Total-pendingAgencies08272025am.xlsx
+Finished pending pipeline.
+
+Generating pivot table for pending agencies...
+Using base directory (Monitor folder): /var/scraper/287g-DetentionData/Monitor
+Parent directory (base data folder): /var/scraper/287g-DetentionData
+Looking for last-pending.txt at: /var/scraper/287g-DetentionData/Monitor/last-pending.txt
+Filename read from txt file: 'pendingAgencies08272025am.xlsx'
+Looking for file at: /var/scraper/287g-DetentionData/Monitor/Normalized_Total_pendingAgencies/Total-pendingAgencies08272025am.xlsx
+Processing file: Total-pendingAgencies08272025am.xlsx
+Pivot report saved to: /var/scraper/287g-DetentionData/pivotPendingAgencies/pivot-pendingAgencies08272025am.xlsx
+Finished successfully!
+
+
+Processing participating agencies...
+Latest file: participatingAgencies08272025am.xlsx (896 rows, 8 columns)
+Processing latest file: participatingAgencies08272025am.xlsx
+Saved extracted hyperlinks to: Hyperlink/hyperlink_participatingAgencies08272025am.xlsx
+
+Processing file → /var/scraper/287g-DetentionData/Monitor/Hyperlink/hyperlink_participatingAgencies08272025am.xlsx
+Done! Cleaned data saved to: /var/scraper/287g-DetentionData/Monitor/Agency_Name_Normalizer/TOTAL-participatingAgencies08272025am.xlsx
+Generating pivot table for participating agencies...
+Filename from txt: participatingAgencies08272025am.xlsx
+
+Processing file → /var/scraper/287g-DetentionData/Monitor/CleanParticipatingAgencies/Total-participatingAgencies08272025am.xlsx
+
+Loaded 975 rows
+After filtering ≥ 2025-01-01 → 838 rows remain
+Creating per-support-type pivot tables...
+   Warrant Service Officer: 280 rows processed
+   Jail Enforcement Model: 72 rows processed
+   Task Force Model: 486 rows processed
+Creating weekly pivot table...
+Weekly pivot with 29 rows
+Writing results to ../pivotParticipatingAgencies/Pivot-participatingAgencies08272025am.xlsx ...
+Processed data saved to: ../pivotParticipatingAgencies/Pivot-participatingAgencies08272025am.xlsx
+
+Finished participating pipeline!
+
+Deleted: hyperlink_participatingAgencies08272025am.xlsx
+Cleaned folder: Hyperlink
+Broadcasting updates: ['pending', 'participating']
+Email sent successfully via SES.
+✅ Files successfully pushed to GitHub.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08272025am.xlsx
+- Last saved:    participatingAgencies08272025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08272025am.xlsx
+- Last saved:    pendingAgencies08272025am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08272025am.xlsx
+- Last saved:    participatingAgencies08272025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08272025am.xlsx
+- Last saved:    pendingAgencies08272025am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08272025am.xlsx
+- Last saved:    participatingAgencies08272025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08272025am.xlsx
+- Last saved:    pendingAgencies08272025am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08272025am.xlsx
+- Last saved:    participatingAgencies08272025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08272025am.xlsx
+- Last saved:    pendingAgencies08272025am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08272025am.xlsx
+- Last saved:    participatingAgencies08272025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08272025am.xlsx
+- Last saved:    pendingAgencies08272025am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08272025am.xlsx
+- Last saved:    participatingAgencies08272025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08272025am.xlsx
+- Last saved:    pendingAgencies08272025am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08272025am.xlsx
+- Last saved:    participatingAgencies08272025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08272025am.xlsx
+- Last saved:    pendingAgencies08272025am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08272025am.xlsx
+- Last saved:    participatingAgencies08272025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08272025am.xlsx
+- Last saved:    pendingAgencies08272025am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08272025am.xlsx
+- Last saved:    participatingAgencies08272025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08272025am.xlsx
+- Last saved:    pendingAgencies08272025am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08272025am.xlsx
+- Last saved:    participatingAgencies08272025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08272025am.xlsx
+- Last saved:    pendingAgencies08272025am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08272025am.xlsx
+- Last saved:    participatingAgencies08272025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08272025am.xlsx
+- Last saved:    pendingAgencies08272025am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08272025am.xlsx
+- Last saved:    participatingAgencies08272025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08272025am.xlsx
+- Last saved:    pendingAgencies08272025am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies08272025am.xlsx
+- Last saved:    participatingAgencies08272025am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies08272025am.xlsx
+- Last saved:    pendingAgencies08272025am.xlsx
+No updates for pending.
+
+No new updates found.
+/var/scraper/287g-DetentionData/Monitor/merge.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df['SIGNED'] = pd.to_datetime(df['SIGNED'], errors='coerce')
