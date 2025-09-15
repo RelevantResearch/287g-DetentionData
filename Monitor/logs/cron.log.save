@@ -9858,6 +9858,15 @@ Checking PARTICIPATING file:
 No updates for participating.
 
 Checking PENDING file:
+garyeuu?
+￼￼
+￼￼
+￼￼
+￼
+￼
+￼
+￼
+￼
 - Latest on site: pendingAgencies09052025pm.xlsx
 - Last saved:    pendingAgencies09052025pm.xlsx
 No updates for pending.
@@ -14885,27 +14894,3 @@ Checking PENDING file:
 No updates for pending.
 
 No new updates found.
-Checking PARTICIPATING file:
-- Latest on site: participatingAgencies09122025pm.xlsx
-- Last saved:    participatingAgencies09122025pm.xlsx
-No updates for participating.
-
-Checking PENDING file:
-- Latest on site: pendingAgencies09122025pm.xlsx
-- Last saved:    pendingAgencies09122025pm.xlsx
-No updates for pending.
-
-No new updates found.
-Checking PARTICIPATING file:
-- Latest on site: participatingAgencies09122025pm.xlsx
-- Last saved:    participatingAgencies09122025pm.xlsx
-No updates for participating.
-
-Checking PENDING file:
-- Latest on site: pendingAgencies09122025pm.xlsx
-- Last saved:    pendingAgencies09122025pm.xlsx
-No updates for pending.
-
-No new updates found.
-/var/scraper/287g-DetentionData/Monitor/merge.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
-  df['SIGNED'] = pd.to_datetime(df['SIGNED'], errors='coerce')
