@@ -18,6 +18,7 @@ from combinePendingAgencies import merge_pending_agencies
 from creationOfPivotTable import generate_agency_summary
 from cleanFolder import cleanFolder
 from send_email import send_email
+import time
 
 load_dotenv()
 SLACK_API_TOKEN = os.getenv("SLACK_API_TOKEN")
@@ -131,65 +132,75 @@ def broadcast_email_and_slack(updated_labels):
 def monitor_sheets():
     """Monitor ICE 287(g) site, process updates, and broadcast results."""
     url = "https://www.ice.gov/identify-and-arrest/287g"
-    # updated = monitor_and_download_all(url)
+    updated = monitor_and_download_all(url)
 
-    # if not updated:
-    #     print("No new updates found.")
-    #     return
+    if not updated:
+        print("No new updates found.")
+        return
 
     updated_labels = []
 
     # Pending agencies pipeline
-    # if "pending" in updated:
-    print("\nProcessing pending agencies...")
-    normalize_agency_names_pending(
-        pending_dir="pendingAgencies",
-        output_dir="Monitor/Agency_Pending_Normalizer"
-    )
-    
-    merge_pending_agencies()
-    print("Finished pending pipeline.\n")
-    updated_labels.append("pending")
-    print("Generating pivot table for pending agencies...")
-    try:
-        run_pending_agencies_pivot_report()
-        print("Finished successfully!\n")
-    except Exception:
-        traceback.print_exc()
+    if "pending" in updated:
+        time.sleep(2)
+        print("\nProcessing pending agencies...")
+        normalize_agency_names_pending(
+            pending_dir="pendingAgencies",
+            output_dir="Monitor/Agency_Pending_Normalizer"
+        )
+        
+        time.sleep(2)
+        
+        merge_pending_agencies()
+        print("Finished pending pipeline.\n")
+        updated_labels.append("pending")
+
+        print("Generating pivot table for pending agencies...")
+        try:
+            run_pending_agencies_pivot_report()
+            print("Finished successfully!\n")
+        except Exception:
+            traceback.print_exc()
 
     # Participating agencies pipeline
-    # if "participating" in updated:
-    print("\nProcessing participating agencies...")
-    folder_name = "participatingAgencies"
-    filename, df = get_latest_filename(folder_name)
-    if df is not None:
-        print(f"Latest file: {filename} ({len(df)} rows, {len(df.columns)} columns)")
-    df = extract_hyperlinks(folder_name)
-    normalize_agency_names(
-        txt_path="last-participating.txt",
-        directory="Hyperlink",
-        output_dir="Agency_Name_Normalizer"
-    )
-    merge_latest_normalizer_with_participating(
-        normalizer_folder="Agency_Name_Normalizer",
-        participating_folder="CleanParticipatingAgencies",
-        merge_folder="CleanParticipatingAgencies",
-        last_participating_file="last-participating.txt"
-    )
-    print("Generating pivot table for participating agencies...")
-    try:
-        generate_agency_summary()
-        print("Finished participating pipeline!\n")
-    except Exception:
-        traceback.print_exc()
-    cleanFolder("Hyperlink")
-    updated_labels.append("participating")
+    if "participating" in updated:
+        print("\nProcessing participating agencies...")
+        folder_name = "participatingAgencies"
+
+        filename, df = get_latest_filename(folder_name)
+        if df is not None:
+            print(f"Latest file: {filename} ({len(df)} rows, {len(df.columns)} columns)")
+
+        df = extract_hyperlinks(folder_name)
+
+        normalize_agency_names(
+            txt_path="last-participating.txt",
+            directory="Hyperlink",
+            output_dir="Agency_Name_Normalizer"
+        )
+
+        merge_latest_normalizer_with_participating(
+            normalizer_folder="Agency_Name_Normalizer",
+            participating_folder="CleanParticipatingAgencies",
+            merge_folder="CleanParticipatingAgencies",
+            last_participating_file="last-participating.txt"
+        )
+
+        print("Generating pivot table for participating agencies...")
+        try:
+            generate_agency_summary()
+            print("Finished participating pipeline!\n")
+        except Exception:
+            traceback.print_exc()
+
+        cleanFolder("Hyperlink")
+        updated_labels.append("participating")
 
     # Broadcast updates
     if updated_labels:
         print(f"Broadcasting updates: {updated_labels}")
         broadcast_email_and_slack(updated_labels)
-    
+    # 
     push_to_github()
 
 
