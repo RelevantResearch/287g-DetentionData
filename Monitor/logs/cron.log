@@ -85538,3 +85538,598 @@ No updates for pending.
 No new updates found.
 /var/scraper/287g-DetentionData/Monitor/merge.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
   df['SIGNED'] = pd.to_datetime(df['SIGNED'], errors='coerce')
+[main b6cf116] New Sheets Alert! participatingAgencies01212026am.xlsx and pendingAgencies01212026am.xlsx
+ 11 files changed, 608 insertions(+), 2 deletions(-)
+ create mode 100644 Monitor/Agency_Name_Normalizer/TOTAL-participatingAgencies01212026am.xlsx
+ create mode 100644 Monitor/Agency_Pending_Normalizer/pendingAgencies01212026am.xlsx
+ create mode 100644 Monitor/CleanParticipatingAgencies/Total-participatingAgencies01212026am.xlsx
+ create mode 100644 Monitor/Normalized_Total_pendingAgencies/Total-pendingAgencies01212026am.xlsx
+ create mode 100644 participatingAgencies/participatingAgencies01212026am.xlsx
+ create mode 100644 pendingAgencies/pendingAgencies01212026am.xlsx
+ create mode 100644 pivotParticipatingAgencies/Pivot-participatingAgencies01212026am.xlsx
+ create mode 100644 pivotPendingAgencies/pivot-pendingAgencies01212026am.xlsx
+To github.com:RelevantResearch/287g-DetentionData.git
+   15dce3e..b6cf116  main -> main
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01202026am.xlsx
+New participating file detected. Downloading...
+Updated last-participating.txt with: participatingAgencies01212026am.xlsx
+Downloaded participating file to: /var/scraper/287g-DetentionData/participatingAgencies/participatingAgencies01212026am.xlsx
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01202026am.xlsx
+New pending file detected. Downloading...
+Updated last-pending.txt with: pendingAgencies01212026am.xlsx
+Downloaded pending file to: /var/scraper/287g-DetentionData/pendingAgencies/pendingAgencies01212026am.xlsx
+
+Processing pending agencies...
+
+Processing latest file → /var/scraper/287g-DetentionData/pendingAgencies/pendingAgencies01212026am.xlsx
+
+Done! Cleaned data saved to: /var/scraper/287g-DetentionData/Monitor/Agency_Pending_Normalizer/pendingAgencies01212026am.xlsx
+Latest file found: Normalized_Total_pendingAgencies/Total-pendingAgencies01202026am.xlsx
+Using normalizer file: Agency_Pending_Normalizer/pendingAgencies01212026am.xlsx
+Merged file saved directly to: Normalized_Total_pendingAgencies/Total-pendingAgencies01212026am.xlsx
+Finished pending pipeline.
+
+Generating pivot table for pending agencies...
+Using base directory (Monitor folder): /var/scraper/287g-DetentionData/Monitor
+Parent directory (base data folder): /var/scraper/287g-DetentionData
+Looking for last-pending.txt at: /var/scraper/287g-DetentionData/Monitor/last-pending.txt
+Filename read from txt file: 'pendingAgencies01212026am.xlsx'
+Looking for file at: /var/scraper/287g-DetentionData/Monitor/Normalized_Total_pendingAgencies/Total-pendingAgencies01212026am.xlsx
+Processing file: Total-pendingAgencies01212026am.xlsx
+Pivot report saved to: /var/scraper/287g-DetentionData/pivotPendingAgencies/pivot-pendingAgencies01212026am.xlsx
+Finished successfully!
+
+
+Processing participating agencies...
+Latest file: participatingAgencies01212026am.xlsx (1316 rows, 8 columns)
+Processing latest file: participatingAgencies01212026am.xlsx
+Saved extracted hyperlinks to: Hyperlink/hyperlink_participatingAgencies01212026am.xlsx
+
+Processing file → /var/scraper/287g-DetentionData/Monitor/Hyperlink/hyperlink_participatingAgencies01212026am.xlsx
+Done! Cleaned data saved to: /var/scraper/287g-DetentionData/Monitor/Agency_Name_Normalizer/TOTAL-participatingAgencies01212026am.xlsx
+Generating pivot table for participating agencies...
+Filename from txt: participatingAgencies01212026am.xlsx
+
+Processing file → /var/scraper/287g-DetentionData/Monitor/CleanParticipatingAgencies/Total-participatingAgencies01212026am.xlsx
+
+Loaded 1496 rows
+After filtering ≥ 2025-01-01 → 1357 rows remain
+Creating per-support-type pivot tables...
+   Warrant Service Officer: 438 rows processed
+   Jail Enforcement Model: 118 rows processed
+   Task Force Model: 797 rows processed
+Creating weekly pivot table...
+Weekly pivot with 42 rows
+Writing results to ../pivotParticipatingAgencies/Pivot-participatingAgencies01212026am.xlsx ...
+Processed data saved to: ../pivotParticipatingAgencies/Pivot-participatingAgencies01212026am.xlsx
+
+Finished participating pipeline!
+
+Deleted: hyperlink_participatingAgencies01212026am.xlsx
+Cleaned folder: Hyperlink
+Broadcasting updates: ['pending', 'participating']
+Email sent successfully via SES.
+✅ Files successfully pushed to GitHub.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies01212026am.xlsx
+- Last saved:    participatingAgencies01212026am.xlsx
+No updates for participating.
+
+Checking PENDING file:
+- Latest on site: pendingAgencies01212026am.xlsx
+- Last saved:    pendingAgencies01212026am.xlsx
+No updates for pending.
+
+No new updates found.
+/var/scraper/287g-DetentionData/Monitor/merge.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df['SIGNED'] = pd.to_datetime(df['SIGNED'], errors='coerce')
