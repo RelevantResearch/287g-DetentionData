@@ -4,19 +4,27 @@ import pandas as pd
 
 
 def normalize_agency_names(
+    filename=None,
     txt_path="last-participating.txt",
     directory="Hyperlink",
     output_dir="Agency_Name_Normalizer"
 ):
-    # -------------------------
-    # Load file
-    # -------------------------
-    with open(txt_path, "r") as f:
-        txt_filename = f.read().strip()
+    # If filename was not explicitly provided, fall back
+    # to last-participating.txt for backwards compatibility.
+    if filename is None:
+        with open(txt_path, "r") as f:
+            filename = f.read().strip()
 
-    actual_filename = f"hyperlink_{txt_filename}"
+    actual_filename = f"hyperlink_{filename}"
+
     file_path = os.path.join(directory, actual_filename)
+
     print(f"\nProcessing file → {os.path.abspath(file_path)}")
+
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(
+            f"Hyperlink file not found: {os.path.abspath(file_path)}"
+        )
 
     df = pd.read_excel(file_path)
 
@@ -118,7 +126,10 @@ def normalize_agency_names(
     # Save output
     # -------------------------
     os.makedirs(output_dir, exist_ok=True)
-    output_file = os.path.join(output_dir, f"TOTAL-{txt_filename}")
+    output_file = os.path.join(
+        output_dir,
+        f"TOTAL-{filename}"
+    )
     df.to_excel(output_file, index=False)
 
     print(f"Done! Cleaned data saved to: {os.path.abspath(output_file)}")

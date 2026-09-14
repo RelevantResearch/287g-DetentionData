@@ -159,7 +159,7 @@ def generate_agency_summary(
 
     input_filename = f"Total-{txt_filename}"
     input_filepath = os.path.join(input_folder, input_filename)
-    print(f"\nProcessing file → {os.path.abspath(input_filepath)}\n")
+    print(f"\nProcessings file → {os.path.abspath(input_filepath)}\n")
 
     df = pd.read_excel(input_filepath)
     print(f"Loaded {len(df)} rows")

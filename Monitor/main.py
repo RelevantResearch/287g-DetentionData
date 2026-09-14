@@ -163,18 +163,33 @@ def monitor_sheets():
             traceback.print_exc()
 
     # Participating agencies pipeline
+    # Participating agencies pipeline
     if "participating" in updated:
         print("\nProcessing participating agencies...")
+
         folder_name = "participatingAgencies"
 
+        # Get the actual latest downloaded file
         filename, df = get_latest_filename(folder_name)
-        if df is not None:
-            print(f"Latest file: {filename} ({len(df)} rows, {len(df.columns)} columns)")
 
-        df = extract_hyperlinks(folder_name)
+        if not filename or df is None:
+            print("Could not find participating agencies file.")
+            return
 
+        print(
+            f"Latest file: {filename} "
+            f"({len(df)} rows, {len(df.columns)} columns)"
+        )
+
+        # Extract hyperlinks from the exact file we selected
+        df = extract_hyperlinks(
+            folder_name=folder_name,
+            filename=filename
+        )
+
+        # Normalize the exact hyperlink file
         normalize_agency_names(
-            txt_path="last-participating.txt",
+            filename=filename,
             directory="Hyperlink",
             output_dir="Agency_Name_Normalizer"
         )
@@ -187,6 +202,7 @@ def monitor_sheets():
         )
 
         print("Generating pivot table for participating agencies...")
+
         try:
             generate_agency_summary()
             print("Finished participating pipeline!\n")
@@ -194,6 +210,7 @@ def monitor_sheets():
             traceback.print_exc()
 
         cleanFolder("Hyperlink")
+
         updated_labels.append("participating")
 
     # Broadcast updates
@@ -206,3 +223,5 @@ def monitor_sheets():
 
 if __name__ == "__main__":
     monitor_sheets()
+
+
