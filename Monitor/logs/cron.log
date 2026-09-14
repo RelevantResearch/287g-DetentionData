@@ -131104,3 +131104,41 @@ No updates for participating.
 No new updates found.
 /var/scraper/287g-DetentionData/Monitor/merge.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
   df['SIGNED'] = pd.to_datetime(df['SIGNED'], errors='coerce')
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies09112026.xlsx
+- Last saved:    participatingAgencies09112026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies09112026.xlsx
+- Last saved:    participatingAgencies09112026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies09112026.xlsx
+- Last saved:    participatingAgencies09112026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies09112026.xlsx
+- Last saved:    participatingAgencies09112026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies09112026.xlsx
+- Last saved:    participatingAgencies09112026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies09112026.xlsx
+- Last saved:    participatingAgencies09112026.xlsx
+No updates for participating.
+
+No new updates found.
+/var/scraper/287g-DetentionData/Monitor/merge.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df['SIGNED'] = pd.to_datetime(df['SIGNED'], errors='coerce')
