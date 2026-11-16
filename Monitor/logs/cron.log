@@ -136906,3 +136906,2604 @@ No updates for participating.
 No new updates found.
 /var/scraper/287g-DetentionData/Monitor/merge.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
   df['SIGNED'] = pd.to_datetime(df['SIGNED'], errors='coerce')
+[main 09b81f2] New Sheets Alert! participatingAgencies10152026.xlsx and pendingAgencies02272026am.xlsx
+ 6 files changed, 263 insertions(+), 1 deletion(-)
+ create mode 100644 Monitor/CleanParticipatingAgencies/Total-participatingAgencies10152026.xlsx
+ create mode 100644 participatingAgencies/participatingAgencies10152026.xlsx
+ create mode 100644 pivotParticipatingAgencies/Pivot-participatingAgencies10152026.xlsx
+To github.com:RelevantResearch/287g-DetentionData.git
+   1684a8a..09b81f2  main -> main
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10142026.xlsx
+New participating file detected. Downloading...
+Updated last-participating.txt with: participatingAgencies10152026.xlsx
+Downloaded participating file to: /var/scraper/287g-DetentionData/participatingAgencies/participatingAgencies10152026.xlsx
+
+Processing participating agencies...
+Latest file: participatingAgencies06152026am.xlsx (1959 rows, 8 columns)
+Processing file: participatingAgencies06152026am.xlsx
+Saved extracted hyperlinks to: /var/scraper/287g-DetentionData/Monitor/Hyperlink/hyperlink_participatingAgencies06152026am.xlsx
+
+Processing file → /var/scraper/287g-DetentionData/Monitor/Hyperlink/hyperlink_participatingAgencies06152026am.xlsx
+Done! Cleaned data saved to: /var/scraper/287g-DetentionData/Monitor/Agency_Name_Normalizer/TOTAL-participatingAgencies06152026am.xlsx
+Generating pivot table for participating agencies...
+Filename from txt: participatingAgencies10152026.xlsx
+
+Processings file → /var/scraper/287g-DetentionData/Monitor/CleanParticipatingAgencies/Total-participatingAgencies10152026.xlsx
+
+Loaded 2301 rows
+After filtering ≥ 2025-01-01 → 2159 rows remain
+Creating per-support-type pivot tables...
+   Warrant Service Officer: 522 rows processed
+   Jail Enforcement Model: 171 rows processed
+   Task Force Model: 1461 rows processed
+Creating weekly pivot table...
+Weekly pivot with 61 rows
+Writing results to ../pivotParticipatingAgencies/Pivot-participatingAgencies10152026.xlsx ...
+Processed data saved to: ../pivotParticipatingAgencies/Pivot-participatingAgencies10152026.xlsx
+
+Finished participating pipeline!
+
+Deleted: hyperlink_participatingAgencies06152026am.xlsx
+Cleaned folder: Hyperlink
+Broadcasting updates: ['participating']
+Email sent successfully via SES.
+✅ Files successfully pushed to GitHub.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: participatingAgencies10152026.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+No updates for participating.
+
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+Traceback (most recent call last):
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 225, in <module>
+    monitor_sheets()
+  File "/var/scraper/287g-DetentionData/Monitor/main.py", line 135, in monitor_sheets
+    updated = monitor_and_download_all(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 69, in monitor_and_download_all
+    links = get_excel_links(webpage_url)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/scraper/287g-DetentionData/Monitor/monitorSheets.py", line 27, in get_excel_links
+    response.raise_for_status()
+  File "/var/scraper/287g-DetentionData/Monitor/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ice.gov/identify-and-arrest/287g
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+No new updates found.
+/var/scraper/287g-DetentionData/Monitor/merge.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df['SIGNED'] = pd.to_datetime(df['SIGNED'], errors='coerce')
