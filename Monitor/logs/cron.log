@@ -139507,3 +139507,308 @@ No new updates found.
 No new updates found.
 /var/scraper/287g-DetentionData/Monitor/merge.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
   df['SIGNED'] = pd.to_datetime(df['SIGNED'], errors='coerce')
+[main a776f7b] New Sheets Alert! ParticipatingAgencies11162026pm.xlsx and pendingAgencies02272026am.xlsx
+ 6 files changed, 2602 insertions(+), 1 deletion(-)
+ create mode 100644 Monitor/Agency_Name_Normalizer/TOTAL-ParticipatingAgencies11162026pm.xlsx
+ create mode 100644 Monitor/CleanParticipatingAgencies/Total-ParticipatingAgencies11162026pm.xlsx
+ create mode 100644 participatingAgencies/ParticipatingAgencies11162026pm.xlsx
+ create mode 100644 pivotParticipatingAgencies/Pivot-ParticipatingAgencies11162026pm.xlsx
+To github.com:RelevantResearch/287g-DetentionData.git
+   09b81f2..a776f7b  main -> main
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    participatingAgencies10152026.xlsx
+New participating file detected. Downloading...
+Updated last-participating.txt with: ParticipatingAgencies11162026pm.xlsx
+Downloaded participating file to: /var/scraper/287g-DetentionData/participatingAgencies/ParticipatingAgencies11162026pm.xlsx
+
+Processing participating agencies...
+Latest file: ParticipatingAgencies11162026pm.xlsx (2783 rows, 8 columns)
+Processing file: ParticipatingAgencies11162026pm.xlsx
+Saved extracted hyperlinks to: /var/scraper/287g-DetentionData/Monitor/Hyperlink/hyperlink_ParticipatingAgencies11162026pm.xlsx
+
+Processing file → /var/scraper/287g-DetentionData/Monitor/Hyperlink/hyperlink_ParticipatingAgencies11162026pm.xlsx
+Done! Cleaned data saved to: /var/scraper/287g-DetentionData/Monitor/Agency_Name_Normalizer/TOTAL-ParticipatingAgencies11162026pm.xlsx
+Generating pivot table for participating agencies...
+Filename from txt: ParticipatingAgencies11162026pm.xlsx
+
+Processings file → /var/scraper/287g-DetentionData/Monitor/CleanParticipatingAgencies/Total-ParticipatingAgencies11162026pm.xlsx
+
+Loaded 3206 rows
+After filtering ≥ 2025-01-01 → 3064 rows remain
+Creating per-support-type pivot tables...
+   Warrant Service Officer: 621 rows processed
+   Jail Enforcement Model: 198 rows processed
+   Task Force Model: 2239 rows processed
+Creating weekly pivot table...
+Weekly pivot with 83 rows
+Writing results to ../pivotParticipatingAgencies/Pivot-ParticipatingAgencies11162026pm.xlsx ...
+Processed data saved to: ../pivotParticipatingAgencies/Pivot-ParticipatingAgencies11162026pm.xlsx
+
+Finished participating pipeline!
+
+Deleted: hyperlink_ParticipatingAgencies11162026pm.xlsx
+Cleaned folder: Hyperlink
+Broadcasting updates: ['participating']
+Email sent successfully via SES.
+✅ Files successfully pushed to GitHub.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+Checking PARTICIPATING file:
+- Latest on site: ParticipatingAgencies11162026pm.xlsx
+- Last saved:    ParticipatingAgencies11162026pm.xlsx
+No updates for participating.
+
+No new updates found.
+/var/scraper/287g-DetentionData/Monitor/merge.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df['SIGNED'] = pd.to_datetime(df['SIGNED'], errors='coerce')
